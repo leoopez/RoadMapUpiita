@@ -2,9 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-size: 24px;
 }
 
-.app {
+:root {
+    --bg:#EAEAEA;
+    --bg-accent: #C9A675;
+    --text-color:#702F4E;
+    --nav-size: 60px;
+    --border: 1px solid #474a4d;
+    --border-radious: 8px;
+    --speed: 500ms;
+}
 
+body {
+    background-color: #EAEAEA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
 }

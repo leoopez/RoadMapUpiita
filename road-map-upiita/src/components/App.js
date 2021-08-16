@@ -9,9 +9,9 @@ import Footer from "./Footer/Footer"
 export default function App(){
     return (
         <div className="app">
-            <Header />
+            {/* <Header /> */}
             <Main />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

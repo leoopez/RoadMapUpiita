@@ -15,9 +15,9 @@
 }
 
 body {
-    background-color: #EAEAEA;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 ul {
@@ -27,4 +27,8 @@ ul {
 a {
     color: var(--text-color);
     text-decoration: none;
+}
+
+img {
+    object-fit: contain;
 }

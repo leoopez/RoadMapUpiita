@@ -1,4 +1,12 @@
 .semester {
     display: flex;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.semester--unit{
+    width: 1.2em;
+    font-size: 3em;
 }

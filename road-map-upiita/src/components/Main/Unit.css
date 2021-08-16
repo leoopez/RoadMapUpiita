@@ -1,20 +1,36 @@
 .unit {
+    display: flex;
     text-align: center;
+    justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    width: 125px;
-    height: 5rem;
+    flex-direction: column;
+    border-radius: 0.5em;
+    width: 9em;
+    height: 5em;
     white-space: pre-line;
     margin-bottom: 0;
     padding: 0 0;
     border: 0.2rem;
-    margin-right: 10px;
+    margin-right: 0.5em;
+    margin-bottom: 0.3em;
+    /* box-shadow: 0 0 5px black inset; */
+}
+
+.unit--unselected {
+    filter: blur(2px);
+}
+
+.unit:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
 }
 
 .unit p {
     margin: 0;
     padding: 0;
 }
+
+
 
 .level--1{
     border: solid blue;

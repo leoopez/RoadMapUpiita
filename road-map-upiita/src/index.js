@@ -1,6 +1,11 @@
 import React from "react"
-import {render} from "react-dom"
+import { render } from "react-dom"
+import UnitsProvider from "./Hooks/unit-provider-hook"
+import App from "./Components/App"
 
-import App from "./components/App"
 
-render(<App />, document.getElementById('root'))
+render(
+    <UnitsProvider>
+        <App />
+    </UnitsProvider>,
+    document.getElementById('root'))

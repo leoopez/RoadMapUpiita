@@ -11,18 +11,27 @@
     margin-bottom: 0;
     padding: 0 0;
     border: 0.2rem;
-    margin-right: 0.5em;
-    margin-bottom: 0.3em;
-    /* box-shadow: 0 0 5px black inset; */
+    margin-right: 1em;
+    margin-bottom: 0.7em;
 }
 
 .unit--unselected {
+    transition-duration: 300ms;
     filter: blur(2px);
+}
+
+.unit--linked {
+    box-shadow: 0 0 5px black inset;
+}
+
+.unit--recommended {
+    box-shadow: 0 0 5px red inset;
 }
 
 .unit:hover{
     cursor: pointer;
-    box-shadow: 0 0 5px black;
+    transition-duration: 300ms;
+    transform: rotate(-3deg); 
 }
 
 .unit p {

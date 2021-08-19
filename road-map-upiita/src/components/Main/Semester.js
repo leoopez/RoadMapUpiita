@@ -1,15 +1,16 @@
-import React from "react"
-import "./Semester.css"
+/** @format */
 
-import Unit from "./Unit"
+import React from "react";
+import "./Semester.css";
 
-export default function Semester({units, semester}){
-    console.log(units)
-    const renderUnits = units.map((unit, i) => <Unit key={i} {...unit}/>)
-    return (
-        <div className="semester">
-            <span className="semester--unit">{semester}</span>  
-            {renderUnits}
-        </div>
-    )
+import Unit from "./Unit";
+
+export default function Semester({ units, semester }) {
+  const renderUnits = units.map((unit, i) => <Unit key={i} unit={unit} />);
+  return (
+    <>
+      <div className='semester--unit'>{semester}</div>
+      <div className='semester'>{renderUnits}</div>
+    </>
+  );
 }

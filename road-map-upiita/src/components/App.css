@@ -5,13 +5,12 @@
 }
 
 :root {
-    --bg-primariy:#EAEAEA;
+    --bg-primary:#EAEAEA;
     --bg-secundary: #474a4d;
     --bg-accent: #C9A675;
 
-    --txt-color:#702F4E;
-    --nav-size: 60px;
-    --border: 4px;
+    --text-color:#702F4E;
+    --border-size: 4px;
     --border-radious: 8px;
     --speed: 500ms;
 
@@ -21,15 +20,15 @@
     --level-4: brown;
     --level-5: #9B59B6;
 
-    --l-1-bd: var(--border) blue solid;
-    --l-2-bd: var(--border) black dotted;
-    --l-3-bd: var(--border) red dashed;
-    --l-4-bd: var(--border) brown solid;
-    --l-5-bd: var(--border) #9B59B6 solid;
+    --l-1-bd: var(--border-size) var(--level-1) solid;
+    --l-2-bd: var(--border-size) var(--level-2) dotted;
+    --l-3-bd: var(--border-size) var(--level-3) dashed;
+    --l-4-bd: var(--border-size) var(--level-4) solid;
+    --l-5-bd: var(--border-size) var(--level-5) solid;
 }
 
 body {
-    background-color: white;
+    background: var(--bg-primary);
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }

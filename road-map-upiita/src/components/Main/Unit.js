@@ -1,30 +1,47 @@
-import React from "react"
-import "./Unit.css"
-import { useUnit } from "../../Hooks/unit-provider-hook"
+/** @format */
 
-export default function Unit({level, credits, name}) {
+import React from "react";
+import "./Unit.css";
 
-    const { unit, changeUnit} = useUnit();
+import { useUnit } from "../../Hooks/unit-provider-hook";
 
-    const onClick = name => unit === name? changeUnit(null) : changeUnit(name);
-    
-
-    if(unit){
-        return (
-            <div
-                className={`unit ${name !== unit ? "unit--unselected" : ""} level--${level}`}
-                onClick={() => onClick(name)}>
-                
-                <p>{name}</p>
-                <p>({credits[0]},{credits[1]})</p>
-            </div>
-        )
-    }
-
+export default function Unit({ unit }) {
+  const { selected, changeSelectedUnit } = useUnit();
+  if (selected) {
     return (
-        <div className={`level--${level} unit`} onClick={() => onClick(name)}>
-            <p>{name}</p>
-            <p>({credits[0]},{credits[1]})</p>
-        </div>
-    )
+      <div
+        className={`unit ${unit.isSelected ? "unit--selected" : ""} ${
+          unit.isRecommended ? "unit--recommended" : ""
+        } ${unit.isLinked ? "unit--linked" : ""} level--${unit.level}`}
+        onClick={() => {
+          if (selected === unit) {
+            changeSelectedUnit(null);
+          } else {
+            changeSelectedUnit(unit);
+          }
+        }}>
+        <p>{unit.name}</p>
+        <p>
+          ({unit.credits[0]},{unit.credits[1]})
+        </p>
+      </div>
+    );
+  } else {
+    return (
+      <div
+        className={"unit unit--selected level--" + unit.level}
+        onClick={() => {
+          if (selected === unit) {
+            changeSelectedUnit(null);
+          } else {
+            changeSelectedUnit(unit);
+          }
+        }}>
+        <p>{unit.name}</p>
+        <p>
+          ({unit.credits[0]},{unit.credits[1]})
+        </p>
+      </div>
+    );
+  }
 }

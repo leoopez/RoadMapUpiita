@@ -1,17 +1,19 @@
-import React from "react"
+/** @format */
 
-import "./App.css"
+import React from "react";
 
-import Header from "./Header/Header"
-import Main from "./Main/Main"
-import Footer from "./Footer/Footer"
+import "./App.css";
 
-export default function App(){
-    return (
-        <div className="app">
-            {/* <Header /> */}
-            <Main />
-            {/* <Footer /> */}
-        </div>
-    )
+import Header from "./Header/Header";
+import Main from "./Main/Main";
+import Footer from "./Footer/Footer";
+
+export default function App() {
+  return (
+    <div className='app'>
+      {/* <Header /> */}
+      <Main />
+      {/* <Footer /> */}
+    </div>
+  );
 }

@@ -1,13 +1,6 @@
 .units-grid{
     display: grid;
     grid-template-columns: 5rem auto;
-    gap: 1rem;
-}
-
-.by-semester {
     grid-template-rows: 10;
-}
-
-.by-level {
-    grid-template-rows: 5;
+    gap: 1rem;
 }

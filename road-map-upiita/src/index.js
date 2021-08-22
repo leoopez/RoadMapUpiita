@@ -1,11 +1,11 @@
 import React from "react"
 import { render } from "react-dom"
-import UnitsProvider from "./Hooks/unit-provider-hook"
-import App from "./Components/App"
-
+import OptionProvider from "./Hooks/option-provider.hook";
+import App from "./Components/App";
 
 render(
-    <UnitsProvider>
-        <App />
-    </UnitsProvider>,
-    document.getElementById('root'))
+  <OptionProvider>
+    <App />
+  </OptionProvider>,
+  document.getElementById("root")
+);

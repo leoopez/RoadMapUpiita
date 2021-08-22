@@ -1,60 +1,11 @@
-import React, {createContext, useContext, useState} from "react"
-import dataUnits from "../data/mecatronica/learningUnits";
+/** @format */
 
-const UnitsContext = createContext();
+import React, { createContext, useContext } from "react";
 
-export const useUnit = () => useContext(UnitsContext);
+const UnitContext = createContext();
 
-export default function UnitsProvider({ children }) {
-  const [selected, setSelected] = useState(null);
-  const [selectedUnit, setSelectedUnit] = useState(
-    dataUnits.map((unit, id) => {
-      return {
-        id,
-        isSelected: true,
-        isLinked: false,
-        isRecommended: false,
-      };
-    })
-  );
+export const useUnit = () => useContext(UnitContext);
 
-  const changeSelectedUnit = newUnitSelected => {
-    let newData;
-    if (newUnitSelected) {
-      newData = selectedUnit.map((unit, id) => {
-        console.log(unit);
-        if (newUnitSelected.recommended.includes(id))
-          return { ...unit, isRecommended: false };
-        else if (newUnitSelected.linked.includes(id))
-          return { ...unit, isLinked: true };
-        else if (newUnitSelected.id === id)
-          return { ...unit, isSelected: true };
-        else
-          return {
-            ...unit,
-            isSelected: true,
-            isLinked: false,
-            isRecommended: false,
-          };
-      });
-    } else {
-      newData = selectedUnit.map(unit => {
-        return {
-          ...unit,
-          isSelected: false,
-          isLinked: false,
-          isRecommended: false,
-        };
-      });
-    }
-    setSelected(newUnitSelected);
-    setSelectedUnit(newData);
-  };
-
-  return (
-    <UnitsContext.Provider
-      value={{ selected, selectedUnit, dataUnits, changeSelectedUnit }}>
-      {children}
-    </UnitsContext.Provider>
-  );
+export default function UnitProvider({ children }) {
+  return <UnitContext.Provider value={null}>{children}</UnitContext.Provider>;
 }

@@ -27,10 +27,13 @@
     --l-5-bd: var(--border-size) var(--level-5) solid;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     background: var(--bg-primary);
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
 }
 
 ul, ol {
@@ -44,4 +47,9 @@ a {
 
 img {
     object-fit: contain;
+}
+
+.container {
+    padding: 1rem;
+    margin-bottom: 1rem;
 }

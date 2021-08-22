@@ -1,117 +1,13 @@
-.main{
-    padding: 5em;
-    margin: auto;
+.units-grid{
     display: grid;
-    grid-template-columns: repeat(9, auto);
-    grid-template-rows: repeat(9, auto);
-    row-gap: 15px;
+    grid-template-columns: 5rem auto;
+    gap: 1rem;
 }
 
-.info {
-    cursor: pointer;
-    position: fixed;
-    height: 2rem;
-    width: 2rem;
-    top: 1em;
-    right: 1em;
+.by-semester {
+    grid-template-rows: 10;
 }
 
-.info:hover {
-    transition-duration: 300ms;
-    transform: scale(1.1);
-}
-
-.info--model {  
-    position: fixed;    
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100vw;
-    height: 100vh;
-    padding: 20%;
-    font-size: 1.2rem;
-    background-color: rgba(250, 250, 250, 0.5);
-    backdrop-filter: blur(2px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.info--simb {
-    text-align: center;
-    border: 4px red dotted;
-    border-radius: 7px;
-}
-
-.info--container {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-}
-
-.info--credits {
-    margin-right: 10px;
-    border: 4px black solid;
-    padding: 10px;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.info--levels {
-    font-weight: bold;
-}
-
-.info--1{
-    color: var(--level-1);
-}
-
-.info--2{
-    color: var(--level-2);
-}
-
-.info--3{
-    color: var(--level-3);
-}
-
-.info--4{
-    color: var(--level-4);
-}
-
-.info--5{
-    color: var(--level-5);
-}
-
-hr {
-    display: inline-block;
-    width: 4em;
-}
-
-.info--line-1{
-    border-top: var(--l-1-bd);
-}
-
-.info--line-2{
-    border-top: var(--l-2-bd);
-}
-
-.info--line-3{
-    border-top: var(--l-3-bd);
-}
-
-.info--line-4{
-    border-top: var(--l-4-bd);
-}
-
-.info--line-5{
-    border-top: var(--l-5-bd);
-}
-
-.info--elec {
-    padding: 10px;
-    border-radius: 15px;
-    font-weight: bold;
-    color: green;
-    text-align: center;
-    border: 4px solid green;
+.by-level {
+    grid-template-rows: 5;
 }

@@ -1,71 +1,49 @@
 /** @format */
 
 import React, { useState } from "react";
-import { FaInfo, FaWindowClose } from "react-icons/fa";
 
 import "./Main.css";
-import { useUnit } from "../../Hooks/unit-provider-hook";
+import dataUnits from "../../data/mecatronica/learningUnits";
 
-import Unit from "./Unit";
-// import Semester from "./Semester";
+import Semester from "./Semester";
+
+const showOption = {
+  Semester: 10,
+  Level: 5,
+};
+
+// const careerOption = {
+//   0: "Mecatronica",
+//   1: "Telematica",
+//   2: "Bionica",
+//   3: "Sistemas Automotrices",
+//   4: "en Energia",
+// };
 
 export default function Main() {
-  // const [modal, setModal] = useState(false);
-  const { dataUnits } = useUnit();
+  const [showSelected] = useState(showOption.Semester);
 
-  const renderUnits = dataUnits.map((unit, i) => <Unit key={i} unit={unit} />);
-
-  return (
-    <>
-      {/* <Info changeModal={setModal} currModal={modal} />
-      {modal ? <ModelInfo /> : null} */}
-      <div className='main'>{renderUnits}</div>
-    </>
+  const groupOfUnits = dataUnits.reduce(
+    (reduceArray, unit, i) => {
+      reduceArray[unit.semester - 1].push(unit);
+      return reduceArray;
+    },
+    new Array(showSelected).fill(undefined).map(_ => new Array(0))
   );
-}
 
-function Info({ currModal, changeModal }) {
-  return (
-    <div className='info' onClick={() => changeModal(!currModal)}>
-      <FaInfo size={{ height: "24px" }} />
-    </div>
-  );
-}
+  const renderUnits = groupOfUnits.map((units, i) => (
+    <Semester key={i} semester={i} units={units} />
+  ));
+  console.log(renderUnits);
 
-function ModelInfo() {
   return (
-    <div className='info--model'>
-      <FaWindowClose size={{ height: "24px" }} />
-      {/* <div className='info--simb'>
-        <h4>SIMBOLOGIA</h4>
-        <div className='info--container'>
-          <div className='info--credits'>
-            <p>Unidad de Aprendizaje</p>
-            <p>(Hrs.Teoria, Hrs.Practica)</p>
-          </div>
-          <div className='info--levels'>
-            <div className='info--1'>
-              NIVEL 1<hr className='info--line-1'></hr>
-            </div>
-            <div className='info--2'>
-              NIVEL 2<hr className='info--line-2'></hr>
-            </div>
-            <div className='info--3'>
-              NIVEL 3<hr className='info--line-3'></hr>
-            </div>
-            <div className='info--4'>
-              NIVEL 4<hr className='info--line-4'></hr>
-            </div>
-            <div className='info--5'>
-              NIVEL 5<hr className='info--line-5'></hr>
-            </div>
-          </div>
+    <main>
+      <section className='container'>
+        <div className='option container'>
+          <p>Dropdown menu...</p>
         </div>
-      </div>
-      <div className='info--elec'>
-        <p>3 ELECTIVAS</p>
-        <p>7 CREDITOS CADA UNA</p>
-      </div> */}
-    </div>
+        <div className='units-grid by-semester'>{renderUnits}</div>
+      </section>
+    </main>
   );
 }

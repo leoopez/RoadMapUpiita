@@ -4,9 +4,9 @@ import React from "react";
 
 import "./App.css";
 
-import Header from "./Header/Header";
+// import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Footer from "./Footer/Footer";
+// import Footer from "./Footer/Footer";
 
 export default function App() {
   return (

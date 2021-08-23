@@ -1,0 +1,36 @@
+.dropdown {
+    width: 7rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 1rem 2.5rem rgba(0,0,0,.1);
+    background-color: white;
+}
+
+.dropdown .dp-btn{
+    padding: 1rem;
+}
+
+.dp-content {
+    padding: 5px;
+    border-top: 1px solid #E5E8EC;
+}
+  
+  .dropdown-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .dp-item {
+    padding: 1rem;
+    transition: 300ms;
+  }
+  
+  .dp-item:hover {
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    cursor: pointer;
+  }

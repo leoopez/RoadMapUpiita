@@ -3,6 +3,8 @@
 import React from "react";
 
 import "./App.css";
+// import OptionProvider from "../Hooks/option-provider.hook";
+import UnitProvider from "../Hooks/unit-provider-hook";
 
 // import Header from "./Header/Header";
 import Main from "./Main/Main";
@@ -12,7 +14,9 @@ export default function App() {
   return (
     <div className='app'>
       {/* <Header /> */}
-      <Main />
+      <UnitProvider>
+        <Main />
+      </UnitProvider>
       {/* <Footer /> */}
     </div>
   );

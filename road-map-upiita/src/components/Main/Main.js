@@ -3,9 +3,8 @@
 import React from "react";
 
 import "./Main.css";
-import dataUnits from "../../data/mecatronica/learningUnits";
 
-import { useMode } from "../../Hooks/option-provider.hook";
+import { useUnits } from "../../Hooks/unit-provider-hook";
 
 import SetUnits from "./SetUnits";
 import Dropdown from "./Dropdown";
@@ -16,19 +15,17 @@ const showOption = {
 };
 
 export default function Main() {
-  const { mode } = useMode();
+  const { mode, dataUnits } = useUnits();
 
-  const groupOfUnits = dataUnits.reduce(
-    (reduceArray, unit, i) => {
-      reduceArray[unit[mode.toLowerCase()] - 1].push(unit);
-      return reduceArray;
-    },
-    new Array(showOption[mode]).fill(undefined).map(_ => new Array(0))
-  );
-
-  const renderUnits = groupOfUnits.map((units, i) => (
-    <SetUnits key={i + 1} group={i + 1} units={units} />
-  ));
+  const renderUnits = dataUnits
+    .reduce(
+      (reduceArray, unit) => {
+        reduceArray[unit[mode.toLowerCase()] - 1].push(unit);
+        return reduceArray;
+      },
+      new Array(showOption[mode]).fill(undefined).map(_ => new Array(0))
+    )
+    .map((units, i) => <SetUnits key={i + 1} group={i + 1} units={units} />);
 
   return (
     <main>

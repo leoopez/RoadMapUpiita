@@ -558,7 +558,7 @@ const DataUnits = [
 export default DataUnits;
 
 /*
-
+Meaning numbers in recommended and linked in each unit
 
 0 cal
 1 alg

@@ -15,6 +15,25 @@
     transition-duration: 300ms;
     transform: rotate(-3deg); 
 }
+.unit--selected{
+    
+}
+
+.unit--unselected{
+    transform: scale(0.9);
+    filter: blur(1px);
+}
+
+
+.unit--linked{
+    filter: none;
+    background-color: red;
+}
+
+.unit--recommended{
+    filter: none;
+    background-color: green;
+}
 
 .unit p {
     margin: 0;

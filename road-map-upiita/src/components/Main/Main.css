@@ -1,6 +1,16 @@
 .units-grid{
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 5rem auto;
     grid-template-rows: 10;
     gap: 1rem;
+}
+
+
+@media (max-width: 480px){
+    .units-grid{
+        grid-template-columns: 1fr;
+        /* background-color: black; */
+    }
 }

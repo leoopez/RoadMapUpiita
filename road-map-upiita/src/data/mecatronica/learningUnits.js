@@ -1,6 +1,6 @@
 /** @format */
 
-const DataUnits = [
+export const regularUnits = [
   {
     name: "Cálculo Dif.\ne Integral",
     credits: [3, 3],
@@ -31,7 +31,7 @@ const DataUnits = [
     level: 1,
     semester: 1,
     recommended: [],
-    linked: []
+    linked: [],
   },
   {
     name: "Estructura y\nPropiedades de\nlos Materiales",
@@ -71,7 +71,6 @@ const DataUnits = [
     semester: 2,
     recommended: [0, 1],
     linked: [],
-    
   },
   {
     name: "Calculo\nVectorial",
@@ -414,6 +413,7 @@ const DataUnits = [
     credits: [0, 4.5],
     level: 3,
     semester: 7,
+    optional: 1,
     recommended: [],
     linked: [],
   },
@@ -422,6 +422,7 @@ const DataUnits = [
     credits: [0, 4.5],
     level: 3,
     semester: 7,
+    optional: 2,
     recommended: [],
     linked: [],
   },
@@ -469,6 +470,7 @@ const DataUnits = [
     name: "Optativa 3",
     credits: [0, 4.5],
     level: 3,
+    optional: 3,
     semester: 8,
     recommended: [],
     linked: [],
@@ -478,6 +480,7 @@ const DataUnits = [
     credits: [0, 6],
     level: 4,
     semester: 8,
+    optional: 4,
     recommended: [],
     linked: [],
   },
@@ -518,6 +521,7 @@ const DataUnits = [
     credits: [0, 6],
     level: 4,
     semester: 9,
+    optional: 5,
     recommended: [],
     linked: [],
   },
@@ -526,6 +530,7 @@ const DataUnits = [
     credits: [0, 6],
     level: 4,
     semester: 9,
+    optional: 6,
     recommended: [],
     linked: [],
   },
@@ -553,10 +558,201 @@ const DataUnits = [
     recommended: [],
     linked: [],
   },
-];
+].map((unit, id) => ({
+  ...unit,
+  id,
+  isSelected: true,
+  isLinked: false,
+  isRecommended: false,
+}));
 
-export default DataUnits;
+export const optionalUnits = [
+  {
+    name: "Automatas\nIndustriales",
+    optional: 1,
+    credits: [1.5, 1.5],
+  },
+  {
+    name: "Protocolors\nAvanzados de\nComunicaciones",
+    optional: 1,
+    credits: [1.5, 1.5],
+  },
+  {
+    name: "Automatizacion\nde Linea de\nProduccion",
+    optional: 1,
+    credits: [1.5, 1.5],
+  },
+  {
+    name: "Seguriadad\nIndustrial",
+    optional: 1,
+    credits: [1.5, 1.5],
+  },
+  {
+    name: "Desarrollo\nEmpresarial",
+    optional: 1,
+    credits: [1.5, 1.5],
+  },
+  {
+    name: "Control\nDistribuido",
+    optional: 1,
+    credits: [1.5, 1.5],
+  },
+  {
+    name: "Sistemas de\nCalidad para\nla Manuactura",
+    optional: 1,
+    credits: [1.5, 1.5],
+  },
+  {
+    name: "Economía y\nLogistica",
+    optional: 1,
+    credits: [1.5, 1.5],
+  },
+  {
+    name: "Topicos\nAvanzados de\nSensores",
+    optional: 2,
+    credits: [0, 4.5],
+  },
+  {
+    name: "Produccion mas\nLimpia",
+    optional: 2,
+    credits: [0, 4.5],
+  },
+  {
+    name: "Uso y Mant. de\nHerr. para\nProc. de Man.",
+    optional: 2,
+    credits: [0, 4.5],
+  },
+  {
+    name: "Diseno Avanzado y\nManufactura\nAsistida\npor Computadora",
+    optional: 3,
+    credits: [0, 4.5],
+  },
+  {
+    name: "Graficacion 3D",
+    optional: 3,
+    credits: [0, 4.5],
+  },
+  {
+    name: "Sistemas\nOperativos en\nTiempo Real",
+    optional: 3,
+    credits: [0, 4.5],
+  },
+  {
+    name: "Topicos\nAvanzados de\nElectronica",
+    optional: 3,
+    credits: [0, 4.5],
+  },
+  {
+    name: "Procesos\nIndustriales",
+    optional: 3,
+    credits: [0, 4.5],
+  },
+  {
+    name: "Microcontroladores\nAvanzados",
+    optional: 4,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Control de\nInteligente",
+    optional: 4,
+    credits: [1.5, 3],
+  },
 
+  {
+    name: "Diseno de Equipo\npara el Manejo\nde Materiales",
+    optional: 4,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Realidad\nVirtual",
+    optional: 4,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Protocolos de\nComunicacion\nIndustrial",
+    optional: 4,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Vision\nArtificial\nAplicada",
+    optional: 4,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Diseno\nErgonomico",
+    optional: 5,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Instrumentacion\nVirtual\nAplicada",
+    optional: 5,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Control de\nProcesos\nIndustriales",
+    optional: 5,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Procesos\nAvanzados de\nManufactura",
+    optional: 5,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Control de\nSistemas\nRoboticos",
+    optional: 5,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Sistemas de\nProc. Digital de\nSenales",
+    optional: 5,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Manufactura\nIntegrada por\nComputadora",
+    optional: 5,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Mercadotecnia",
+    optional: 6,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Topicos\nAvanxados de\nSoldadura",
+    optional: 6,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Integracion de\nun Sistema\nRobotico",
+    optional: 6,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Implementacion\nde Sistemas\nDigitales",
+    optional: 6,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Topicos\nAvanxados de\nAutomatizacion",
+    optional: 6,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Sistemas\nAvanzados de\nManufactura",
+    optional: 6,
+    credits: [1.5, 3],
+  },
+  {
+    name: "Proyecto de\nSistemas\nEmbebidos",
+    optional: 6,
+    credits: [1.5, 3],
+  },
+].map((unit, id) => ({
+  ...unit,
+  id,
+  isSelected: true,
+}));
 /*
 Meaning numbers in recommended and linked in each unit
 

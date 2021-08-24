@@ -27,6 +27,10 @@ export default function Unit({ unit }) {
         unit.isLinked ? "unit--linked" : ""
       }`}
       onClick={() => onClick(unit.id)}>
+      {unit.isRecommended ? <p className='recommended'>R</p> : null}
+      {unit.isLinked ? <p className='linked'>L</p> : null}
+      {/* <p className='recommended'>R</p>
+      <p className='linked'>L</p> */}
       <p>{unit.name}</p>
       <p>
         ({unit.credits[0]},{unit.credits[1]})

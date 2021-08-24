@@ -1,14 +1,14 @@
 /** @format */
 
 import React, { createContext, useContext, useState } from "react";
-import data from "../data/mecatronica/learningUnits";
+import { regularUnits, optionalUnits } from "../data/mecatronica/learningUnits";
 
 const UnitContext = createContext();
 
 export const useUnits = () => useContext(UnitContext);
 
 const restartData = () =>
-  data.map((unit, id) => ({
+  regularUnits.map((unit, id) => ({
     ...unit,
     id,
     isSelected: true,
@@ -37,6 +37,9 @@ export default function UnitProvider({ children }) {
       unit.isSelected = false;
     });
 
+    if (newData[id].optional) {
+    }
+
     newData[id].isSelected = true;
     newData[id].linked.forEach(i => {
       newData[i].isLinked = true;
@@ -48,6 +51,7 @@ export default function UnitProvider({ children }) {
 
     setDataUnits(newData);
   };
+
   return (
     <UnitContext.Provider value={{ mode, changeMode, dataUnits, changeUnits }}>
       {children}

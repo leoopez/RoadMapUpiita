@@ -1,59 +1,38 @@
 /** @format */
 
 import React, { createContext, useContext, useState } from "react";
-import { regularUnits } from "../data/mecatronica/learningUnits";
 
 const UnitContext = createContext();
 
+//export hook that creates a Context Consumer
 export const useUnits = () => useContext(UnitContext);
 
-const restartData = () =>
-  regularUnits.map((unit, id) => ({
-    ...unit,
-    id,
-    isSelected: true,
-    isLinked: false,
-    isRecommended: false,
-  }));
-
 export default function UnitProvider({ children }) {
-  const [mode, setMode] = useState("Semester");
-  const [dataUnits, setDataUnits] = useState(restartData());
+  const [currentUnit, setCurrenUnit] = useState(null);
+  const [linkedUnits, setLinkedUnits] = useState(null);
+  const [recommendedUnits, setRecommendedUnits] = useState(null);
 
-  const changeMode = newMode => setMode(newMode);
-
-  const changeUnits = id => {
-    const newData = restartData();
-
-    if (!id) {
-      newData.forEach(unit => {
-        unit.isSelected = true;
-      });
-      setDataUnits(newData);
+  const changeCurrentUnits = unit => {
+    if (unit.id === currentUnit) {
+      setCurrenUnit(null);
+      setLinkedUnits(null);
+      setRecommendedUnits(null);
       return;
     }
-
-    newData.forEach(unit => {
-      unit.isSelected = false;
-    });
-
-    if (newData[id].optional) {
-    }
-
-    newData[id].isSelected = true;
-    newData[id].linked.forEach(i => {
-      newData[i].isLinked = true;
-    });
-
-    newData[id].recommended.forEach(i => {
-      newData[i].isRecommended = true;
-    });
-
-    setDataUnits(newData);
+    setCurrenUnit(unit.id);
+    setLinkedUnits([...unit.linked]);
+    setRecommendedUnits([...unit.recommended]);
   };
 
+  console.log(linkedUnits, recommendedUnits);
   return (
-    <UnitContext.Provider value={{ mode, changeMode, dataUnits, changeUnits }}>
+    <UnitContext.Provider
+      value={{
+        currentUnit,
+        linkedUnits,
+        recommendedUnits,
+        changeCurrentUnits,
+      }}>
       {children}
     </UnitContext.Provider>
   );

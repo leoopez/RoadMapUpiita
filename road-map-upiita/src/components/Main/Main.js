@@ -1,13 +1,14 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 
 import "./Main.css";
 
-import { useUnits } from "../../Hooks/unit-provider-hook";
+import { regularUnits } from "../../data/mecatronica/learningUnits";
 
 import SetUnits from "./SetUnits";
 import Dropdown from "./Dropdown";
+import InfoModal from "./InfoModal";
 
 const showOption = {
   Semester: 10,
@@ -15,9 +16,9 @@ const showOption = {
 };
 
 export default function Main() {
-  const { mode, dataUnits } = useUnits();
+  const [mode, setMode] = useState("Semester");
 
-  const renderUnits = dataUnits
+  const renderUnits = regularUnits
     .reduce(
       (reduceArray, unit) => {
         reduceArray[unit[mode.toLowerCase()] - 1].push(unit);
@@ -27,12 +28,12 @@ export default function Main() {
     )
     .map((units, i) => <SetUnits key={i + 1} group={i + 1} units={units} />);
 
+  console.log("render");
   return (
     <main>
       <section className='container'>
-        <div className='container'>
-          <Dropdown />
-        </div>
+        <InfoModal />
+        <Dropdown mode={mode} changeMode={setMode} />
         <div className='units-grid'>{renderUnits}</div>
       </section>
     </main>

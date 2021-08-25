@@ -49,11 +49,12 @@ img {
 }
 
 .container {
+    position: relative;
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
 .icons--default{
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
 }

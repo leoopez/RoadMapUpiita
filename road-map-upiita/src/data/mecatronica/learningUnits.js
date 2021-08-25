@@ -62,7 +62,8 @@ export const regularUnits = [
     credits: [0, 3],
     level: 1,
     semester: 1,
-    prevUnits: {},
+    recommended: [],
+    linked: [],
   },
   {
     name: "Ecuaciones\nDiferenciales",
@@ -561,9 +562,6 @@ export const regularUnits = [
 ].map((unit, id) => ({
   ...unit,
   id,
-  isSelected: true,
-  isLinked: false,
-  isRecommended: false,
 }));
 
 export const optionalUnits = [

@@ -5,6 +5,7 @@
     border-radius: 10px;
     box-shadow: 0 1rem 2.5rem rgba(0,0,0,.1);
     background-color: white;
+    cursor: pointer;
 }
 
 .dropdown .dp-btn{

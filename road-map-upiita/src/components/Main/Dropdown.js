@@ -1,10 +1,12 @@
 /** @format */
 
 import React, { useState, useEffect, useRef } from "react";
-import { useUnits } from "../../Hooks/unit-provider-hook";
 
 import "./Dropdown.css";
-export default function Dropdown() {
+
+const options = ["Semester", "Level"];
+
+export default function Dropdown({ mode, changeMode = f => f }) {
   const [isActive, setIsActive] = useState(false);
   const ref = useRef();
 
@@ -20,9 +22,6 @@ export default function Dropdown() {
         capture: true,
       });
   }, []);
-
-  const { mode, changeMode } = useUnits();
-  const options = ["Semester", "Level"];
 
   return (
     <div ref={ref} className='dropdown'>

@@ -14,24 +14,20 @@
     position: relative;
 }
 
+.unit p {
+    margin: 0;
+    padding: 0;
+}
+
 .unit:hover{
     transition-duration: 300ms;
     transform: rotate(-3deg); 
-}
-
-.unit--unselected{
-    transform: scale(0.9);
-    filter: blur(1px);
 }
 
 .unit--linked, .unit--recommended{
     filter: none;
 }
 
-.unit p {
-    margin: 0;
-    padding: 0;
-}
 
 .recommended,
 .linked {

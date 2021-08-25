@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { createContext, useContext, useState } from "react";
-import { regularUnits, optionalUnits } from "../data/mecatronica/learningUnits";
+import { regularUnits } from "../data/mecatronica/learningUnits";
 
 const UnitContext = createContext();
 

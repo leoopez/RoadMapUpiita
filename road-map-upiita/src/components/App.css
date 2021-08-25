@@ -52,3 +52,8 @@ img {
     padding: 1rem;
     margin-bottom: 1rem;
 }
+
+.icons--default{
+    width: 48px;
+    height: 48px;
+}

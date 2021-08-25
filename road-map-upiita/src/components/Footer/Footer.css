@@ -1,5 +1,13 @@
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 2rem;
     color: blanchedalmond;
-    height: 3em;
     background-color: black;
+}
+
+.github--icon:hover{
+    cursor: pointer;
 }

@@ -3,21 +3,21 @@
 import React from "react";
 
 import "./App.css";
-// import OptionProvider from "../Hooks/option-provider.hook";
+
 import UnitProvider from "../Hooks/unit-provider-hook";
 
-// import Header from "./Header/Header";
+import Header from "./Header/Header";
 import Main from "./Main/Main";
-// import Footer from "./Footer/Footer";
+import Footer from "./Footer/Footer";
 
 export default function App() {
   return (
     <div className='app'>
-      {/* <Header /> */}
+      <Header />
       <UnitProvider>
         <Main />
       </UnitProvider>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

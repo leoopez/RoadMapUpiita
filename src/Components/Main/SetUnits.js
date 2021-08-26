@@ -10,7 +10,7 @@ import { useUnits } from "../../Hooks/unit-provider-hook";
 
 export default function SetUnits({ units, group }) {
   const { currentUnit, linkedUnits, recommendedUnits } = useUnits();
-  console.log(currentUnit?.id);
+
   const optionalRenders =
     currentUnit?.optional && units.some(unit => unit.id === currentUnit.id)
       ? optionalUnits[currentUnit.optional - 1].map((unit, i) => (

@@ -9,7 +9,7 @@
     --bg-secundary: #474a4d;
     --bg-accent: #C9A675;
 
-    --text-color:#702F4E;
+    --text-color:#212529;
     --border-size: 4px;
     --border-radious: 8px;
     --speed: 500ms;
@@ -19,6 +19,13 @@
     --level-3: red;
     --level-4: brown;
     --level-5: #9B59B6;
+
+    --optional-1: #9B59B6;
+    --optional-2: brown;
+    --optional-3: #22b8cf;
+    --optional-4: #69db7c;
+    --optional-5: #fab005;
+    --optional-6: #f06595;
 
     --l-1-bd: var(--border-size) var(--level-1) solid;
     --l-2-bd: var(--border-size) var(--level-2) dotted;

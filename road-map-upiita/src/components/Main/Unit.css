@@ -12,6 +12,8 @@
     width: 10em;
     overflow: hidden;
     position: relative;
+    transition-duration: 300ms;
+    transition-timing-function: all ease-out;
 }
 
 .unit p {
@@ -20,17 +22,24 @@
 }
 
 .unit:hover{
-    transition-duration: 300ms;
     transform: rotate(-3deg); 
+}
+
+.unit:active{
+    transform: translateY(-2rem);
 }
 
 .unit--linked, .unit--recommended{
     filter: none;
 }
 
+.selected{
+    box-shadow: 0 0 0.5rem 0.5rem inset var(--bg-accent);
+}
 
 .recommended,
-.linked {
+.linked,
+.optional {
     position: absolute;
     font-weight: 900;
     bottom: 0.5rem;
@@ -51,9 +60,46 @@
     transform: rotate(-45deg);
 }
 
+.optional{
+    color: #2b8a3e;
+    background-color: #F89B9B;
+    right: -1.5rem;
+    transform: rotate(-45deg);      
+}
+
+.optional__level--1{
+    border: dashed #9B59B6;
+    color: currentColor;
+}
+
+.optional__level--2{
+    border: dashed brown;
+    color: currentColor;
+}
+
+.optional__level--3{
+    border: dashed #22b8cf;
+    color: currentColor;
+}
+
+.optional__level--4{
+    border: solid #69db7c;
+    color: currentColor;
+}
+
+.optional__level--5{
+    border: solid #fab005 ;
+    color: currentColor ;
+}
+
+.optional__level--6{
+    border: solid #f06595 ;
+    color: currentColor ;
+}
+
 .level--1{
-    border: solid blue;
     color: blue;
+    border: solid blue;
 }
 
 .level--2{
@@ -61,18 +107,22 @@
 }
 
 .level--3{
-    border: dashed red;
     color: red;
+    border: dashed currentColor;
 }
 
 .level--4{
-    border: solid brown;
     color: brown;
+    border: solid currentColor;
 }
 
 .level--5{
-    border: solid #9B59B6 ;
     color: #9B59B6 ;
+    border: solid currentColor  ;
+}
+
+.notice {
+    font-size: 1.4rem;
 }
 
 @media (max-width: 480px){

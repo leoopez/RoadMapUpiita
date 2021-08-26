@@ -28,7 +28,6 @@ export default function Main() {
     )
     .map((units, i) => <SetUnits key={i + 1} group={i + 1} units={units} />);
 
-  console.log("render");
   return (
     <main>
       <section className='container'>

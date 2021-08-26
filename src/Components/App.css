@@ -40,6 +40,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 ul, ol {
@@ -58,10 +59,27 @@ img {
 .container {
     position: relative;
     padding: 1rem;
-    margin-bottom: 1rem;
 }
 
 .icons--default{
     width: 32px;
     height: 32px;
 }
+
+.info--icon,
+.close--icon {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.close--icon{
+    top: 1rem;
+}
+
+.info--icon:hover,
+.close--icon:hover {
+    transform: scale(1.3);
+}
+

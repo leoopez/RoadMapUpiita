@@ -34,7 +34,7 @@ export default function SetUnits({ units, group }) {
       <div className='group'>{renderUnits}</div>
       {optionalRenders && (
         <>
-          <div className='group--number'>{group}</div>
+          <div className='group--number'>O{currentUnit.optional}</div>
           <div className='group'>{optionalRenders}</div>
         </>
       )}

@@ -2,10 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 120rem;
+    max-width: 140rem;
     gap: 1rem;
 }
-
+.group > * {
+    border: 0.25rem solid currentColor;
+}
 .group--number{
     display: flex;
     justify-content: center;

@@ -8,7 +8,7 @@ import { regularUnits } from "../../data/mecatronica/learningUnits";
 
 import SetUnits from "./SetUnits";
 import Dropdown from "./Dropdown";
-import InfoModal from "./InfoModal";
+import InfoModal from "./InfoModal/InfoModal";
 
 const showOption = {
   Semester: 10,

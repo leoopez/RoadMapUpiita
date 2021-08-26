@@ -6,26 +6,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     white-space: pre-line;
-    height: 6em;
-    width: 10em;
+    height: 7em;
+    width: 11em;
     overflow: hidden;
     position: relative;
-    transition-duration: 300ms;
+    transition-property: transform;
+    transition-duration:  300ms;
     transition-timing-function: all ease-out;
 }
 
-.unit p {
+.unit > p {
     margin: 0;
     padding: 0;
 }
 
 .unit:hover{
-    transform: rotate(-3deg); 
+    transform: rotate(-3deg);
 }
 
-.unit:active{
+.unit:active,.unit:focus{
     transform: translateY(-2rem);
 }
 
@@ -34,7 +35,7 @@
 }
 
 .selected{
-    box-shadow: 0 0 0.5rem 0.5rem inset var(--bg-accent);
+    box-shadow: 0 0.3rem 1em 0.1rem currentColor;
 }
 
 .recommended,
@@ -68,57 +69,44 @@
 }
 
 .optional__level--1{
-    border: dashed #9B59B6;
-    color: currentColor;
+    color: #9B59B6;
 }
 
 .optional__level--2{
-    border: dashed brown;
-    color: currentColor;
+    color: brown;
 }
 
 .optional__level--3{
-    border: dashed #22b8cf;
-    color: currentColor;
+    color: #22b8cf;
 }
 
 .optional__level--4{
-    border: solid #69db7c;
-    color: currentColor;
+    color: #69db7c;
 }
 
 .optional__level--5{
-    border: solid #fab005 ;
-    color: currentColor ;
+    color: #fab005  ;
 }
 
 .optional__level--6{
-    border: solid #f06595 ;
-    color: currentColor ;
+    color: #f06595 ;
 }
 
 .level--1{
     color: blue;
-    border: solid blue;
 }
 
-.level--2{
-    border: dotted black;
-}
 
 .level--3{
     color: red;
-    border: dashed currentColor;
 }
 
 .level--4{
     color: brown;
-    border: solid currentColor;
 }
 
 .level--5{
     color: #9B59B6 ;
-    border: solid currentColor  ;
 }
 
 .notice {

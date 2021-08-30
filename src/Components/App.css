@@ -12,7 +12,7 @@
     --text-color:#212529;
     --text-color-secundary: #dee2e6;
     --border-size: 0.5rem;
-    --border-sizb-bg: 1rem;
+    --border-size-bg: 1rem;
     --border-radious: 1rem;
     --speed-normal: 500ms;
     --speed-fast: 250ms;
@@ -28,6 +28,13 @@ body {
     background-color: var(--bg-primary);
 }
 
+ul, li {
+    list-style: none;
+}
+
+p {
+    text-align: center;
+}
 .container {
     position: relative;
     padding: 1rem;
@@ -37,6 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 

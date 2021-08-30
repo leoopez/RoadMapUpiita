@@ -20,41 +20,25 @@ export default function InfoModal() {
   );
 }
 
+
 const Modal = ({ onClick = f => f }) => {
   return (
-    <div className='info--modal'>
+    <div className='flex__container--center info--modal'>
       <div className='icons--default close--icon' onClick={onClick}>
         <FaTimes size='100%' />
       </div>
-      <div className='simboly'>
-        <h2 className='simbology--title'>Simbología</h2>
-        <div className='simbology--content'>
-          <div className='content--info'>
-            <p className='info--units'>Unidad de Aprendizaje</p>
-            <p className='info--hrs'>(Hrs.Teoria,Hrs.Practica)</p>
+      <div className='flex__container--center simboly'>
+        <h2>Simbología</h2>
+        <div className='flex__container--center'>
+          <div className='flex__container--center content--info'>
+            <p>Unidad de Aprendizaje</p>
+            <p>(Hrs.Teoria,Hrs.Practica)</p>
           </div>
           <div className='contents--levels'>
             <ul>
-              <li>
-                <span className='levels--1'>NIVEL 1</span>
-                <div className='levels--1 line'></div>
-              </li>
-              <li>
-                <span className='levels--2'>NIVEL 2</span>
-                <div className='levels--2 line'></div>
-              </li>
-              <li>
-                <span className='levels--3'>NIVEL 3</span>
-                <div className='levels--3 line'></div>
-              </li>
-              <li>
-                <span className='levels--4'>NIVEL 4</span>
-                <div className='levels--4 line'></div>
-              </li>
-              <li>
-                <span className='levels--5'>NIVEL 5</span>
-                <div className='levels--5 line'></div>
-              </li>
+              {[...Array(5)].map((_, i) => (
+                <ContentLevel key={i} level={i + 1} />
+              ))}
             </ul>
           </div>
         </div>
@@ -66,37 +50,22 @@ const Modal = ({ onClick = f => f }) => {
       <div className='modal-optional'>
         <h2 className='simbology--title'>Optativas</h2>
         <ul>
-          <li>
-            <span className='optional--1'>OPTATIVA 1</span>
-            <div className='optional--1 line'></div>
-          </li>
-          <li>
-            <span className='optional--2'>OPTATIVA 2</span>
-            <div className='optional--2 line'></div>
-          </li>
-          <li>
-            <span className='optional--3'>OPTATIVA 3</span>
-            <div className='optional--3 line'></div>
-          </li>
-          <li>
-            <span className='optional--4'>OPTATIVA 4</span>
-            <div className='optional--4 line'></div>
-          </li>
-          <li>
-            <span className='optional--5'>OPTATIVA 5</span>
-            <div className='optional--5 line'></div>
-          </li>
-          <li>
-            <span className='optional--6'>OPTATIVA 6</span>
-            <div className='optional--6  line'></div>
-          </li>
+          {[...Array(5)].map((_, i) => (
+            <ContentLevel key={i} levelorOptional={"optional"} level={i + 1} />
+          ))}
         </ul>
-        <p className='notice'>
-          *Click en unidades
-          <br />
-          de optativa para mostrar
-        </p>
       </div>
     </div>
+  );
+};
+
+const ContentLevel = ({ levelorOptional = "level", level }) => {
+  return (
+    <li>
+      <span className={`${levelorOptional}-${level}`}>
+        {levelorOptional === "level" ? "NIVEL" : "OPTATIVA"} {level}
+      </span>
+      <div className={`${levelorOptional}-${level} line`}></div>
+    </li>
   );
 };

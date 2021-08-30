@@ -3,17 +3,17 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import "./Dropdown.css";
-
+import useToggle from "../../Hooks/toggle-provider-hook";
 const options = ["Semester", "Level"];
 
 export default function Dropdown({ mode, changeMode = f => f }) {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, toggle] = useToggle(false);
   const ref = useRef();
 
   useEffect(() => {
     const onBodyClick = e => {
       if (ref.current.contains(e.target)) return;
-      setIsActive(false);
+      toggle(false);
     };
 
     document.body.addEventListener("click", onBodyClick, { capture: true });
@@ -21,11 +21,11 @@ export default function Dropdown({ mode, changeMode = f => f }) {
       document.body.removeEventListener("click", onBodyClick, {
         capture: true,
       });
-  }, []);
+  }, [toggle]);
 
   return (
     <div ref={ref} className='dropdown'>
-      <div className='dp-btn' onClick={() => setIsActive(!isActive)}>
+      <div className='dp-btn' onClick={() => toggle(!isActive)}>
         {mode}
       </div>
       {isActive && (
@@ -36,7 +36,7 @@ export default function Dropdown({ mode, changeMode = f => f }) {
               key={i}
               onClick={() => {
                 changeMode(option);
-                setIsActive(false);
+                toggle(false);
               }}>
               {option}
             </div>

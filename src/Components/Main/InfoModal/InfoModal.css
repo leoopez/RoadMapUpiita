@@ -1,49 +1,26 @@
 .info--modal{
+    position: absolute;
+    right: 8%;
+    left: 8%;
     width: 84vw;
     height: 84vh;
     z-index: 1;
     font-size: 1.6rem;
     font-weight: 900;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 8%;
-    left: 8%;
     background-color: white;
     padding: 4rem;
     box-shadow: -5px 5px 10px 1px gray;
 }
 
-
-
 .simboly {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 1rem;
     border: 0.5rem dashed red;
-    border-radius: 1rem;
-}
-
-.simbology--title{
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.simbology--content{
-    display: flex;
+    border-radius: var(--border-radious);
 }
 
 .content--info{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .contents--levels{
@@ -72,8 +49,6 @@
 
 .electives > p {
     color: green;
-    font-weight: 900;
-    text-align: center;
 }
 
 .modal-optional{
@@ -82,48 +57,4 @@
     padding: 1rem;
     border: 0.5rem dashed red;
     border-radius: 1rem;
-}
-
-.levels--1{
-    color: var(--level-1);
-}
-
-.levels--2{
-    color: var(--level-2);
-}
-
-.levels--3{
-    color: var(--level-3);
-}
-
-.levels--4{
-    color: var(--level-4);
-}
-
-.levels--5{
-    color: var(--level-5);
-}
-
-.optional--1{
-    color: var(--optional-1);
-}
-
-.optional--2{
-    color: var(--optional-2);
-}
-
-.optional--3{
-    color: var(--optional-3);
-}
-
-.optional--4{
-    color: var(--optional-4);
-}
-
-.optional--5{
-    color: var(--optional-5);
-}
-
-.optional--6{
-    color: var(--optional-6);
 }

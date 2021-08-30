@@ -5,33 +5,17 @@
 }
 
 :root {
-    --bg-primary:#EAEAEA;
+    --bg-primary:#f8f9fa;
     --bg-secundary: #474a4d;
     --bg-accent: #C9A675;
 
     --text-color:#212529;
-    --border-size: 4px;
-    --border-radious: 8px;
-    --speed: 500ms;
-
-    --level-1: blue;
-    --level-2: black;
-    --level-3: red;
-    --level-4: brown;
-    --level-5: #9B59B6;
-
-    --optional-1: #9B59B6;
-    --optional-2: brown;
-    --optional-3: #22b8cf;
-    --optional-4: #69db7c;
-    --optional-5: #fab005;
-    --optional-6: #f06595;
-
-    --l-1-bd: var(--border-size) var(--level-1) solid;
-    --l-2-bd: var(--border-size) var(--level-2) dotted;
-    --l-3-bd: var(--border-size) var(--level-3) dashed;
-    --l-4-bd: var(--border-size) var(--level-4) solid;
-    --l-5-bd: var(--border-size) var(--level-5) solid;
+    --text-color-secundary: #dee2e6;
+    --border-size: 0.5rem;
+    --border-sizb-bg: 1rem;
+    --border-radious: 1rem;
+    --speed-normal: 500ms;
+    --speed-fast: 250ms;
 }
 
 html {
@@ -41,19 +25,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-}
-
-ul, ol {
-    list-style: none;
-}
-
-a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-img {
-    object-fit: contain;
+    background-color: var(--bg-primary);
 }
 
 .container {
@@ -61,15 +33,34 @@ img {
     padding: 1rem;
 }
 
+.flex__container--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.grid__container--center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.parent--space {
+    width: 100%;
+    height: 100%;
+}
+
 .icons--default{
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 
 .info--icon,
 .pdf--icon:hover,
 .close--icon {
-    cursor: pointer;
     transition: transform 300ms;
 }
 
@@ -89,3 +80,42 @@ img {
     transform: scale(1.4);
 }
 
+.optional-1{
+    color: #9B59B6;
+}
+
+.optional-2{
+    color: brown;
+}
+
+.optional-3{
+    color: #22b8cf;
+}
+
+.optional-4{
+    color: #69db7c;
+}
+
+.optional-5{
+    color: #fab005  ;
+}
+
+.optional-6{
+    color: #f06595 ;
+}
+
+.level-1{
+    color: blue;
+}
+
+.level-3{
+    color: red;
+}
+
+.level-4{
+    color: brown;
+}
+
+.level-5{
+    color: #9B59B6 ;
+}

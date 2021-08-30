@@ -1,9 +1,5 @@
 .units-grid{
-    display: grid;
-    align-items: center;
-    justify-content: center;
     grid-template-columns: 5rem auto;
-        gap: 1rem;
 }
 
 

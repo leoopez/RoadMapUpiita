@@ -1,19 +1,11 @@
 .group {
-    display: flex;
     flex-wrap: wrap;
-    align-items: center;
     max-width: 140rem;
-    gap: 1rem;
+    justify-content: start;
 }
 
 .group--number{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
     font-size: 3rem;
-    /* border-right: 1rem black solid; */
     box-shadow: 5px 0 5px -2px #888;
 }
 

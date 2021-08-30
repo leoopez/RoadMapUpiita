@@ -30,12 +30,16 @@ export default function SetUnits({ units, group }) {
 
   return (
     <>
-      <div className='group--number'>{group}</div>
-      <div className='group'>{renderUnits}</div>
+      <div className='group--number flex__container--center parent--space'>
+        {group}
+      </div>
+      <div className='group flex__container--center'>{renderUnits}</div>
       {optionalRenders && (
         <>
-          <div className='group--number'>O{currentUnit.optional}</div>
-          <div className='group'>{optionalRenders}</div>
+          <div className='group--number flex__container--center parent--space'>
+            O{currentUnit.optional}
+          </div>
+          <div className='group flex__container--center'>{optionalRenders}</div>
         </>
       )}
     </>

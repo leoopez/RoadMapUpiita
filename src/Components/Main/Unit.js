@@ -5,6 +5,7 @@ import "./Unit.css";
 
 import { useUnits } from "../../Hooks/unit-provider-hook";
 import { FaFilePdf } from "react-icons/fa";
+
 export default function Unit({
   unit,
   selected = false,
@@ -15,11 +16,11 @@ export default function Unit({
   const { changeCurrentUnits } = useUnits();
 
   return (
-    <div className={`card unit level--${unit.level}`}>
+    <div className={`card unit level-${unit.level}`}>
       <div
-        className={`front ${selected ? "selected" : ""} ${
-          optional ? "optional__level--" + unit.optional : ""
-        }`}
+        className={`front parent--space flex__container--center ${
+          selected ? "selected" : ""
+        } ${optional ? "optional-" + unit.optional : ""}`}
         onClick={() => changeCurrentUnits(unit)}>
         {recommended ? <p className='recommended'>R</p> : null}
         {linked ? <p className='linked'>L</p> : null}
@@ -29,7 +30,10 @@ export default function Unit({
           ({unit.credits[0]},{unit.credits[1]})
         </p>
       </div>
-      <div className={`back ${selected ? "selected-back" : ""}`}>
+      <div
+        className={`back parent--space flex__container--center ${
+          selected ? "selected-back" : ""
+        }`}>
         <div className='icons--default pdf--icon'>
           <FaFilePdf size='100%' color='currentColor' />
         </div>

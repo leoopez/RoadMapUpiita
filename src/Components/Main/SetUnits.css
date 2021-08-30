@@ -5,9 +5,7 @@
     max-width: 140rem;
     gap: 1rem;
 }
-.group > * {
-    border: 0.25rem solid currentColor;
-}
+
 .group--number{
     display: flex;
     justify-content: center;

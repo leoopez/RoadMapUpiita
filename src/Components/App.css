@@ -67,11 +67,16 @@ img {
 }
 
 .info--icon,
+.pdf--icon:hover,
+.close--icon {
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.info--icon,
 .close--icon {
     position: absolute;
     right: 1rem;
-    cursor: pointer;
-    transition: transform 300ms;
 }
 
 .close--icon{
@@ -79,7 +84,8 @@ img {
 }
 
 .info--icon:hover,
+.pdf--icon:hover,
 .close--icon:hover {
-    transform: scale(1.3);
+    transform: scale(1.4);
 }
 

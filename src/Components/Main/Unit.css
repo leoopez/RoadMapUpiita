@@ -42,7 +42,7 @@
     position: absolute;
     font-weight: 900;
     bottom: 0.5rem;
-    width: 5rem;
+    width: 6rem;
 }
 
 .recommended {
@@ -66,6 +66,25 @@
     transform: rotate(-45deg);      
 }
 
+.front::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+  
+.front:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  
+.front::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: var(--bg-accent);
+    transition: transform .3s ease;
+    z-index: -1;
+  }
 
 @media (max-width: 480px){
     .unit{

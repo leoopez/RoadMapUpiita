@@ -4,6 +4,8 @@ import React from "react";
 import "./Unit.css";
 
 import { useUnits } from "../../Hooks/unit-provider-hook";
+import useClose from "../../Hooks/useClose";
+
 import { FaFilePdf } from "react-icons/fa";
 
 export default function Unit({
@@ -14,6 +16,8 @@ export default function Unit({
   optional = false,
 }) {
   const { changeCurrentUnits } = useUnits();
+
+  const ref = useClose(null, changeCurrentUnits);
 
   return (
     <div className={`card unit level-${unit.level}`}>
@@ -31,9 +35,12 @@ export default function Unit({
         </p>
       </div>
       <div
+        ref={ref}
         className={`back parent--space flex__container--center ${
           selected ? "selected-back" : ""
-        }`}>
+        }`}
+        // onClick={() => changeCurrentUnits(null)}
+      >
         <div className='icons--default pdf--icon'>
           <FaFilePdf size='100%' color='currentColor' />
         </div>

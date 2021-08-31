@@ -13,7 +13,7 @@ export default function UnitProvider({ children }) {
   const [recommendedUnits, setRecommendedUnits] = useState(null);
 
   const changeCurrentUnits = unit => {
-    if (unit.id === currentUnit?.id) {
+    if (!unit || unit.id === currentUnit?.id) {
       setCurrenUnit(null);
       setLinkedUnits(null);
       setRecommendedUnits(null);

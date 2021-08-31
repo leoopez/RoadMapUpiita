@@ -1,34 +1,21 @@
 /** @format */
 
-import React, { useState, useEffect, useRef } from "react";
-
+import React, { useState } from "react";
+import useClose from "../../Hooks/useClose";
 import "./Dropdown.css";
-import useToggle from "../../Hooks/toggle-provider-hook";
+
 const options = ["Semester", "Level"];
 
 export default function Dropdown({ mode, changeMode = f => f }) {
-  const [isActive, toggle] = useToggle(false);
-  const ref = useRef();
-
-  useEffect(() => {
-    const onBodyClick = e => {
-      if (ref.current.contains(e.target)) return;
-      toggle(false);
-    };
-
-    document.body.addEventListener("click", onBodyClick, { capture: true });
-    return () =>
-      document.body.removeEventListener("click", onBodyClick, {
-        capture: true,
-      });
-  }, [toggle]);
+  const [open, toggle] = useState(false);
+  const ref = useClose(false, toggle);
 
   return (
     <div ref={ref} className='dropdown'>
-      <div className='dp-btn' onClick={() => toggle(!isActive)}>
+      <div className='dp-btn' onClick={() => toggle(!open)}>
         {mode}
       </div>
-      {isActive && (
+      {open && (
         <div className='dp-content'>
           {options.map((option, i) => (
             <div

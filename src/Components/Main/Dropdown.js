@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import useClose from "../../Hooks/useClose";
 import "./Dropdown.css";
 
-const options = ["Semester", "Level"];
+const options = ["Semester", "Level", "Credits"];
 
 export default function Dropdown({ mode, changeMode = f => f }) {
   const [open, toggle] = useState(false);

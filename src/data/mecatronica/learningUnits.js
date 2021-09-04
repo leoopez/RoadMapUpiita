@@ -761,9 +761,20 @@ export const optionalUnits = [
 ];
 
 export const infoCareer = {
-  Semester: 10,
-  Level: 5,
-  // Credits: [9, 7.5, 6, 4.5, 3],
+  Semester: {
+    1: [],
+    2: [],
+    3: [],
+    4: [],
+    5: [],
+    6: [],
+    7: [],
+    8: [],
+    9: [],
+    10: [],
+  },
+  Level: { 1: [], 2: [], 3: [], 4: [], 5: [] },
+  Credits: { 9: [], 7.5: [], 6: [], 4.5: [], 3: [], 0: [] },
 };
 
 /*

@@ -3,7 +3,7 @@
 export const regularUnits = [
   {
     name: "Cálculo Dif.\ne Integral",
-    credits: [3, 3],
+    hours: [3, 3],
     level: 1,
     semester: 1,
     recommended: [],
@@ -11,7 +11,7 @@ export const regularUnits = [
   },
   {
     name: "Algebra Lineal\nNúm. Complejos",
-    credits: [4.5, 0],
+    hours: [4.5, 0],
     level: 1,
     semester: 1,
     recommended: [],
@@ -19,7 +19,7 @@ export const regularUnits = [
   },
   {
     name: "Mecánica de\nla Partícula",
-    credits: [4.5, 0],
+    hours: [4.5, 0],
     level: 1,
     semester: 1,
     recommended: [],
@@ -27,7 +27,7 @@ export const regularUnits = [
   },
   {
     name: "Introduccion\na la Mecatronica",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 1,
     semester: 1,
     recommended: [],
@@ -35,7 +35,7 @@ export const regularUnits = [
   },
   {
     name: "Estructura y\nPropiedades de\nlos Materiales",
-    credits: [3, 1.5],
+    hours: [3, 1.5],
     level: 1,
     semester: 1,
     recommended: [],
@@ -43,7 +43,7 @@ export const regularUnits = [
   },
   {
     name: "Herramientas\nComputacionales",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 1,
     semester: 1,
     recommended: [],
@@ -51,7 +51,7 @@ export const regularUnits = [
   },
   {
     name: "Introduccion a\nla Programacion",
-    credits: [0, 4.5],
+    hours: [0, 4.5],
     level: 1,
     semester: 1,
     recommended: [],
@@ -59,7 +59,7 @@ export const regularUnits = [
   },
   {
     name: "Dibujo Asistido\npor Computadora",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 1,
     semester: 1,
     recommended: [],
@@ -67,7 +67,7 @@ export const regularUnits = [
   },
   {
     name: "Ecuaciones\nDiferenciales",
-    credits: [4.5, 0],
+    hours: [4.5, 0],
     level: 1,
     semester: 2,
     recommended: [0, 1],
@@ -75,7 +75,7 @@ export const regularUnits = [
   },
   {
     name: "Calculo\nVectorial",
-    credits: [3, 3],
+    hours: [3, 3],
     level: 1,
     semester: 2,
     recommended: [],
@@ -83,7 +83,7 @@ export const regularUnits = [
   },
   {
     name: "Mecanica\ndel Cuerpo\nRigido",
-    credits: [4.5, 0],
+    hours: [4.5, 0],
     level: 1,
     semester: 2,
     recommended: [0],
@@ -91,7 +91,7 @@ export const regularUnits = [
   },
   {
     name: "Comunicaion\nOral y Escrita",
-    credits: [1.5, 3],
+    hours: [1.5, 3],
     level: 1,
     semester: 2,
     recommended: [],
@@ -99,7 +99,7 @@ export const regularUnits = [
   },
   {
     name: "Circuitos\nElectricos",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 1,
     semester: 2,
     recommended: [],
@@ -107,7 +107,7 @@ export const regularUnits = [
   },
   {
     name: "Procesos de\nManufactura",
-    credits: [0, 4.5],
+    hours: [0, 4.5],
     level: 1,
     semester: 2,
     recommended: [],
@@ -115,7 +115,7 @@ export const regularUnits = [
   },
   {
     name: "Analisis y\nDiseño de\nProgramas",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 1,
     semester: 2,
     recommended: [],
@@ -123,7 +123,7 @@ export const regularUnits = [
   },
   {
     name: "Electricidad y\nMagnetismo",
-    credits: [4.5, 0],
+    hours: [4.5, 0],
     level: 1,
     semester: 3,
     recommended: [12],
@@ -131,7 +131,7 @@ export const regularUnits = [
   },
   {
     name: "Circuitos\nElectricos\nAvanzados",
-    credits: [3, 1.5],
+    hours: [3, 1.5],
     level: 1,
     semester: 3,
     recommended: [],
@@ -139,7 +139,7 @@ export const regularUnits = [
   },
   {
     name: "Fundamentos\nde Electronica",
-    credits: [1.5, 3],
+    hours: [1.5, 3],
     level: 1,
     semester: 3,
     recommended: [],
@@ -147,7 +147,7 @@ export const regularUnits = [
   },
   {
     name: "Ingles I",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 1,
     semester: 3,
     recommended: [],
@@ -155,7 +155,7 @@ export const regularUnits = [
   },
   {
     name: "Mantenimiento\ny Sistemas de\nManufactura",
-    credits: [1.5, 3],
+    hours: [1.5, 3],
     level: 2,
     semester: 3,
     recommended: [],
@@ -163,7 +163,7 @@ export const regularUnits = [
   },
   {
     name: "Analisis y\nSintesis de Mecanismos",
-    credits: [3, 1.5],
+    hours: [3, 1.5],
     level: 2,
     semester: 3,
     recommended: [5],
@@ -171,7 +171,7 @@ export const regularUnits = [
   },
   {
     name: "Analisis de\nSenales y\nSistemas",
-    credits: [3, 1.5],
+    hours: [3, 1.5],
     level: 2,
     semester: 3,
     recommended: [5],
@@ -179,7 +179,7 @@ export const regularUnits = [
   },
   {
     name: "Resistencia\nde Materiales",
-    credits: [4.5, 0],
+    hours: [4.5, 0],
     level: 1,
     semester: 4,
     recommended: [],
@@ -187,7 +187,7 @@ export const regularUnits = [
   },
   {
     name: "Ingles II",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 1,
     semester: 4,
     recommended: [18],
@@ -195,7 +195,7 @@ export const regularUnits = [
   },
   {
     name: "Termodinamica",
-    credits: [4.5, 0],
+    hours: [4.5, 0],
     level: 2,
     semester: 4,
     recommended: [8, 9],
@@ -203,7 +203,7 @@ export const regularUnits = [
   },
   {
     name: "Probabilidad y\nEstadistica\npara Ingenieria",
-    credits: [4.5, 0],
+    hours: [4.5, 0],
     level: 2,
     semester: 4,
     recommended: [],
@@ -211,7 +211,7 @@ export const regularUnits = [
   },
   {
     name: "Electonica\nAnalogica",
-    credits: [3, 1.5],
+    hours: [3, 1.5],
     level: 2,
     semester: 4,
     recommended: [],
@@ -219,7 +219,7 @@ export const regularUnits = [
   },
   {
     name: "Sim. Electronica\ny Diseno de\nCtos. Impresos",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 2,
     semester: 4,
     recommended: [17],
@@ -227,7 +227,7 @@ export const regularUnits = [
   },
   {
     name: "Oscilaciones\ny Optica",
-    credits: [3, 1.5],
+    hours: [3, 1.5],
     level: 2,
     semester: 4,
     recommended: [2],
@@ -235,7 +235,7 @@ export const regularUnits = [
   },
   {
     name: "Programacion\nAvanzada",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 2,
     semester: 4,
     recommended: [],
@@ -243,7 +243,7 @@ export const regularUnits = [
   },
   {
     name: "Mecainca\nde Fluidos",
-    credits: [3, 0],
+    hours: [3, 0],
     level: 2,
     semester: 5,
     recommended: [8, 9],
@@ -251,7 +251,7 @@ export const regularUnits = [
   },
   {
     name: "Teoria\nElectromagnetica",
-    credits: [4.5, 0],
+    hours: [4.5, 0],
     level: 2,
     semester: 5,
     recommended: [8],
@@ -259,7 +259,7 @@ export const regularUnits = [
   },
   {
     name: "Diseno Basico\nde Elementos\nde Maquinas",
-    credits: [3, 1.5],
+    hours: [3, 1.5],
     level: 2,
     semester: 5,
     recommended: [9, 13],
@@ -267,7 +267,7 @@ export const regularUnits = [
   },
   {
     name: "Administracion\nOrganizacional",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 2,
     semester: 5,
     recommended: [11],
@@ -275,7 +275,7 @@ export const regularUnits = [
   },
   {
     name: "Microprocesadores,\nMicrocontroladores\ne Interfaz",
-    credits: [0, 4.5],
+    hours: [0, 4.5],
     level: 2,
     semester: 5,
     recommended: [27],
@@ -283,7 +283,7 @@ export const regularUnits = [
   },
   {
     name: "Circuitos\nLogicos",
-    credits: [1.5, 3],
+    hours: [1.5, 3],
     level: 2,
     semester: 5,
     recommended: [],
@@ -291,7 +291,7 @@ export const regularUnits = [
   },
   {
     name: "Modelado y\nSimulacion de Sist.\nMecatronicos",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 3,
     semester: 5,
     recommended: [],
@@ -299,7 +299,7 @@ export const regularUnits = [
   },
   {
     name: "Etica para\nel Ejercicio\nProfesional",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 3,
     semester: 5,
     recommended: [],
@@ -307,7 +307,7 @@ export const regularUnits = [
   },
   {
     name: "Electronica\nde Potencia",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 4,
     semester: 5,
     recommended: [],
@@ -315,7 +315,7 @@ export const regularUnits = [
   },
   {
     name: "Sensores y\nAcondicionadores\nde Senal",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 2,
     semester: 6,
     recommended: [16],
@@ -323,7 +323,7 @@ export const regularUnits = [
   },
   {
     name: "Neumatica\ne Hidraulica",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 2,
     semester: 6,
     recommended: [35],
@@ -331,7 +331,7 @@ export const regularUnits = [
   },
   {
     name: "Dispositivos\nLogicos\nProgramables",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 2,
     semester: 6,
     recommended: [12],
@@ -339,7 +339,7 @@ export const regularUnits = [
   },
   {
     name: "Ingles III",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 2,
     semester: 6,
     recommended: [23],
@@ -347,7 +347,7 @@ export const regularUnits = [
   },
   {
     name: "Maquinas\nElectricas",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 2,
     semester: 6,
     recommended: [15],
@@ -355,7 +355,7 @@ export const regularUnits = [
   },
   {
     name: "Intrumentacion\nVirutal",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 3,
     semester: 6,
     recommended: [],
@@ -363,7 +363,7 @@ export const regularUnits = [
   },
   {
     name: "Control\nClasico",
-    credits: [3, 1.5],
+    hours: [3, 1.5],
     level: 3,
     semester: 6,
     recommended: [5],
@@ -371,7 +371,7 @@ export const regularUnits = [
   },
   {
     name: "Finanzas e\nIngenieria\nEconomica",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 3,
     semester: 6,
     recommended: [33],
@@ -379,7 +379,7 @@ export const regularUnits = [
   },
   {
     name: "Diseno Avanzado\nde Elementos\nde Maquina",
-    credits: [3, 1.5],
+    hours: [3, 1.5],
     level: 3,
     semester: 6,
     recommended: [32],
@@ -387,7 +387,7 @@ export const regularUnits = [
   },
   {
     name: "Sitemas\nNeurodifusos",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 2,
     semester: 7,
     recommended: [5],
@@ -395,7 +395,7 @@ export const regularUnits = [
   },
   {
     name: "Liderazgo y\nEmprendedores",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 2,
     semester: 7,
     recommended: [11],
@@ -403,7 +403,7 @@ export const regularUnits = [
   },
   {
     name: "Proyecto\nIntregrador",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 3,
     semester: 7,
     recommended: [],
@@ -411,7 +411,7 @@ export const regularUnits = [
   },
   {
     name: "Optativa 1",
-    credits: [0, 4.5],
+    hours: [0, 4.5],
     level: 3,
     semester: 7,
     optional: 1,
@@ -420,7 +420,7 @@ export const regularUnits = [
   },
   {
     name: "Optativa 2",
-    credits: [0, 4.5],
+    hours: [0, 4.5],
     level: 3,
     semester: 7,
     optional: 2,
@@ -429,7 +429,7 @@ export const regularUnits = [
   },
   {
     name: "Procesador\nDigital de\nSenales",
-    credits: [0, 3],
+    hours: [0, 3],
     level: 3,
     semester: 7,
     recommended: [],
@@ -437,7 +437,7 @@ export const regularUnits = [
   },
   {
     name: "Ingenieria\nAsistida por\nComputadora",
-    credits: [1.5, 3],
+    hours: [1.5, 3],
     level: 4,
     semester: 7,
     recommended: [],
@@ -445,7 +445,7 @@ export const regularUnits = [
   },
   {
     name: "Control de\nMaquinas\nElectricas",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 5,
     semester: 7,
     recommended: [],
@@ -453,7 +453,7 @@ export const regularUnits = [
   },
   {
     name: "Automatizacion\nIndustrial",
-    credits: [0, 4.5],
+    hours: [0, 4.5],
     level: 3,
     semester: 8,
     recommended: [],
@@ -461,7 +461,7 @@ export const regularUnits = [
   },
   {
     name: "Ingenieria\nAmbiental",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 3,
     semester: 8,
     recommended: [],
@@ -469,7 +469,7 @@ export const regularUnits = [
   },
   {
     name: "Optativa 3",
-    credits: [0, 4.5],
+    hours: [0, 4.5],
     level: 3,
     optional: 3,
     semester: 8,
@@ -478,7 +478,7 @@ export const regularUnits = [
   },
   {
     name: "Optativa 4",
-    credits: [0, 6],
+    hours: [0, 6],
     level: 4,
     semester: 8,
     optional: 4,
@@ -487,7 +487,7 @@ export const regularUnits = [
   },
   {
     name: "Proyectos\nde Inversion",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 4,
     semester: 8,
     recommended: [],
@@ -495,7 +495,7 @@ export const regularUnits = [
   },
   {
     name: "Metodologia de\nla Investigacion",
-    credits: [1.5, 3],
+    hours: [1.5, 3],
     level: 4,
     semester: 8,
     recommended: [],
@@ -503,7 +503,7 @@ export const regularUnits = [
   },
   {
     name: "Sitemas\nde Vision\nArtificial",
-    credits: [1.5, 1.5],
+    hours: [1.5, 1.5],
     level: 4,
     semester: 8,
     recommended: [],
@@ -511,7 +511,7 @@ export const regularUnits = [
   },
   {
     name: "Control de\nSistemas\nMecatronicos",
-    credits: [1.5, 3],
+    hours: [1.5, 3],
     level: 4,
     semester: 8,
     recommended: [],
@@ -519,7 +519,7 @@ export const regularUnits = [
   },
   {
     name: "Optativa 5",
-    credits: [0, 6],
+    hours: [0, 6],
     level: 4,
     semester: 9,
     optional: 5,
@@ -528,7 +528,7 @@ export const regularUnits = [
   },
   {
     name: "Optativa 6",
-    credits: [0, 6],
+    hours: [0, 6],
     level: 4,
     semester: 9,
     optional: 6,
@@ -537,7 +537,7 @@ export const regularUnits = [
   },
   {
     name: "Servicio Social",
-    credits: [0, 0],
+    hours: [0, 0],
     level: 5,
     semester: 9,
     recommended: [],
@@ -545,7 +545,7 @@ export const regularUnits = [
   },
   {
     name: "Trabajo\nTerminal I",
-    credits: [0, 7.5],
+    hours: [0, 7.5],
     level: 5,
     semester: 9,
     recommended: [],
@@ -553,7 +553,7 @@ export const regularUnits = [
   },
   {
     name: "Trabajo\nTerminal II",
-    credits: [0, 7.5],
+    hours: [0, 7.5],
     level: 5,
     semester: 10,
     recommended: [],
@@ -562,6 +562,7 @@ export const regularUnits = [
 ].map((unit, id) => ({
   ...unit,
   id,
+  credits: unit.hours[0]*2 + unit.hours[1]
 }));
 
 export const optionalUnits = [
@@ -569,212 +570,201 @@ export const optionalUnits = [
     {
       name: "Automatas\nIndustriales",
       optional: 1,
-      credits: [1.5, 1.5],
+      hours: [1.5, 1.5],
     },
     {
       name: "Protocolors\nAvanzados de\nComunicaciones",
       optional: 1,
-      credits: [1.5, 1.5],
+      hours: [1.5, 1.5],
     },
     {
       name: "Automatizacion\nde Linea de\nProduccion",
       optional: 1,
-      credits: [1.5, 1.5],
+      hours: [1.5, 1.5],
     },
     {
       name: "Seguriadad\nIndustrial",
       optional: 1,
-      credits: [1.5, 1.5],
+      hours: [1.5, 1.5],
     },
     {
       name: "Desarrollo\nEmpresarial",
       optional: 1,
-      credits: [1.5, 1.5],
+      hours: [1.5, 1.5],
     },
     {
       name: "Control\nDistribuido",
       optional: 1,
-      credits: [1.5, 1.5],
+      hours: [1.5, 1.5],
     },
     {
       name: "Sistemas de\nCalidad para\nla Manuactura",
       optional: 1,
-      credits: [1.5, 1.5],
+      hours: [1.5, 1.5],
     },
     {
       name: "Economía y\nLogistica",
       optional: 1,
-      credits: [1.5, 1.5],
+      hours: [1.5, 1.5],
     },
   ],
   [
     {
       name: "Topicos\nAvanzados de\nSensores",
       optional: 2,
-      credits: [0, 4.5],
+      hours: [0, 4.5],
     },
     {
       name: "Produccion mas\nLimpia",
       optional: 2,
-      credits: [0, 4.5],
+      hours: [0, 4.5],
     },
     {
       name: "Uso y Mant. de\nHerr. para\nProc. de Man.",
       optional: 2,
-      credits: [0, 4.5],
+      hours: [0, 4.5],
     },
   ],
   [
     {
       name: "Diseno Avanzado y\nManufactura\nAsistida\npor Computadora",
       optional: 3,
-      credits: [0, 4.5],
+      hours: [0, 4.5],
     },
     {
       name: "Graficacion 3D",
       optional: 3,
-      credits: [0, 4.5],
+      hours: [0, 4.5],
     },
     {
       name: "Sistemas\nOperativos en\nTiempo Real",
       optional: 3,
-      credits: [0, 4.5],
+      hours: [0, 4.5],
     },
     {
       name: "Topicos\nAvanzados de\nElectronica",
       optional: 3,
-      credits: [0, 4.5],
+      hours: [0, 4.5],
     },
     {
       name: "Procesos\nIndustriales",
       optional: 3,
-      credits: [0, 4.5],
+      hours: [0, 4.5],
     },
   ],
   [
     {
       name: "Microcontroladores\nAvanzados",
       optional: 4,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Control de\nInteligente",
       optional: 4,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
 
     {
       name: "Diseno de Equipo\npara el Manejo\nde Materiales",
       optional: 4,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Realidad\nVirtual",
       optional: 4,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Protocolos de\nComunicacion\nIndustrial",
       optional: 4,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Vision\nArtificial\nAplicada",
       optional: 4,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
   ],
   [
     {
       name: "Diseno\nErgonomico",
       optional: 5,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Instrumentacion\nVirtual\nAplicada",
       optional: 5,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Control de\nProcesos\nIndustriales",
       optional: 5,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Procesos\nAvanzados de\nManufactura",
       optional: 5,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Control de\nSistemas\nRoboticos",
       optional: 5,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Sistemas de\nProc. Digital de\nSenales",
       optional: 5,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Manufactura\nIntegrada por\nComputadora",
       optional: 5,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
   ],
   [
     {
       name: "Mercadotecnia",
       optional: 6,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Topicos\nAvanxados de\nSoldadura",
       optional: 6,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Integracion de\nun Sistema\nRobotico",
       optional: 6,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Implementacion\nde Sistemas\nDigitales",
       optional: 6,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Topicos\nAvanxados de\nAutomatizacion",
       optional: 6,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Sistemas\nAvanzados de\nManufactura",
       optional: 6,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
     {
       name: "Proyecto de\nSistemas\nEmbebidos",
       optional: 6,
-      credits: [1.5, 3],
+      hours: [1.5, 3],
     },
   ],
 ];
 
 export const infoCareer = {
-  Semester: {
-    1: [],
-    2: [],
-    3: [],
-    4: [],
-    5: [],
-    6: [],
-    7: [],
-    8: [],
-    9: [],
-    10: [],
-  },
-  Level: { 1: [], 2: [], 3: [], 4: [], 5: [] },
-  Credits: { 9: [], 7.5: [], 6: [], 4.5: [], 3: [], 0: [] },
+  semester: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  level: [1, 2, 3, 4, 5],
+  credits: [0, 3, 4.5, 6,  7.5, 9]
 };
 
 /*

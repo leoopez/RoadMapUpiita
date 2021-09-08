@@ -9,6 +9,7 @@ import { optionalUnits } from "../../data/mecatronica/learningUnits";
 import { useUnits } from "../../Hooks/unit-provider-hook";
 
 export default function SetUnits({ units, group }) {
+  console.log(units);
   const { currentUnit, linkedUnits, recommendedUnits } = useUnits();
 
   const optionalRenders =

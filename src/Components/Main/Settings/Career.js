@@ -1,10 +1,10 @@
 /** @format */
 
 import React, { useState } from "react";
-import useClose from "../../Hooks/useClose";
-import "./Dropdown.css";
+import options from "./../../../data/Careers";
+import useClose from "../../../Hooks/useClose";
 
-export default function Dropdown({ options, mode, changeMode = f => f }) {
+export default function Dr({ mode, changeMode = f => f }) {
   const [open, toggle] = useState(false);
   const ref = useClose(false, toggle);
 

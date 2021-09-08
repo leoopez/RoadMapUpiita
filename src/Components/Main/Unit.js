@@ -8,6 +8,31 @@ import useClose from "../../Hooks/useClose";
 
 import { FaFilePdf } from "react-icons/fa";
 
+/* 
+let options = {
+  root: document.querySelector('#scrollArea'),
+  rootMargin: '0px',
+  threshold: 1.0
+}
+
+let callback = (entries, observer) => {
+  entries.forEach(entry => {
+    // Each entry describes an intersection change for one observed
+    // target element:
+    //   entry.boundingClientRect
+    //   entry.intersectionRatio
+    //   entry.intersectionRect
+    //   entry.isIntersecting
+    //   entry.rootBounds
+    //   entry.target
+    //   entry.time
+  });
+};
+
+let observer = new IntersectionObserver(callback, options);
+let target = document.querySelector('#listItem');
+observer.observe(target);
+*/
 export default function Unit({
   unit,
   selected = false,
@@ -17,7 +42,7 @@ export default function Unit({
 }) {
   const { changeCurrentUnits } = useUnits();
 
-  const ref = useClose(null, changeCurrentUnits);
+  const ref = useClose(null, changeCurrentUnits);   
 
   return (
     <div className={`card unit level-${unit.level}`}>
@@ -31,7 +56,7 @@ export default function Unit({
         {optional ? <p className='optional'>O{unit.optional}</p> : null}
         <p>{unit.name}</p>
         <p>
-          ({unit.credits[0]},{unit.credits[1]})
+          ({unit.hours[0]},{unit.hours[1]})
         </p>
       </div>
       <div

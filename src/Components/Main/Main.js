@@ -22,7 +22,7 @@ export default function Main() {
         const units = Careers[career].filter(item => {
           return item[mode] === key;
         });
-        return <SetUnits key={key} group={key} units={units} />;
+        return <SetUnits key={key} group={key} units={units} career={career} />;
       })
     );
   }, [mode, career]);
@@ -34,7 +34,7 @@ export default function Main() {
         <Dropdown
           mode={career}
           changeMode={setCareer}
-          options={["mecatronica", "telematica"]}
+          options={["mecatronica", "telematica", "bionica"]}
         />
         <Dropdown
           mode={mode}

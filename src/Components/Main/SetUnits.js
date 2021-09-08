@@ -5,16 +5,17 @@ import "./SetUnits.css";
 
 import Unit from "./Unit";
 
-import { optionalUnits } from "../../data/mecatronica/learningUnits";
 import { useUnits } from "../../Hooks/unit-provider-hook";
 
-export default function SetUnits({ units, group }) {
+import { optCareers } from "../../data";
+
+export default function SetUnits({ units, group, career }) {
   console.log(units);
   const { currentUnit, linkedUnits, recommendedUnits } = useUnits();
 
   const optionalRenders =
     currentUnit?.optional && units.some(unit => unit.id === currentUnit.id)
-      ? optionalUnits[currentUnit.optional - 1].map((unit, i) => (
+      ? optCareers[career][currentUnit.optional - 1].map((unit, i) => (
           <Unit key={i} unit={unit} optional={true} />
         ))
       : null;

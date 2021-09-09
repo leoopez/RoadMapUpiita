@@ -1,15 +1,26 @@
 .info--modal{
-    position: absolute;
-    right: 8%;
-    left: 8%;
-    width: 84vw;
-    height: 84vh;
-    z-index: 1;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.info--modal__body {
+    position: fixed;
+    position: fixed;
+    right: 4rem;
+    left: 4rem;
+    top: 4rem;
+    bottom: 4rem;
     font-size: 1.6rem;
     font-weight: 900;
     background-color: white;
-    padding: 4rem;
-    box-shadow: -5px 5px 10px 1px gray;
+    padding: 8rem;
+    border-radius: var(--border-radious);
+    overflow: auto;
 }
 
 .simboly {

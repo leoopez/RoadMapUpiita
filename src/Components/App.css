@@ -72,14 +72,18 @@ p {
     transition: transform 300ms;
 }
 
-.info--icon,
+.info--icon {
+    position: fixed;
+}
 .close--icon {
     position: absolute;
     right: 1rem;
 }
 
+.info--icon,
 .close--icon{
     top: 1rem;
+    right: 1rem;
 }
 
 .info--icon:hover,

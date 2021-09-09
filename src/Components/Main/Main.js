@@ -12,6 +12,7 @@ import Dropdown from "./Dropdown";
 import InfoModal from "./InfoModal/InfoModal";
 
 export default function Main() {
+  
   const [mode, setMode] = useState("semester");
   const [career, setCareer] = useState("mecatronica");
   const [renderUnits, setRenderUnits] = useState();
@@ -29,8 +30,8 @@ export default function Main() {
 
   return (
     <main>
+      <section>Settings</section>
       <section className='container'>
-        <InfoModal />
         <Dropdown
           mode={career}
           changeMode={setCareer}
@@ -47,6 +48,7 @@ export default function Main() {
           </div>
         )}
       </section>
+      <InfoModal />
     </main>
   );
 }

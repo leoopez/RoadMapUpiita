@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import useClose from "../../Hooks/useClose";
+import { FaAngleRight } from "react-icons/fa";
 import "./Dropdown.css";
 
 export default function Dropdown({ options, mode, changeMode = f => f }) {
@@ -9,25 +10,30 @@ export default function Dropdown({ options, mode, changeMode = f => f }) {
   const ref = useClose(false, toggle);
 
   return (
-    <div ref={ref} className='dropdown'>
-      <div className='dp-btn' onClick={() => toggle(!open)}>
-        {mode}
-      </div>
-      {open && (
-        <div className='dp-content'>
-          {options.map((option, i) => (
-            <div
-              className='dp-item'
-              key={i}
-              onClick={() => {
-                changeMode(option);
-                toggle(false);
-              }}>
-              {option}
-            </div>
-          ))}
+    <nav>
+      <div ref={ref} className='dropdown'>
+        <div className='dp-label' onClick={() => toggle(!open)}>
+          {mode}
+          <span className={open ? "open" : null}>
+            <FaAngleRight />
+          </span>
         </div>
-      )}
-    </div>
+        {open && (
+          <ul>
+            {options.map((option, i) => (
+              <li
+                className='dp-item'
+                key={i}
+                onClick={() => {
+                  changeMode(option);
+                  toggle(false);
+                }}>
+                {option}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </nav>
   );
 }

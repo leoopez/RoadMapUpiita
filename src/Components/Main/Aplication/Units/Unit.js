@@ -3,36 +3,11 @@
 import React from "react";
 import "./Unit.css";
 
-import { useUnits } from "../../contexts/unit-provider/unit-provider-hook";
-import useClose from "../../hooks/useClose";
+import { useUnits } from "../../../../contexts/unit-provider/unit-provider-hook";
+import useClose from "../../../../hooks/useClose";
 
 import { FaFilePdf } from "react-icons/fa";
 
-/* 
-let options = {
-  root: document.querySelector('#scrollArea'),
-  rootMargin: '0px',
-  threshold: 1.0
-}
-
-let callback = (entries, observer) => {
-  entries.forEach(entry => {
-    // Each entry describes an intersection change for one observed
-    // target element:
-    //   entry.boundingClientRect
-    //   entry.intersectionRatio
-    //   entry.intersectionRect
-    //   entry.isIntersecting
-    //   entry.rootBounds
-    //   entry.target
-    //   entry.time
-  });
-};
-
-let observer = new IntersectionObserver(callback, options);
-let target = document.querySelector('#listItem');
-observer.observe(target);
-*/
 export default function Unit({
   unit,
   selected = false,
@@ -42,7 +17,7 @@ export default function Unit({
 }) {
   const { changeCurrentUnits } = useUnits();
 
-  const ref = useClose(null, changeCurrentUnits);   
+  const ref = useClose(null, changeCurrentUnits);
 
   return (
     <div className={`card unit level-${unit.level}`}>

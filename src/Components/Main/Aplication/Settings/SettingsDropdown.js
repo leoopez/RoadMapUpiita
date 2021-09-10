@@ -1,11 +1,15 @@
 /** @format */
 
 import React, { useState } from "react";
-import useClose from "../../hooks/useClose";
+import useClose from "../../../../hooks/useClose";
 import { FaAngleRight } from "react-icons/fa";
 import "./SettingsDropdown.css";
 
-export default function Dropdown({ options, mode, changeMode = f => f }) {
+export default function SettingsDropdown({
+  options,
+  mode,
+  changeMode = f => f,
+}) {
   const [open, toggle] = useState(false);
   const ref = useClose(false, toggle);
 

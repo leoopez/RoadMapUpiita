@@ -5,7 +5,7 @@ import "./SetUnits.css";
 
 import Unit from "./Unit";
 
-import { useUnits } from "../../contexts/unit-provider/unit-provider-hook";
+import { useUnits } from "../../../../contexts/unit-provider/unit-provider-hook";
 
 export default function SetUnits({ units, group, career }) {
   const { currentUnit, linkedUnits, recommendedUnits } = useUnits();

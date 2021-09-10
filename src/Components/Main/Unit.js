@@ -3,8 +3,8 @@
 import React from "react";
 import "./Unit.css";
 
-import { useUnits } from "../../Hooks/unit-provider-hook";
-import useClose from "../../Hooks/useClose";
+import { useUnits } from "../../contexts/unit-provider/unit-provider-hook";
+import useClose from "../../hooks/useClose";
 
 import { FaFilePdf } from "react-icons/fa";
 

@@ -1,0 +1,22 @@
+.info--modal{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.info--modal__body {
+    position: fixed;
+    right: 10vw;
+    left: 10vw;
+    top: 10vh;
+    bottom: 10vh;
+    font-weight: 900;
+    background-color: white;
+    padding: 1rem;
+    border-radius: var(--border-radious);
+    overflow: auto;
+}

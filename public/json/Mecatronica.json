@@ -1,0 +1,816 @@
+{
+  "regularUnits": [
+    {
+      "id": "M103",
+      "name": "Cálculo Dif. e Integral",
+      "hours": [3, 3],
+      "level": 1,
+      "semester": 1,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M101",
+      "name": "Algebra Lineal Núm. Complejos",
+      "hours": [4.5, 0],
+      "level": 1,
+      "semester": 1,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M118",
+      "name": "Mecánica de la Partícula",
+      "hours": [4.5, 0],
+      "level": 1,
+      "semester": 1,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M116",
+      "name": "Introduccion a la Mecatronica",
+      "hours": [1.5, 1.5],
+      "level": 1,
+      "semester": 1,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M110",
+      "name": "Estructura y Propiedades de los Materiales",
+      "hours": [3, 1.5],
+      "level": 1,
+      "semester": 1,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M113",
+      "name": "Herramientas Computacionales",
+      "hours": [0, 3],
+      "level": 1,
+      "semester": 1,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M117",
+      "name": "Introducción a la Programación",
+      "hours": [0, 4.5],
+      "level": 1,
+      "semester": 1,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M107",
+      "name": "Dibujo Asistido por Computadora",
+      "hours": [0, 3],
+      "level": 1,
+      "semester": 1,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M108",
+      "name": "Ecuaciones Diferenciales",
+      "hours": [4.5, 0],
+      "level": 1,
+      "semester": 2,
+      "recommended": [0, 1],
+      "linked": []
+    },
+    {
+      "id": "M104",
+      "name": "Calculo Vectorial",
+      "hours": [3, 3],
+      "level": 1,
+      "semester": 2,
+      "recommended": [],
+      "linked": [0]
+    },
+    {
+      "id": "M119",
+      "name": "Mecanica del Cuerpo Rigido",
+      "hours": [4.5, 0],
+      "level": 1,
+      "semester": 2,
+      "recommended": [0],
+      "linked": [2]
+    },
+    {
+      "id": "M111",
+      "name": "Comunicaion Oral y Escrita",
+      "hours": [1.5, 3],
+      "level": 1,
+      "semester": 2,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M105",
+      "name": "Circuitos Electricos",
+      "hours": [0, 3],
+      "level": 1,
+      "semester": 2,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M120",
+      "name": "Procesos de Manufactura",
+      "hours": [0, 4.5],
+      "level": 1,
+      "semester": 2,
+      "recommended": [],
+      "linked": [4, 7]
+    },
+    {
+      "id": "M102",
+      "name": "Analisis y Diseño de Programas",
+      "hours": [0, 3],
+      "level": 1,
+      "semester": 2,
+      "recommended": [],
+      "linked": [6]
+    },
+    {
+      "id": "M109",
+      "name": "Electricidad y Magnetismo",
+      "hours": [4.5, 0],
+      "level": 1,
+      "semester": 3,
+      "recommended": [12],
+      "linked": [9]
+    },
+    {
+      "id": "M106",
+      "name": "Circuitos Electricos Avanzados",
+      "hours": [3, 1.5],
+      "level": 1,
+      "semester": 3,
+      "recommended": [],
+      "linked": [8, 12]
+    },
+    {
+      "id": "M112",
+      "name": "Fundamentos de Electronica",
+      "hours": [1.5, 3],
+      "level": 1,
+      "semester": 3,
+      "recommended": [],
+      "linked": [12]
+    },
+    {
+      "id": "M114",
+      "name": "Ingles I",
+      "hours": [0, 3],
+      "level": 1,
+      "semester": 3,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M210",
+      "name": "Mantenimiento y Sistemas de Manufactura",
+      "hours": [1.5, 3],
+      "level": 2,
+      "semester": 3,
+      "recommended": [],
+      "linked": [13]
+    },
+    {
+      "id": "M203",
+      "name": "Analisis y Sintesis de Mecanismos",
+      "hours": [3, 1.5],
+      "level": 2,
+      "semester": 3,
+      "recommended": [5],
+      "linked": [10]
+    },
+    {
+      "id": "M202",
+      "name": "Analisis de Señales y Sistemas",
+      "hours": [3, 1.5],
+      "level": 2,
+      "semester": 3,
+      "recommended": [5],
+      "linked": [8]
+    },
+    {
+      "id": "M121",
+      "name": "Resistencia de Materiales",
+      "hours": [4.5, 0],
+      "level": 1,
+      "semester": 4,
+      "recommended": [],
+      "linked": [4, 10]
+    },
+    {
+      "id": "M115",
+      "name": "Ingles II",
+      "hours": [0, 3],
+      "level": 1,
+      "semester": 4,
+      "recommended": [18],
+      "linked": []
+    },
+    {
+      "id": "M222",
+      "name": "Termodinamica",
+      "hours": [4.5, 0],
+      "level": 2,
+      "semester": 4,
+      "recommended": [8, 9],
+      "linked": []
+    },
+    {
+      "id": "M216",
+      "name": "Probabilidad y Estadistica para Ingenieria",
+      "hours": [4.5, 0],
+      "level": 2,
+      "semester": 4,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M207",
+      "name": "Electonica Analogica",
+      "hours": [3, 1.5],
+      "level": 2,
+      "semester": 4,
+      "recommended": [],
+      "linked": [16, 17]
+    },
+    {
+      "id": "M219",
+      "name": "Sim. Electronica y Diseno de Ctos. Impresos",
+      "hours": [0, 3],
+      "level": 2,
+      "semester": 4,
+      "recommended": [17],
+      "linked": [16]
+    },
+    {
+      "id": "M215",
+      "name": "Oscilaciones y Optica",
+      "hours": [3, 1.5],
+      "level": 2,
+      "semester": 4,
+      "recommended": [2],
+      "linked": [8]
+    },
+    {
+      "id": "M217",
+      "name": "Programacion Avanzada",
+      "hours": [0, 3],
+      "level": 2,
+      "semester": 4,
+      "recommended": [],
+      "linked": [14]
+    },
+    {
+      "id": "M212",
+      "name": "Mecainca de Fluidos",
+      "hours": [3, 0],
+      "level": 2,
+      "semester": 5,
+      "recommended": [8, 9],
+      "linked": []
+    },
+    {
+      "id": "M221",
+      "name": "Teoria Electromagnetica",
+      "hours": [4.5, 0],
+      "level": 2,
+      "semester": 5,
+      "recommended": [8],
+      "linked": [15, 9]
+    },
+    {
+      "id": "M205",
+      "name": "Diseño Básico de Elementos de Máquinas",
+      "hours": [3, 1.5],
+      "level": 2,
+      "semester": 5,
+      "recommended": [9, 13],
+      "linked": [22]
+    },
+    {
+      "id": "M201",
+      "name": "Administracion Organizacional",
+      "hours": [1.5, 1.5],
+      "level": 2,
+      "semester": 5,
+      "recommended": [11],
+      "linked": []
+    },
+    {
+      "id": "M213",
+      "name": "Microprocesadores, Microcontroladores e Interfaz",
+      "hours": [0, 4.5],
+      "level": 2,
+      "semester": 5,
+      "recommended": [27],
+      "linked": []
+    },
+    {
+      "id": "M204",
+      "name": "Circuitos Logicos",
+      "hours": [1.5, 3],
+      "level": 2,
+      "semester": 5,
+      "recommended": [],
+      "linked": [17]
+    },
+    {
+      "id": "M304",
+      "name": "Modelado y Simulacion de Sist. Mecatronicos",
+      "hours": [0, 3],
+      "level": 3,
+      "semester": 5,
+      "recommended": [],
+      "linked": [21]
+    },
+    {
+      "id": "M302",
+      "name": "Etica para el Ejercicio Profesional",
+      "hours": [1.5, 1.5],
+      "level": 3,
+      "semester": 5,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M402",
+      "name": "Electronica\nde Potencia",
+      "hours": [1.5, 1.5],
+      "level": 4,
+      "semester": 5,
+      "recommended": [],
+      "linked": [26]
+    },
+    {
+      "id": "M218",
+      "name": "Sensores y Acondicionadores de Senal",
+      "hours": [1.5, 1.5],
+      "level": 2,
+      "semester": 6,
+      "recommended": [16],
+      "linked": [17]
+    },
+    {
+      "id": "M214",
+      "name": "Neumatica e Hidraulica",
+      "hours": [0, 3],
+      "level": 2,
+      "semester": 6,
+      "recommended": [35],
+      "linked": []
+    },
+    {
+      "id": "M206",
+      "name": "Dispositivos Logicos Programables",
+      "hours": [0, 3],
+      "level": 2,
+      "semester": 6,
+      "recommended": [12],
+      "linked": [35]
+    },
+    {
+      "id": "M208",
+      "name": "Ingles III",
+      "hours": [0, 3],
+      "level": 2,
+      "semester": 6,
+      "recommended": [23],
+      "linked": []
+    },
+    {
+      "id": "M211",
+      "name": "Maquinas Electricas",
+      "hours": [1.5, 1.5],
+      "level": 2,
+      "semester": 6,
+      "recommended": [15],
+      "linked": [31]
+    },
+    {
+      "id": "M303",
+      "name": "Intrumentacion Virutal",
+      "hours": [0, 3],
+      "level": 3,
+      "semester": 6,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M301",
+      "name": "Control Clasico",
+      "hours": [3, 1.5],
+      "level": 3,
+      "semester": 6,
+      "recommended": [5],
+      "linked": [21]
+    },
+    {
+      "id": "M307",
+      "name": "Finanzas e Ingenieria Economica",
+      "hours": [1.5, 1.5],
+      "level": 3,
+      "semester": 6,
+      "recommended": [33],
+      "linked": []
+    },
+    {
+      "id": "M306",
+      "name": "Diseno Avanzado de Elementos de Maquina",
+      "hours": [3, 1.5],
+      "level": 3,
+      "semester": 6,
+      "recommended": [32],
+      "linked": []
+    },
+    {
+      "id": "M220",
+      "name": "Sitemas Neurodifusos",
+      "hours": [0, 3],
+      "level": 2,
+      "semester": 7,
+      "recommended": [5],
+      "linked": []
+    },
+    {
+      "id": "M209",
+      "name": "Liderazgo y\nEmprendedores",
+      "hours": [1.5, 1.5],
+      "level": 2,
+      "semester": 7,
+      "recommended": [11],
+      "linked": []
+    },
+    {
+      "id": "M314",
+      "name": "Proyecto   Intregrador",
+      "hours": [0, 3],
+      "level": 3,
+      "semester": 7,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "MOPT1",
+      "name": "Optativa 1",
+      "hours": [0, 4.5],
+      "level": 3,
+      "semester": 7,
+      "optional": 1,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "MOPT2",
+      "name": "Optativa 2",
+      "hours": [0, 4.5],
+      "level": 3,
+      "semester": 7,
+      "optional": 2,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M308",
+      "name": "Procesador Digital de Senales",
+      "hours": [0, 3],
+      "level": 3,
+      "semester": 7,
+      "recommended": [],
+      "linked": [21]
+    },
+    {
+      "id": "M403",
+      "name": "Ingenieria Asistida por Computadora",
+      "hours": [1.5, 3],
+      "level": 4,
+      "semester": 7,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M501",
+      "name": "Control de Maquinas Electricas",
+      "hours": [1.5, 1.5],
+      "level": 5,
+      "semester": 7,
+      "recommended": [],
+      "linked": [43, 45]
+    },
+    {
+      "id": "M305",
+      "name": "Automatizacion Industrial",
+      "hours": [0, 4.5],
+      "level": 3,
+      "semester": 8,
+      "recommended": [],
+      "linked": [40]
+    },
+    {
+      "id": "M309",
+      "name": "Ingenieria Ambiental",
+      "hours": [1.5, 1.5],
+      "level": 3,
+      "semester": 8,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "name": "Optativa 3",
+      "hours": [0, 4.5],
+      "level": 3,
+      "optional": 3,
+      "semester": 8,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "name": "Optativa 4",
+      "hours": [0, 6],
+      "level": 4,
+      "semester": 8,
+      "optional": 4,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M405",
+      "name": "Proyectos de Inversion",
+      "hours": [1.5, 1.5],
+      "level": 4,
+      "semester": 8,
+      "recommended": [],
+      "linked": [46]
+    },
+    {
+      "id": "M404",
+      "name": "Metodologia de la Investigacion",
+      "hours": [1.5, 3],
+      "level": 4,
+      "semester": 8,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M406",
+      "name": "Sitemas de Vision Artificial",
+      "hours": [1.5, 1.5],
+      "level": 4,
+      "semester": 8,
+      "recommended": [],
+      "linked": [44]
+    },
+    {
+      "id": "M401",
+      "name": "Control de Sistemas Mecatronicos",
+      "hours": [1.5, 3],
+      "level": 4,
+      "semester": 8,
+      "recommended": [],
+      "linked": [36]
+    },
+    {
+      "id": "MOPT5",
+      "name": "Optativa 5",
+      "hours": [0, 6],
+      "level": 4,
+      "semester": 9,
+      "optional": 5,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "MOPT6",
+      "name": "Optativa 6",
+      "hours": [0, 6],
+      "level": 4,
+      "semester": 9,
+      "optional": 6,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "MSER",
+      "name": "Servicio Social",
+      "hours": [0, 0],
+      "level": 5,
+      "semester": 9,
+      "recommended": [],
+      "linked": []
+    },
+    {
+      "id": "M503",
+      "name": "Trabajo\nTerminal I",
+      "hours": [0, 7.5],
+      "level": 5,
+      "semester": 9,
+      "recommended": [],
+      "linked": [61]
+    },
+    {
+      "id": "M504",
+      "name": "Trabajo\nTerminal II",
+      "hours": [0, 7.5],
+      "level": 5,
+      "semester": 10,
+      "recommended": [],
+      "linked": []
+    }
+  ],
+  "optionalUnits": [
+    {
+      "name": "Automatas\nIndustriales",
+      "optional": 1,
+      "hours": [1.5, 1.5]
+    },
+    {
+      "name": "Protocolors\nAvanzados de\nComunicaciones",
+      "optional": 1,
+      "hours": [1.5, 1.5]
+    },
+    {
+      "name": "Automatizacion\nde Linea de\nProduccion",
+      "optional": 1,
+      "hours": [1.5, 1.5]
+    },
+    {
+      "name": "Seguriadad\nIndustrial",
+      "optional": 1,
+      "hours": [1.5, 1.5]
+    },
+    {
+      "name": "Desarrollo\nEmpresarial",
+      "optional": 1,
+      "hours": [1.5, 1.5]
+    },
+    {
+      "name": "Control\nDistribuido",
+      "optional": 1,
+      "hours": [1.5, 1.5]
+    },
+    {
+      "name": "Sistemas de\nCalidad para\nla Manuactura",
+      "optional": 1,
+      "hours": [1.5, 1.5]
+    },
+    {
+      "name": "Economía y\nLogistica",
+      "optional": 1,
+      "hours": [1.5, 1.5]
+    },
+    {
+      "name": "Topicos\nAvanzados de\nSensores",
+      "optional": 2,
+      "hours": [0, 4.5]
+    },
+    {
+      "name": "Produccion mas\nLimpia",
+      "optional": 2,
+      "hours": [0, 4.5]
+    },
+    {
+      "name": "Uso y Mant. de\nHerr. para\nProc. de Man.",
+      "optional": 2,
+      "hours": [0, 4.5]
+    },
+    {
+      "name": "Diseno Avanzado y\nManufactura\nAsistida\npor Computadora",
+      "optional": 3,
+      "hours": [0, 4.5]
+    },
+    {
+      "name": "Graficacion 3D",
+      "optional": 3,
+      "hours": [0, 4.5]
+    },
+    {
+      "name": "Sistemas\nOperativos en\nTiempo Real",
+      "optional": 3,
+      "hours": [0, 4.5]
+    },
+    {
+      "name": "Topicos\nAvanzados de\nElectronica",
+      "optional": 3,
+      "hours": [0, 4.5]
+    },
+    {
+      "name": "Procesos\nIndustriales",
+      "optional": 3,
+      "hours": [0, 4.5]
+    },
+    {
+      "name": "Microcontroladores\nAvanzados",
+      "optional": 4,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Control de\nInteligente",
+      "optional": 4,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Diseno de Equipo\npara el Manejo\nde Materiales",
+      "optional": 4,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Realidad\nVirtual",
+      "optional": 4,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Protocolos de\nComunicacion\nIndustrial",
+      "optional": 4,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Vision\nArtificial\nAplicada",
+      "optional": 4,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Diseno\nErgonomico",
+      "optional": 5,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Instrumentacion\nVirtual\nAplicada",
+      "optional": 5,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Control de\nProcesos\nIndustriales",
+      "optional": 5,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Procesos\nAvanzados de\nManufactura",
+      "optional": 5,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Control de\nSistemas\nRoboticos",
+      "optional": 5,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Sistemas de\nProc. Digital de\nSenales",
+      "optional": 5,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Manufactura\nIntegrada por\nComputadora",
+      "optional": 5,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Mercadotecnia",
+      "optional": 6,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Topicos\nAvanxados de\nSoldadura",
+      "optional": 6,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Integracion de\nun Sistema\nRobotico",
+      "optional": 6,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Implementacion\nde Sistemas\nDigitales",
+      "optional": 6,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Topicos\nAvanxados de\nAutomatizacion",
+      "optional": 6,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Sistemas\nAvanzados de\nManufactura",
+      "optional": 6,
+      "hours": [1.5, 3]
+    },
+    {
+      "name": "Proyecto de\nSistemas\nEmbebidos",
+      "optional": 6,
+      "hours": [1.5, 3]
+    }
+  ],
+  "infoCareer": {
+    "semester": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "level": [1, 2, 3, 4, 5],
+    "credits": [0, 3, 4.5, 6, 7.5, 9]
+  }
+}

@@ -1,14 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-}
 
 :root {
+    box-sizing: border-box;
+    font-size: 62.5%;
     --bg-primary:#f8f9fa;
     --bg-secundary: #474a4d;
     --bg-accent: #ffec99;
-
+    
     --text-color:#212529;
     --text-color-secundary: #dee2e6;
     --border-size: 0.5rem;
@@ -18,12 +15,18 @@
     --speed-fast: 250ms;
 }
 
-html {
-    font-size: 62.5%;
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
 }
 
+
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, monospace;
     font-weight: 700;
     background-color: var(--bg-primary);
 }
@@ -35,6 +38,7 @@ ul, li {
 p {
     text-align: center;
 }
+
 .container {
     position: relative;
     padding: 1rem;
@@ -60,10 +64,14 @@ p {
     height: 100%;
 }
 
-.icons--default{
-    width: 32px;
-    height: 32px;
+.icon--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
     cursor: pointer;
+    padding: 0.5rem;
 }
 
 .info--icon,
@@ -130,4 +138,8 @@ p {
 
 .level-5{
     color: #9B59B6 ;
+}
+
+.is--close{
+    display: none !important;
 }

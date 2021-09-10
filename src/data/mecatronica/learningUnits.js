@@ -2,7 +2,8 @@
 
 export const regularUnits = [
   {
-    name: "Cálculo Dif.\ne Integral",
+    id: "M103",
+    name: "Cálculo Dif. e Integral",
     hours: [3, 3],
     level: 1,
     semester: 1,
@@ -10,7 +11,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Algebra Lineal\nNúm. Complejos",
+    id: "M101",
+    name: "Algebra Lineal Núm. Complejos",
     hours: [4.5, 0],
     level: 1,
     semester: 1,
@@ -18,7 +20,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Mecánica de\nla Partícula",
+    id: "M118",
+    name: "Mecánica de la Partícula",
     hours: [4.5, 0],
     level: 1,
     semester: 1,
@@ -26,7 +29,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Introduccion\na la Mecatronica",
+    id: "M116",
+    name: "Introduccion a la Mecatronica",
     hours: [1.5, 1.5],
     level: 1,
     semester: 1,
@@ -34,7 +38,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Estructura y\nPropiedades de\nlos Materiales",
+    id: "M110",
+    name: "Estructura y Propiedades de los Materiales",
     hours: [3, 1.5],
     level: 1,
     semester: 1,
@@ -42,7 +47,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Herramientas\nComputacionales",
+    id: "M113",
+    name: "Herramientas Computacionales",
     hours: [0, 3],
     level: 1,
     semester: 1,
@@ -50,7 +56,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Introduccion a\nla Programacion",
+    id: "M117",
+    name: "Introducción a la Programación",
     hours: [0, 4.5],
     level: 1,
     semester: 1,
@@ -58,7 +65,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Dibujo Asistido\npor Computadora",
+    id: "M107",
+    name: "Dibujo Asistido por Computadora",
     hours: [0, 3],
     level: 1,
     semester: 1,
@@ -66,7 +74,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Ecuaciones\nDiferenciales",
+    id: "M108",
+    name: "Ecuaciones Diferenciales",
     hours: [4.5, 0],
     level: 1,
     semester: 2,
@@ -74,7 +83,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Calculo\nVectorial",
+    id: "M104",
+    name: "Calculo Vectorial",
     hours: [3, 3],
     level: 1,
     semester: 2,
@@ -82,7 +92,8 @@ export const regularUnits = [
     linked: [0],
   },
   {
-    name: "Mecanica\ndel Cuerpo\nRigido",
+    id: "M119",
+    name: "Mecanica del Cuerpo Rigido",
     hours: [4.5, 0],
     level: 1,
     semester: 2,
@@ -90,7 +101,8 @@ export const regularUnits = [
     linked: [2],
   },
   {
-    name: "Comunicaion\nOral y Escrita",
+    id: "M111",
+    name: "Comunicaion Oral y Escrita",
     hours: [1.5, 3],
     level: 1,
     semester: 2,
@@ -98,7 +110,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Circuitos\nElectricos",
+    id: "M105",
+    name: "Circuitos Electricos",
     hours: [0, 3],
     level: 1,
     semester: 2,
@@ -106,7 +119,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Procesos de\nManufactura",
+    id: "M120",
+    name: "Procesos de Manufactura",
     hours: [0, 4.5],
     level: 1,
     semester: 2,
@@ -114,7 +128,8 @@ export const regularUnits = [
     linked: [4, 7],
   },
   {
-    name: "Analisis y\nDiseño de\nProgramas",
+    id: "M102",
+    name: "Analisis y Diseño de Programas",
     hours: [0, 3],
     level: 1,
     semester: 2,
@@ -122,7 +137,8 @@ export const regularUnits = [
     linked: [6],
   },
   {
-    name: "Electricidad y\nMagnetismo",
+    id: "M109",
+    name: "Electricidad y Magnetismo",
     hours: [4.5, 0],
     level: 1,
     semester: 3,
@@ -130,7 +146,8 @@ export const regularUnits = [
     linked: [9],
   },
   {
-    name: "Circuitos\nElectricos\nAvanzados",
+    id: "M106",
+    name: "Circuitos Electricos Avanzados",
     hours: [3, 1.5],
     level: 1,
     semester: 3,
@@ -138,7 +155,8 @@ export const regularUnits = [
     linked: [8, 12],
   },
   {
-    name: "Fundamentos\nde Electronica",
+    id: "M112",
+    name: "Fundamentos de Electronica",
     hours: [1.5, 3],
     level: 1,
     semester: 3,
@@ -146,6 +164,7 @@ export const regularUnits = [
     linked: [12],
   },
   {
+    id: "M114",
     name: "Ingles I",
     hours: [0, 3],
     level: 1,
@@ -154,7 +173,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Mantenimiento\ny Sistemas de\nManufactura",
+    id: "M210",
+    name: "Mantenimiento y Sistemas de Manufactura",
     hours: [1.5, 3],
     level: 2,
     semester: 3,
@@ -162,7 +182,8 @@ export const regularUnits = [
     linked: [13],
   },
   {
-    name: "Analisis y\nSintesis de Mecanismos",
+    id: "M203",
+    name: "Analisis y Sintesis de Mecanismos",
     hours: [3, 1.5],
     level: 2,
     semester: 3,
@@ -170,7 +191,8 @@ export const regularUnits = [
     linked: [10],
   },
   {
-    name: "Analisis de\nSenales y\nSistemas",
+    id: "M202",
+    name: "Analisis de Señales y Sistemas",
     hours: [3, 1.5],
     level: 2,
     semester: 3,
@@ -178,7 +200,8 @@ export const regularUnits = [
     linked: [8],
   },
   {
-    name: "Resistencia\nde Materiales",
+    id: "M121",
+    name: "Resistencia de Materiales",
     hours: [4.5, 0],
     level: 1,
     semester: 4,
@@ -186,6 +209,7 @@ export const regularUnits = [
     linked: [4, 10],
   },
   {
+    id: "M115",
     name: "Ingles II",
     hours: [0, 3],
     level: 1,
@@ -194,6 +218,7 @@ export const regularUnits = [
     linked: [],
   },
   {
+    id: "M222",
     name: "Termodinamica",
     hours: [4.5, 0],
     level: 2,
@@ -202,7 +227,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Probabilidad y\nEstadistica\npara Ingenieria",
+    id: "M216",
+    name: "Probabilidad y Estadistica para Ingenieria",
     hours: [4.5, 0],
     level: 2,
     semester: 4,
@@ -210,7 +236,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Electonica\nAnalogica",
+    id: "M207",
+    name: "Electonica Analogica",
     hours: [3, 1.5],
     level: 2,
     semester: 4,
@@ -218,7 +245,8 @@ export const regularUnits = [
     linked: [16, 17],
   },
   {
-    name: "Sim. Electronica\ny Diseno de\nCtos. Impresos",
+    id: "M219",
+    name: "Sim. Electronica y Diseno de Ctos. Impresos",
     hours: [0, 3],
     level: 2,
     semester: 4,
@@ -226,7 +254,8 @@ export const regularUnits = [
     linked: [16],
   },
   {
-    name: "Oscilaciones\ny Optica",
+    id: "M215",
+    name: "Oscilaciones y Optica",
     hours: [3, 1.5],
     level: 2,
     semester: 4,
@@ -234,7 +263,8 @@ export const regularUnits = [
     linked: [8],
   },
   {
-    name: "Programacion\nAvanzada",
+    id: "M217",
+    name: "Programacion Avanzada",
     hours: [0, 3],
     level: 2,
     semester: 4,
@@ -242,7 +272,8 @@ export const regularUnits = [
     linked: [14],
   },
   {
-    name: "Mecainca\nde Fluidos",
+    id: "M212",
+    name: "Mecainca de Fluidos",
     hours: [3, 0],
     level: 2,
     semester: 5,
@@ -250,7 +281,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Teoria\nElectromagnetica",
+    id: "M221",
+    name: "Teoria Electromagnetica",
     hours: [4.5, 0],
     level: 2,
     semester: 5,
@@ -258,7 +290,8 @@ export const regularUnits = [
     linked: [15, 9],
   },
   {
-    name: "Diseno Basico\nde Elementos\nde Maquinas",
+    id: "M205",
+    name: "Diseño Básico de Elementos de Máquinas",
     hours: [3, 1.5],
     level: 2,
     semester: 5,
@@ -266,7 +299,8 @@ export const regularUnits = [
     linked: [22],
   },
   {
-    name: "Administracion\nOrganizacional",
+    id: "M201",
+    name: "Administracion Organizacional",
     hours: [1.5, 1.5],
     level: 2,
     semester: 5,
@@ -274,7 +308,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Microprocesadores,\nMicrocontroladores\ne Interfaz",
+    id: "M213",
+    name: "Microprocesadores, Microcontroladores e Interfaz",
     hours: [0, 4.5],
     level: 2,
     semester: 5,
@@ -282,7 +317,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Circuitos\nLogicos",
+    id: "M204",
+    name: "Circuitos Logicos",
     hours: [1.5, 3],
     level: 2,
     semester: 5,
@@ -290,7 +326,8 @@ export const regularUnits = [
     linked: [17],
   },
   {
-    name: "Modelado y\nSimulacion de Sist.\nMecatronicos",
+    id: "M304",
+    name: "Modelado y Simulacion de Sist. Mecatronicos",
     hours: [0, 3],
     level: 3,
     semester: 5,
@@ -298,7 +335,8 @@ export const regularUnits = [
     linked: [21],
   },
   {
-    name: "Etica para\nel Ejercicio\nProfesional",
+    id: "M302",
+    name: "Etica para el Ejercicio Profesional",
     hours: [1.5, 1.5],
     level: 3,
     semester: 5,
@@ -306,6 +344,7 @@ export const regularUnits = [
     linked: [],
   },
   {
+    id: "M402",
     name: "Electronica\nde Potencia",
     hours: [1.5, 1.5],
     level: 4,
@@ -314,7 +353,8 @@ export const regularUnits = [
     linked: [26],
   },
   {
-    name: "Sensores y\nAcondicionadores\nde Senal",
+    id: "M218",
+    name: "Sensores y Acondicionadores de Senal",
     hours: [1.5, 1.5],
     level: 2,
     semester: 6,
@@ -322,7 +362,8 @@ export const regularUnits = [
     linked: [17],
   },
   {
-    name: "Neumatica\ne Hidraulica",
+    id: "M214",
+    name: "Neumatica e Hidraulica",
     hours: [0, 3],
     level: 2,
     semester: 6,
@@ -330,7 +371,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Dispositivos\nLogicos\nProgramables",
+    id: "M206",
+    name: "Dispositivos Logicos Programables",
     hours: [0, 3],
     level: 2,
     semester: 6,
@@ -338,6 +380,7 @@ export const regularUnits = [
     linked: [35],
   },
   {
+    id: "M208",
     name: "Ingles III",
     hours: [0, 3],
     level: 2,
@@ -346,7 +389,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Maquinas\nElectricas",
+    id: "M211",
+    name: "Maquinas Electricas",
     hours: [1.5, 1.5],
     level: 2,
     semester: 6,
@@ -354,7 +398,8 @@ export const regularUnits = [
     linked: [31],
   },
   {
-    name: "Intrumentacion\nVirutal",
+    id: "M303",
+    name: "Intrumentacion Virutal",
     hours: [0, 3],
     level: 3,
     semester: 6,
@@ -362,7 +407,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Control\nClasico",
+    id: "M301",
+    name: "Control Clasico",
     hours: [3, 1.5],
     level: 3,
     semester: 6,
@@ -370,7 +416,8 @@ export const regularUnits = [
     linked: [21],
   },
   {
-    name: "Finanzas e\nIngenieria\nEconomica",
+    id: "M307",
+    name: "Finanzas e Ingenieria Economica",
     hours: [1.5, 1.5],
     level: 3,
     semester: 6,
@@ -378,7 +425,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Diseno Avanzado\nde Elementos\nde Maquina",
+    id: "M306",
+    name: "Diseno Avanzado de Elementos de Maquina",
     hours: [3, 1.5],
     level: 3,
     semester: 6,
@@ -386,7 +434,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Sitemas\nNeurodifusos",
+    id: "M220",
+    name: "Sitemas Neurodifusos",
     hours: [0, 3],
     level: 2,
     semester: 7,
@@ -394,6 +443,7 @@ export const regularUnits = [
     linked: [],
   },
   {
+    id: "M209",
     name: "Liderazgo y\nEmprendedores",
     hours: [1.5, 1.5],
     level: 2,
@@ -402,7 +452,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Proyecto\nIntregrador",
+    id: "M314",
+    name: "Proyecto   Intregrador",
     hours: [0, 3],
     level: 3,
     semester: 7,
@@ -410,6 +461,7 @@ export const regularUnits = [
     linked: [],
   },
   {
+    id: "MOPT1",
     name: "Optativa 1",
     hours: [0, 4.5],
     level: 3,
@@ -419,6 +471,7 @@ export const regularUnits = [
     linked: [],
   },
   {
+    id: "MOPT2",
     name: "Optativa 2",
     hours: [0, 4.5],
     level: 3,
@@ -428,7 +481,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Procesador\nDigital de\nSenales",
+    id: "M308",
+    name: "Procesador Digital de Senales",
     hours: [0, 3],
     level: 3,
     semester: 7,
@@ -436,7 +490,8 @@ export const regularUnits = [
     linked: [21],
   },
   {
-    name: "Ingenieria\nAsistida por\nComputadora",
+    id: "M403",
+    name: "Ingenieria Asistida por Computadora",
     hours: [1.5, 3],
     level: 4,
     semester: 7,
@@ -444,7 +499,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Control de\nMaquinas\nElectricas",
+    id: "M501",
+    name: "Control de Maquinas Electricas",
     hours: [1.5, 1.5],
     level: 5,
     semester: 7,
@@ -452,7 +508,8 @@ export const regularUnits = [
     linked: [43, 45],
   },
   {
-    name: "Automatizacion\nIndustrial",
+    id: "M305",
+    name: "Automatizacion Industrial",
     hours: [0, 4.5],
     level: 3,
     semester: 8,
@@ -460,7 +517,8 @@ export const regularUnits = [
     linked: [40],
   },
   {
-    name: "Ingenieria\nAmbiental",
+    id: "M309",
+    name: "Ingenieria Ambiental",
     hours: [1.5, 1.5],
     level: 3,
     semester: 8,
@@ -468,7 +526,7 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Optativa 3",
+    name: "MOPT3",
     hours: [0, 4.5],
     level: 3,
     optional: 3,
@@ -477,7 +535,7 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Optativa 4",
+    name: "MOPT4",
     hours: [0, 6],
     level: 4,
     semester: 8,
@@ -486,7 +544,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Proyectos\nde Inversion",
+    id: "M405",
+    name: "Proyectos de Inversion",
     hours: [1.5, 1.5],
     level: 4,
     semester: 8,
@@ -494,7 +553,8 @@ export const regularUnits = [
     linked: [46],
   },
   {
-    name: "Metodologia de\nla Investigacion",
+    id: "M404",
+    name: "Metodologia de la Investigacion",
     hours: [1.5, 3],
     level: 4,
     semester: 8,
@@ -502,7 +562,8 @@ export const regularUnits = [
     linked: [],
   },
   {
-    name: "Sitemas\nde Vision\nArtificial",
+    id: "M406",
+    name: "Sitemas de Vision Artificial",
     hours: [1.5, 1.5],
     level: 4,
     semester: 8,
@@ -510,7 +571,8 @@ export const regularUnits = [
     linked: [44],
   },
   {
-    name: "Control de\nSistemas\nMecatronicos",
+    id: "M401",
+    name: "Control de Sistemas Mecatronicos",
     hours: [1.5, 3],
     level: 4,
     semester: 8,
@@ -518,6 +580,7 @@ export const regularUnits = [
     linked: [36],
   },
   {
+    id: "MOPT5",
     name: "Optativa 5",
     hours: [0, 6],
     level: 4,
@@ -527,6 +590,7 @@ export const regularUnits = [
     linked: [],
   },
   {
+    id: "MOPT6",
     name: "Optativa 6",
     hours: [0, 6],
     level: 4,
@@ -536,6 +600,7 @@ export const regularUnits = [
     linked: [],
   },
   {
+    id: "MSER",
     name: "Servicio Social",
     hours: [0, 0],
     level: 5,
@@ -544,6 +609,7 @@ export const regularUnits = [
     linked: [],
   },
   {
+    id: "M503",
     name: "Trabajo\nTerminal I",
     hours: [0, 7.5],
     level: 5,
@@ -552,6 +618,7 @@ export const regularUnits = [
     linked: [61],
   },
   {
+    id: "M504",
     name: "Trabajo\nTerminal II",
     hours: [0, 7.5],
     level: 5,
@@ -562,7 +629,7 @@ export const regularUnits = [
 ].map((unit, id) => ({
   ...unit,
   id,
-  credits: unit.hours[0]*2 + unit.hours[1]
+  credits: unit.hours[0] * 2 + unit.hours[1],
 }));
 
 export const optionalUnits = [
@@ -764,81 +831,5 @@ export const optionalUnits = [
 export const infoCareer = {
   semester: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   level: [1, 2, 3, 4, 5],
-  credits: [0, 3, 4.5, 6,  7.5, 9]
+  credits: [0, 3, 4.5, 6, 7.5, 9],
 };
-
-/*
-Meaning numbers in recommended and linked in each unit
-
-0 cal
-1 alg
-2 particula
-3 intro
-4 materiales
-5 herramientas
-6 intro progra
-7 dibujo
-
-8 diferenciales
-9 vectorial
-10 rigido
-11 comunicaion
-12 circuitos
-13 processos
-14 diseno de progra
-
-15 electricidad
-16 avanzados
-17 fundamentos
-18 ingles 1
-19 mantenimiento
-20 mecanismos
-21 senales
-
-22 resistencia
-23 ingles 11
-24 termo
-25 proba
-26 analogica
-27 simulacion
-28 osci
-29 avanzada
-
-30 fluidos
-31 teoria
-32 diseno basico
-33 administracion
-34 micros
-35 logicos
-36 modelado
-37 etica
-38 potencia
-
-39 sensores
-40 neumatica
-41 dlp
-42 ingles 111
-43 maquinas
-44 instrumentacion
-45 control
-46 finanzas
-47 diseno avanzado
-
-48 sistemas 
-49 liderazgo
-50 proyecyto integrador
-51 op 1
-52 op 2
-53 procesador
-54 asistida
-55 control de maquinas
-
-56 industrual
-57 ambiental
-58 op3
-59 op4
-60 proyectos de inversion
-61 metodologia
-62 sistemas 
-63 control de sistemas
-*/

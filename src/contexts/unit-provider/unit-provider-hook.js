@@ -7,26 +7,24 @@ const UnitContext = createContext();
 //export hook that creates a Context Consumer
 export const useUnits = () => useContext(UnitContext);
 
+const initialValues = {
+  currentUnit: null,
+  linkedUnits: [],
+  recommendedUnits: [],
+};
+
 export default function UnitProvider({ children }) {
-  const [currentUnit, setCurrenUnit] = useState(null);
-  const [linkedUnits, setLinkedUnits] = useState(null);
-  const [recommendedUnits, setRecommendedUnits] = useState(null);
+  const [state, setState] = useState(initialValues);
+  const { currentUnit, linkedUnits, recommendedUnits } = state;
 
   const changeCurrentUnits = unit => {
-    if (!unit || unit.id === currentUnit?.id) {
-      setCurrenUnit(null);
-      setLinkedUnits(null);
-      setRecommendedUnits(null);
-      return;
-    }
-
-    if (unit.optional) {
-      console.log(unit);
-    }
-
-    setCurrenUnit(unit);
-    setLinkedUnits([...unit.linked]);
-    setRecommendedUnits([...unit.recommended]);
+    !unit || unit.id === currentUnit?.id
+      ? setState(initialValues)
+      : setState({
+          currentUnit: unit,
+          linkedUnits: [...unit.linked],
+          recommendedUnits: [...unit.recommended],
+        });
   };
 
   return (

@@ -2,27 +2,28 @@
 
 import React, { useState } from "react";
 import useClose from "../../../../hooks/useClose";
-import { FaAngleRight } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 import "./SettingsDropdown.css";
 
 export default function SettingsDropdown({
   options,
   mode,
   changeMode = f => f,
+  Iconleft,
+  children,
 }) {
   const [open, toggle] = useState(false);
   const ref = useClose(false, toggle);
 
   return (
-    <nav>
-      <div ref={ref} className='dropdown'>
+    <li className='dropdown__settings'>
+      <span className='icon--container'>{Iconleft}</span>
+      <div ref={ref} className='dp--item'>
         <div className='dp-label' onClick={() => toggle(!open)}>
+          {children}
           {mode}
-          <span className={open ? "open" : null}>
-            <FaAngleRight />
-          </span>
         </div>
-        {open && (
+        {/* {open && (
           <ul>
             {options.map((option, i) => (
               <li
@@ -36,8 +37,11 @@ export default function SettingsDropdown({
               </li>
             ))}
           </ul>
-        )}
+        )} */}
       </div>
-    </nav>
+      <span className='icon--container icon--left'>
+        <FaChevronRight />
+      </span>
+    </li>
   );
 }

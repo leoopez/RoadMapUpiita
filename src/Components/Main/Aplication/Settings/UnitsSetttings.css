@@ -1,0 +1,14 @@
+.settings {
+    margin-bottom: 1rem;
+}
+
+.nav__settings{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    border: 0.3rem solid #474a4d;
+    border-radius: 1rem;
+
+}

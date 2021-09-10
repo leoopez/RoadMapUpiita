@@ -39,6 +39,9 @@ p {
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+}
 .container {
     position: relative;
     padding: 1rem;

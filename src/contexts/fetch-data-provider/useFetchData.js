@@ -3,22 +3,17 @@
 import { useEffect, useState } from "react";
 
 export default function useFetchData(data) {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-  const [units, setUnits] = useState([]);
+  const [error, setError] = useState();
+  const [units, setUnits] = useState();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (!data) return;
-    fetch(`json/${data}.json`, {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
+    setLoading(true);
+    fetch(`json/${data}.json`)
       .then(res => res.json())
       .then(setUnits)
-      .then(setUnits)
-      .then(setLoading(false))
+      .then(() => setLoading(false))
       .catch(setError);
   }, [data]);
 

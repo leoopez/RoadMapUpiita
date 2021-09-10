@@ -7,18 +7,8 @@ import Unit from "./Unit";
 
 import { useUnits } from "../../contexts/unit-provider/unit-provider-hook";
 
-import { optCareers } from "../../data";
-
 export default function SetUnits({ units, group, career }) {
-  console.log(units);
   const { currentUnit, linkedUnits, recommendedUnits } = useUnits();
-
-  const optionalRenders =
-    currentUnit?.optional && units.some(unit => unit.id === currentUnit.id)
-      ? optCareers[career][currentUnit.optional - 1].map((unit, i) => (
-          <Unit key={i} unit={unit} optional={true} />
-        ))
-      : null;
 
   const renderUnits = units.map((unit, i) => (
     <Unit
@@ -36,14 +26,6 @@ export default function SetUnits({ units, group, career }) {
         {group}
       </div>
       <div className='group flex__container--center'>{renderUnits}</div>
-      {optionalRenders && (
-        <>
-          <div className='group--number flex__container--center parent--space'>
-            O{currentUnit.optional}
-          </div>
-          <div className='group flex__container--center'>{optionalRenders}</div>
-        </>
-      )}
     </>
   );
 }

@@ -1,9 +1,0 @@
-.group {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.group--number{
-    font-size: 3rem;
-    box-shadow: 5px 0 5px -2px #888;
-}

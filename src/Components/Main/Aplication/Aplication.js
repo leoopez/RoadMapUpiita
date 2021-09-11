@@ -1,9 +1,6 @@
 /** @format */
 
-import React from "react";
-import { useState } from "react/cjs/react.development";
-
-import "./Aplication.css";
+import React, { useState } from "react";
 
 import Options from "./Options/Options";
 import UnitsSettings from "./Settings/UntisSettings";

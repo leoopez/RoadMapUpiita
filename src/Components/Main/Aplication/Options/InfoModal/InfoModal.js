@@ -3,7 +3,6 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 
-import "./InfoModal.css";
 import useClose from "../../../../../hooks/useClose";
 
 export default function InfoModal({ setInfoModal = f => f }) {

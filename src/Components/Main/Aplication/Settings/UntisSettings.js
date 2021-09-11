@@ -1,7 +1,6 @@
 /** @format */
 import React, { useState } from "react";
 
-import "./UnitsSetttings.css";
 import useClose from "../../../../hooks/useClose";
 
 import {
@@ -60,7 +59,9 @@ function Navbar({ children }) {
 function NavItem({ icon, children, dd }) {
   const [open, setOpen] = useState(false);
   return (
-    <li className='nav-item' onClick={() => setOpen(open => !open)}>
+    <li
+      className='flex-container flex-container--center nav-item'
+      onClick={() => setOpen(open => !open)}>
       <span className='icon--container icon--button'>{icon}</span>
       <span className='nav--text'>{children}</span>
       <span className='icon--container icon--button icon--left'>
@@ -84,7 +85,7 @@ function DropDown({ dd }) {
 
 function DropItem({ item }) {
   return (
-    <li className='nav-item'>
+    <li className='flex-container flex-container--center nav-item'>
       <span className='icon--container icon--button'>
         <FaAngleDoubleUp size={"100%"} />
       </span>

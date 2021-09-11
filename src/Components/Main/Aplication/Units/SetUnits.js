@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import "./SetUnits.css";
 
 import Unit from "./Unit";
 
@@ -22,10 +21,10 @@ export default function SetUnits({ units, group, career }) {
 
   return (
     <>
-      <div className='group--number flex__container--center parent--space'>
+      <div className='group--number flex-container flex-container--center'>
         {group}
       </div>
-      <div className='group flex__container--center'>{renderUnits}</div>
+      <div className='flex-container flex-container--center'>{renderUnits}</div>
     </>
   );
 }

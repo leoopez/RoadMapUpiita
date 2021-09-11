@@ -2,8 +2,6 @@
 
 import React, { useState } from "react";
 
-import "./Options.css";
-
 import InfoModal from "./InfoModal/InfoModal";
 
 import { FaAngleDown } from "react-icons/fa";
@@ -17,7 +15,7 @@ export default function Options() {
   const [infoModal, setInfoModal] = useState(false);
 
   return (
-    <div className='options--bar'>
+    <div className='flex-container flex-container--center options--bar'>
       <div className='icon--container'>
         {darkMode ? <FaSun size={"100%"} /> : <FaMoon size={"100%"} />}
       </div>

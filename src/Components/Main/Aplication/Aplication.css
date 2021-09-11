@@ -1,8 +1,0 @@
-.application {
-    margin: 0 auto;
-}
-
-.units-grid{
-    grid-template-columns: 1fr;
-    max-width: 130rem;
-}

@@ -19,7 +19,5 @@ export default function Units({ career, group }) {
       group={it}
     />
   ));
-  return (
-    <div className='units-grid grid__container--center'>{renderUnits}</div>
-  );
+  return <div className='grid-container--center'>{renderUnits}</div>;
 }

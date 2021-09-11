@@ -10,6 +10,7 @@ export default function useClose(closeValue, change = f => f) {
       if (ref.current.contains(e.target)) return;
       change(closeValue);
     };
+
     document.body.addEventListener("click", onBodyClick, { capture: true });
     return () =>
       document.body.removeEventListener("click", onBodyClick, {

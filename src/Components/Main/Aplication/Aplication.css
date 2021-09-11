@@ -1,11 +1,8 @@
-.units-grid{
-    grid-template-columns: 5rem auto;
+.application {
+    margin: 0 auto;
 }
 
-
-@media (max-width: 480px){
-    .units-grid{
-        grid-template-columns: 1fr;
-        /* background-color: black; */
-    }
+.units-grid{
+    grid-template-columns: 1fr;
+    max-width: 130rem;
 }

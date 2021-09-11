@@ -1,17 +1,9 @@
 .group {
     flex-wrap: wrap;
-    max-width: 140rem;
-    justify-content: start;
+    justify-content: center;
 }
 
 .group--number{
     font-size: 3rem;
     box-shadow: 5px 0 5px -2px #888;
-}
-
-@media (max-width: 480px){
-    .group--number{
-        font-size: 5rem;
-        border-right: none;
-    }
 }

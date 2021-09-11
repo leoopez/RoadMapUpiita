@@ -15,6 +15,7 @@ import { FaInfoCircle } from "react-icons/fa";
 export default function Options() {
   const [darkMode, setDarkMode] = useState(false);
   const [infoModal, setInfoModal] = useState(false);
+
   return (
     <div className='options--bar'>
       <div className='icon--container'>

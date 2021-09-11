@@ -19,6 +19,7 @@
 }
 
 .front {
+    padding: 0 0.2rem;
     cursor: pointer;
     white-space: pre-line;
     transform: perspective(600px) rotateY(0deg)
@@ -85,9 +86,3 @@
     transition: transform .3s ease;
     z-index: -1;
   }
-
-@media (max-width: 480px){
-    .unit{
-        font-size: 1rem;
-    }
-}

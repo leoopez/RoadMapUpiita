@@ -1,14 +1,55 @@
 .settings {
     margin-bottom: 1rem;
+    overflow: hidden;
+    transition: height var(--speed) ease;
+    background-color: white;
+    z-index: 10;
+    position: absolute;  
+    width: 90vw;
 }
 
 .nav__settings{
-    width: 30rem;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 1rem;
     border: 0.3rem solid #474a4d;
     border-radius: 1rem;
-
 }
+
+.dropdown__settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    border-bottom: 1px solid #474a4d;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.icon--left{
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: default;
+}
+
+.dropdown__settings:hover{
+    background-color: cornsilk;
+}
+
+.dp-menu {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 0.2rem;
+}
+@media only screen and (min-width: 40em) {
+    .nav__settings{
+        flex-direction: row;
+    }
+  }

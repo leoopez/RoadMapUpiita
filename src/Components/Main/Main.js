@@ -8,7 +8,7 @@ import Aplication from "./Aplication/Aplication";
 
 export default function Main() {
   return (
-    <main>
+    <main className='main'>
       <div>
         <Aplication />
       </div>

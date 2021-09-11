@@ -6,18 +6,18 @@ import { useState } from "react/cjs/react.development";
 import "./Aplication.css";
 
 import Options from "./Options/Options";
-import UnitsSettings from "./Settings/UnitsSettings";
+import Settings from "./Settings/Settings";
 import Units from "./Units/Units";
 
 export default function Aplication() {
-  const [career, setCareer] = useState("Mecatronica");
-  const [group, setGroup] = useState("semester");
-  const [order, setOrder] = useState("m-M");
+  const [career, setCareer] = useState(null);
+  const [group, setGroup] = useState();
+  const [order, setOrder] = useState();
 
   return (
     <>
       <section className='container'>
-        <UnitsSettings
+        <Settings
           career={career}
           changeCareer={setCareer}
           order={order}

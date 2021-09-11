@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import useClose from "../../../../hooks/useClose";
+
 import { FaChevronRight } from "react-icons/fa";
-import "./SettingsDropdown.css";
 
 export default function SettingsDropdown({
   options,
@@ -24,7 +24,7 @@ export default function SettingsDropdown({
           {mode}
         </div>
         {/* {open && (
-          <ul>
+          <ul className='dp-menu'>
             {options.map((option, i) => (
               <li
                 className='dp-item'

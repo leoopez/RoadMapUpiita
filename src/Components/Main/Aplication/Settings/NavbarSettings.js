@@ -1,22 +1,23 @@
 /** @format */
+
 import React from "react";
+
 import SettingsDropdown from "./SettingsDropdown";
-
-import "./UnitsSetttings.css";
-
 import { FaUniversity, FaSort, FaExchangeAlt } from "react-icons/fa";
+
+import { CSSTransition } from "react-transition-group";
 
 const careers = ["Mecatronica", "Telematica", "Bionica"];
 const groupBy = ["semester", "level"];
 const orderBy = ["M-m", "m-M"];
 
-export default function UnitsSettings({
+export default function NavbarSettings({
   career,
   changeCareer,
-  order,
-  changeOrder,
   group,
   changeGroup,
+  order,
+  changeOrder,
 }) {
   return (
     <nav className='settings'>

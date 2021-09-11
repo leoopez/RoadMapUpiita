@@ -11,7 +11,7 @@
 
 @media (max-width: 480px){
     .group--number{
-        font-size: 1rem;
+        font-size: 5rem;
         border-right: none;
     }
 }

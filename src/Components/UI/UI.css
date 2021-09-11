@@ -1,0 +1,19 @@
+.card{
+    background-color: #aaa;
+    border-radius: 2rem;
+}
+
+.skeleton > div >div{
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        /* backgorund-color: rgb(163, 184, 194) */
+        background-color: #666;
+    }
+    100% {
+        backgorund-color:#aaa;
+    }
+}
+

@@ -6,7 +6,7 @@ import Unit from "./Unit";
 
 import { useUnits } from "../../../../contexts/unit-provider/unit-provider-hook";
 
-export default function SetUnits({ units, group, career }) {
+export default function Units({ units, group, career }) {
   const { currentUnit, linkedUnits, recommendedUnits } = useUnits();
 
   const renderUnits = units.map((unit, i) => (

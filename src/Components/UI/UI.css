@@ -1,8 +1,25 @@
-.card{
-    border-radius: 2rem;
+.unit--skeleton {
+    border: 0.25rem solid #aaa;
+    flex-direction: column;
+    border-radius: var(--border-radious);
 }
 
-.skeleton > div >div{
+.skeleton--text-p {
+    width: 75%;
+    height: 20%;
+    border-radius: var(--border-radious);
+    background-color: #aaa;
+    /* margin-bottom: 1rem; */
+}
+.skeleton--text-s {
+    width: 50%;
+    height: 15%;
+    border-radius: var(--border-radious);
+    background-color: #aaa;
+}
+
+
+.skeleton {
     animation: skeleton-loading 1s linear infinite alternate;
 }
 
@@ -12,7 +29,7 @@
         background-color: #666;
     }
     100% {
-        backgorund-color:#aaa;
+        backgorund-color:#ccc;
     }
 }
 

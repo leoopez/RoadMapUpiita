@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import Options from "./Options/Options";
 import UnitsSettings from "./Settings/UntisSettings";
-import Units from "./Units/Units";
+import RoadMap from "./RoadMap/RoadMap";
 
 export default function Aplication() {
   const [career, setCareer] = useState("Mecatronica");
@@ -13,15 +13,8 @@ export default function Aplication() {
 
   return (
     <div className='application'>
-      <UnitsSettings
-        career={career}
-        changeCareer={setCareer}
-        order={order}
-        changeOrder={setOrder}
-        group={group}
-        changeGroup={setGroup}
-      />
-      <Units career={career} group={group} />
+      <UnitsSettings />
+      <RoadMap career={career} group={group} order={order} />
       <Options />
     </div>
   );

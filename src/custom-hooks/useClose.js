@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-//Close any component if click on body
+//Close any absolute component if click on body
 export default function useClose(closeValue, change = f => f) {
   const ref = useRef();
   useEffect(() => {

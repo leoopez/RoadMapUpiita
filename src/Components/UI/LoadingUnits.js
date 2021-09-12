@@ -1,27 +1,29 @@
 /** @format */
 
-import React, { Fragment } from "react";
+import React from "react";
 
 import "./UI.css";
+
 export default function LoadingUnits({ career }) {
-  console.log(career);
   return (
-    <div
-      className={`units-grid grid__container--center ${
-        career ? "skeleton" : ""
-      }`}>
-      {[...Array(5)].map((__, it) => (
-        <Fragment key={__}>
-          <div className='group--number flex__container--center parent--space'>
-            {it}
-          </div>
-          <div className='group flex__container--center'>
-            {[...Array(10)].map(_ => (
-              <div key={_} className='card'></div>
-            ))}
-          </div>
-        </Fragment>
-      ))}
+    <div className='units-grid grid-container--center'>
+      <div className='group flex-container flex-container--center'>
+        <Units />
+      </div>
+    </div>
+  );
+}
+
+function Units() {
+  const units = [...Array(20)].map((x, y) => <UnitSkeleton key={y} />);
+  return units;
+}
+
+function UnitSkeleton() {
+  return (
+    <div className='card unit--skeleton flex-container flex-container--center parent--space'>
+      <div className='skeleton skeleton--text-p'></div>
+      <div className='skeleton skeleton--text-s'></div>
     </div>
   );
 }

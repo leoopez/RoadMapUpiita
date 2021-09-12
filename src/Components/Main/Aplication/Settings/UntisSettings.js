@@ -1,7 +1,7 @@
 /** @format */
 import React, { useState } from "react";
 
-import useClose from "../../../../hooks/useClose";
+import useClose from "../../../../custom-hooks/useClose";
 
 import {
   FaAngleDoubleDown,
@@ -16,7 +16,7 @@ const careers = ["Mecatronica", "Telematica", "Bionica"];
 const groupBy = ["semester", "level"];
 const orderBy = ["M-m", "m-M"];
 
-export default function UnitsSettings(props) {
+export default function UnitsSettings() {
   const [open, setOpen] = useState(false);
   const ref = useClose(false, setOpen);
 

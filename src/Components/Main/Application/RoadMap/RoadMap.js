@@ -25,4 +25,3 @@ export default function RoadMap() {
 
   return <div className='grid-container--center'>{renderUnits}</div>;
 }
-  

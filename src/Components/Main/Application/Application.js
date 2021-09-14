@@ -17,7 +17,6 @@ export default function Application() {
       ) : (
         <WaitingRoom text={"Selecciona una carrera"} />
       )}
-      {/* <Options /> */}
     </div>
   );
 }

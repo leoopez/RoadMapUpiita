@@ -25,6 +25,7 @@
     box-sizing: inherit; 
 }
 
+
 body {
     font-family: 'Roboto', sans-serif, monospace;
     font-weight: 700;
@@ -146,6 +147,12 @@ a{
     display: none !important;
 }
 
+
+.application {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 4rem auto 5rem;
+}
 /* Units style render*/
 
 .card{
@@ -278,10 +285,6 @@ a{
     padding: 0.5rem 0;
 }
 
-.options--bar:last-child  {
-    margin-right: auto;
-}
-
 /* Settings of Units */
 
 .settings{
@@ -332,6 +335,18 @@ a{
     background-color: white;
     box-shadow: 0 1rem 10rem 10rem #ddd;
     border-radius: var(--border-radious);
+}
+
+/* UI Components */
+
+.waiting-room{
+    width: 100%;
+}
+
+.waiting-text{
+    color: #555;
+    text-align: center;
+    font-size: 6.4rem;
 }
 
 

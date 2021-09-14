@@ -1,6 +1,7 @@
 /** @format */
 
 import { useEffect, useState } from "react";
+import useLocalStorage from "./useLocalStorage";
 
 export default function useFetchData(data) {
   const [error, setError] = useState();
@@ -8,9 +9,8 @@ export default function useFetchData(data) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!data) return;
     setLoading(true);
-    fetch(`json/${data}.json`)
+    fetch(`http://localhost:3001/${data}`)
       .then(res => res.json())
       .then(setUnits)
       .then(() => setLoading(false))

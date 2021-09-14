@@ -4,7 +4,7 @@ import React from "react";
 
 import "./UI.css";
 
-export default function LoadingUnits({ career }) {
+export default function RoadingMapLoading() {
   return (
     <div className='units-grid grid-container--center'>
       <div className='group flex-container flex-container--center'>

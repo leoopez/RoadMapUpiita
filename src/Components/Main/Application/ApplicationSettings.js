@@ -1,7 +1,10 @@
 /** @format */
 import React, { useState } from "react";
 
-import useClose from "../../../../custom-hooks/useClose";
+import useClose from "../../../custom-hooks/useClose";
+
+import { CAREERS, GROUP_BY, ORDER_BY } from "../../../config";
+import { useApplication } from "./ApplicationContext";
 
 import {
   FaAngleDoubleDown,
@@ -12,13 +15,17 @@ import {
   FaExchangeAlt,
 } from "react-icons/fa";
 
-const careers = ["Mecatronica", "Telematica", "Bionica"];
-const groupBy = ["semester", "level"];
-const orderBy = ["M-m", "m-M"];
-
-export default function UnitsSettings() {
+export default function AplicationSettings() {
   const [open, setOpen] = useState(false);
   const ref = useClose(false, setOpen);
+  const {
+    career,
+    group,
+    order,
+    triggerActionCareer,
+    triggerActionGroup,
+    triggerActionOrder,
+  } = useApplication();
 
   return (
     <div className='settings--container' ref={ref}>
@@ -33,14 +40,23 @@ export default function UnitsSettings() {
       </span>
       {open && (
         <Navbar>
-          <NavItem icon={<FaUniversity size={"100%"} />} dd={careers}>
-            Carrera:
+          <NavItem
+            icon={<FaUniversity size={"100%"} />}
+            dd={CAREERS}
+            changeState={triggerActionCareer}>
+            Carrera: {career}
           </NavItem>
-          <NavItem icon={<FaSort size={"100%"} />} dd={groupBy}>
-            Agrupar por:
+          <NavItem
+            icon={<FaSort size={"100%"} />}
+            dd={GROUP_BY}
+            changeState={triggerActionGroup}>
+            Agrupar por: {group}
           </NavItem>
-          <NavItem icon={<FaExchangeAlt size={"100%"} />} dd={orderBy}>
-            Ordenar por:
+          <NavItem
+            icon={<FaExchangeAlt size={"100%"} />}
+            dd={ORDER_BY}
+            changeState={triggerActionOrder}>
+            Ordenar por: {order}
           </NavItem>
         </Navbar>
       )}
@@ -56,7 +72,7 @@ function Navbar({ children }) {
   );
 }
 
-function NavItem({ icon, children, dd }) {
+function NavItem({ icon, children, dd, changeState = f => f }) {
   const [open, setOpen] = useState(false);
   return (
     <li
@@ -68,24 +84,26 @@ function NavItem({ icon, children, dd }) {
         {<FaChevronRight size='100%' />}
       </span>
 
-      {open && <DropDown dd={dd} />}
+      {open && <DropDown dd={dd} changeState={changeState} />}
     </li>
   );
 }
 
-function DropDown({ dd }) {
+function DropDown({ dd, changeState = f => f }) {
   return (
     <ul className='nav--secundary'>
-      {dd.map(item => (
-        <DropItem item={item} />
+      {dd.map((item, id) => (
+        <DropItem key={id} item={item} changeState={changeState} />
       ))}
     </ul>
   );
 }
 
-function DropItem({ item }) {
+function DropItem({ item, changeState = f => f }) {
   return (
-    <li className='flex-container flex-container--center nav-item'>
+    <li
+      className='flex-container flex-container--center nav-item'
+      onClick={() => changeState(item)}>
       <span className='icon--container icon--button'>
         <FaAngleDoubleUp size={"100%"} />
       </span>

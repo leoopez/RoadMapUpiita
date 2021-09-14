@@ -2,12 +2,14 @@
 
 import React from "react";
 
-import Aplication from "./Aplication/Aplication";
-
+import Application from "./Application/Application";
+import ApplicationProvider from "./Application/ApplicationContext";
 export default function Main() {
   return (
     <main>
-      <Aplication />
+      <ApplicationProvider>
+        <Application />
+      </ApplicationProvider>
     </main>
   );
 }

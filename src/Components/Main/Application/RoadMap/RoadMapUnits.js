@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import Unit from "./Unit";
+import RoadMapUnit from "./RoadMapUnit";
 
 import { useUnits } from "../../../../contexts/unit-provider/unit-provider-hook";
 
@@ -10,7 +10,7 @@ export default function Units({ units, group, career }) {
   const { currentUnit, linkedUnits, recommendedUnits } = useUnits();
 
   const renderUnits = units.map((unit, i) => (
-    <Unit
+    <RoadMapUnit
       key={i}
       unit={unit}
       selected={currentUnit && unit.id === currentUnit.id}

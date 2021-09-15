@@ -79,6 +79,12 @@ a{
     padding: 0.8rem;
 }
 
+.ic-s{
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
 .icon--button {
     border-radius: 50%;
     background-color: var(--bg-accent);
@@ -147,11 +153,11 @@ a{
     display: none !important;
 }
 
-
+.main {
+    padding: 0 10px;
+}
 .application {
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: 4rem auto 5rem;
 }
 /* Units style render*/
 
@@ -287,31 +293,31 @@ a{
 
 /* Settings of Units */
 
-.settings{
-    position: absolute;
-    width: clamp(var(--min-width), 90%,40rem);
-    left: 1rem;
-    z-index: 10;
-    background-color: white;
-    font-weight: 400;
-    font-size: 1.6rem;
-    border-radius: var(--border-radious);
-    box-shadow: 0 1rem 1rem 0.1rem #ddd;
+.nav-container{
+    font-weight: 500;
+    height: 10rem;
 }
 
 .nav{
-    position: relative;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 .nav-item{
-    position: relative;
     cursor: pointer;
-    border-radius:  calc(var(--border-radious)*4);
-    padding: 0.5rem 1rem;
-    margin: 0.5rem 0;
+    border-radius: var(--border-size);
+    border: solid #ddd 0.2rem;
+    padding: 1rem 1.5rem;
     transition: background-color var(--speed-fast);
+    width: calc(40% - 5px);
+}
+
+.nav-icon {
+    border-radius: var(--border-size);
+    border:solid 0.2rem #bbb;
 }
 
 .nav-item:hover, 
@@ -319,24 +325,28 @@ a{
     background-color: #ddd;
 }
 
-.nav--text {
-    margin: 0 2rem;
-}
-
 .icon--left{
     margin-left: auto;
 }
 
 .nav--secundary{
-    z-index: 20;
+    height: 100vh;
     position: absolute;
-    top: 5rem;
-    left:5rem;
+    top: -1rem;
+    width: 50%;
+    z-index: 20;
     background-color: white;
     box-shadow: 0 1rem 10rem 10rem #ddd;
     border-radius: var(--border-radious);
 }
 
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
 /* UI Components */
 
 .waiting-room{

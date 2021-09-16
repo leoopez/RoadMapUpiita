@@ -3,7 +3,7 @@
 import React from "react";
 import NavLink from "./NavLink";
 
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react/cjs/react.development";
 import useClose from "../../custom-hooks/useClose";
 
@@ -12,21 +12,23 @@ export default function Navbar() {
   const ref = useClose(false, setOpen);
 
   return (
-    <nav ref={ref} className='navbar'>
-      <NavLink to='Home' href='#' />
-      <ul className='navbar--list'>
+    <>
+      <div className='navbar'>
+        <NavLink to='RoadMapUpiita' href='#' />
         <span
           className='icon--container'
           onClick={() => setOpen(open => !open)}>
-          <FaBars />
+          {open ? <FaTimes size={"100%"} /> : <FaBars size={"100%"} />}
         </span>
+      </div>
+      <div ref={ref}>
         {open && (
-          <>
-            <NavLink to='Upiita' href='https://www.upiita.ipn.mx' />
-            <NavLink to='About' href='/' />
-          </>
+          <nav className='navbar--active' onClick={() => setOpen(false)}>
+            <NavLink to='inicio' />
+            <NavLink to='upiita' />{" "}
+          </nav>
         )}
-      </ul>
-    </nav>
+      </div>
+    </>
   );
 }

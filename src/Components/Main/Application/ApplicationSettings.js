@@ -33,7 +33,9 @@ export default function AplicationSettings() {
           }>
           {career || <span style={{ color: "#aaa" }}>Carrera</span>}
         </button>
-        <span className='icon--container' onClick={() => triggerActionOrder()}>
+        <span
+          className='icon--container flip'
+          onClick={() => triggerActionOrder()}>
           <FaExchangeAlt size={"100%"} color={"#bbb"} />
         </span>
 
@@ -65,7 +67,9 @@ export default function AplicationSettings() {
             }>
             {CAREERS.map((item, key) => (
               <li key={key} onClick={() => triggerActionCareer(item)}>
-                <button className='btn btn--settings'>{item}</button>
+                <button className='flex-container flex-container--center btn btn--settings'>
+                  {item}
+                </button>
               </li>
             ))}
           </ul>
@@ -91,7 +95,7 @@ export default function AplicationSettings() {
             }>
             {GROUP_BY.map((item, key) => (
               <li key={key} onClick={() => triggerActionGroup(item)}>
-                <button className='btn btn--settings'>
+                <button className='flex-container flex-container--center btn'>
                   {transformText(item)}
                 </button>
               </li>

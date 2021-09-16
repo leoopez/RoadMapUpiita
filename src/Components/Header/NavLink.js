@@ -2,12 +2,12 @@
 
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 export default function NavLink({ to, href, target }) {
   return (
-    <li>
-      <a className='nav--item' href={href}>
-        {to}
-      </a>
-    </li>
+    <Link to={to} className='flex-container flex-container--center nav--item'>
+      {to}
+    </Link>
   );
 }

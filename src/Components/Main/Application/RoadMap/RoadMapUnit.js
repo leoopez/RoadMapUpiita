@@ -36,9 +36,7 @@ export default function RoadMapUnit({
         ref={ref}
         className={`flex-container flex-container--center back parent--space ${
           selected ? "selected-back" : ""
-        }`}
-        // onClick={() => changeCurrentUnits(null)}
-      >
+        }`}>
         <span className='icon--container icon--pdf'>
           <FaFilePdf size='100%' color='currentColor' />
         </span>

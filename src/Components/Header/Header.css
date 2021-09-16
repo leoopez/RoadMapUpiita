@@ -1,28 +1,24 @@
 .header {
-    color: white;
-    font-size: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    background-color: #333;
+    font-size: 2.4rem;
 }
 
 .navbar {
     width: 80%;
+    max-width: 108rem;
+    padding: 0 2rem;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.navbar--list {
-    font-size: 1.6rem;
-    font-weight: 600;
+.navbar--active {
+    width: 100%;
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    background-color: white;
 }
 
 .nav--item {
-    color: white;
+    height: 6.4rem;
     text-decoration: none;
 }

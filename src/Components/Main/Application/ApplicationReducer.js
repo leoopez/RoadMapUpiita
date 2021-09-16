@@ -6,7 +6,7 @@ export default function reducer(state, action) {
       return {
         career: action.payload,
         group: "semester",
-        order: "down_up",
+        order: false,
       };
     case "CHANGE_GROUP":
       return {
@@ -16,7 +16,7 @@ export default function reducer(state, action) {
     case "CHANGE_ORDER":
       return {
         ...state,
-        order: action.payload,
+        order: !state.order,
       };
     default:
       return state;

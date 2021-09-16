@@ -22,6 +22,6 @@ export default function RoadMap() {
       group={it}
     />
   ));
-
+  if (order) renderUnits.reverse();
   return <div className='grid-container--center'>{renderUnits}</div>;
 }

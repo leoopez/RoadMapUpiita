@@ -14,9 +14,8 @@ export const changeGroup = group => {
   };
 };
 
-export const changeOrder = (down = true) => {
+export const changeOrder = () => {
   return {
-    type: "CHANGE_CAREER",
-    payload: down,
+    type: "CHANGE_ORDER",
   };
 };

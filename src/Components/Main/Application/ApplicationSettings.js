@@ -4,9 +4,10 @@ import React, { useState } from "react";
 import useClose from "../../../custom-hooks/useClose";
 
 import { CAREERS, GROUP_BY } from "../../../config";
+import { transformText } from "../../../utils/generals";
 import { useApplication } from "./ApplicationContext";
 
-import { FaWindowClose, FaExchangeAlt, FaRobot } from "react-icons/fa";
+import { FaWindowClose, FaExchangeAlt } from "react-icons/fa";
 
 export default function AplicationSettings() {
   const {
@@ -41,7 +42,9 @@ export default function AplicationSettings() {
           onClick={() =>
             setOpenSidebarGroup(openSidebarGroup => !openSidebarGroup)
           }>
-          {group || <span style={{ color: "#aaa" }}>Agrupar por:</span>}
+          {transformText(group) || (
+            <span style={{ color: "#aaa" }}>Agrupar por:</span>
+          )}
         </button>
       </div>
       <div
@@ -88,7 +91,9 @@ export default function AplicationSettings() {
             }>
             {GROUP_BY.map((item, key) => (
               <li key={key} onClick={() => triggerActionGroup(item)}>
-                <button className='btn btn--settings'>{item}</button>
+                <button className='btn btn--settings'>
+                  {transformText(item)}
+                </button>
               </li>
             ))}
           </ul>

@@ -15,7 +15,6 @@ export default function RoadMapUnit({
   optional = false,
 }) {
   const { changeCurrentUnits } = useUnits();
-
   const ref = useClose(null, changeCurrentUnits);
 
   return (

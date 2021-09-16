@@ -11,9 +11,9 @@ export default function Footer() {
         href='https://github.com/leoopez/RoadMapUpiita'
         target='_blank'
         rel='noreferrer'>
-        <div className='icons--default github--icon'>
+        <span className='icon--container github--icon'>
           <FaGithub size='100%' color='#fff3bf' />
-        </div>
+        </span>
       </a>
     </div>
   );

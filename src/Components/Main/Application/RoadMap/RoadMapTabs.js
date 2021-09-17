@@ -1,28 +1,26 @@
 /** @format */
 
 import React, { useState } from "react";
-import RoadMapUnits from "./RoadMapUnits";
+
+// Components
+import RoadMapTabRegular from "./RoadMapTabRegular";
+import RoadMapTabOptional from "./RoadMapTabOptional";
 import RoadMapLaoding from "../../../UI/RoadMapLaoding";
+
+// Utils
 import useFetchData from "../../../../utils/useFetchData";
 
+//Context
 import { useApplication } from "../ApplicationContext";
 
 export default function RoadMapTabs() {
   const [selectedTab, setSelectedTab] = useState(0);
-  const { career, group, order } = useApplication();
+
+  const { career } = useApplication();
   const { loading, error, units } = useFetchData(career);
 
   if (error) return <pre>{JSON.stringify(error, null, 2)}</pre>;
   if (loading) return <RoadMapLaoding loading={career} />;
-
-  const renderUnits = units.infoCareer[group].map(it => (
-    <RoadMapUnits
-      key={it}
-      units={units.regularUnits.filter(unit => unit[group] === it)}
-      group={it}
-    />
-  ));
-  if (order) renderUnits.reverse();
 
   return (
     <div className='tab--container'>
@@ -44,8 +42,16 @@ export default function RoadMapTabs() {
       </div>
       <div className='tab--body'>
         {selectedTab === 0 ? (
-          <div className='grid-container--center'>{renderUnits}</div>
-        ) : null}
+          <RoadMapTabRegular
+            units={units.regularUnits}
+            info={units.infoCareer.regularUnits}
+          />
+        ) : (
+          <RoadMapTabOptional
+            units={units.optionalUnits}
+            info={units.infoCareer.optionalUnits}
+          />
+        )}
       </div>
     </div>
   );

@@ -205,7 +205,6 @@ p {
 .front {
     padding: 0 0.2rem;
     cursor: pointer;
-    white-space: pre-line;
     transform: perspective(600px) rotateY(0deg)
 }
 

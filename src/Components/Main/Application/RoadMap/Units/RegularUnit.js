@@ -2,12 +2,12 @@
 
 import React from "react";
 
-import { useUnits } from "../../../../contexts/unit-provider/unit-provider-hook";
-import useClose from "../../../../custom-hooks/useClose";
+import { useUnits } from "../../../../../contexts/unit-provider/unit-provider-hook";
+import useClose from "../../../../../custom-hooks/useClose";
 
 import { FaFilePdf } from "react-icons/fa";
 
-export default function RoadMapUnit({
+export default function RegularUnit({
   unit,
   selected = false,
   linked = false,
@@ -22,7 +22,7 @@ export default function RoadMapUnit({
       <div
         className={`flex-container flex-container--center front parent--space ${
           selected ? "selected" : ""
-        } ${optional ? "optional-" + unit.optional : ""}`}
+        }`}
         onClick={() => changeCurrentUnits(unit)}>
         {recommended ? <p className='recommended'>R</p> : null}
         {linked ? <p className='linked'>L</p> : null}

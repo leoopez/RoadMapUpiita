@@ -466,7 +466,6 @@
         "hours": [0, 4.5],
         "level": 3,
         "semester": 7,
-        "optional": 1,
         "recommended": [],
         "linked": []
       },
@@ -476,7 +475,6 @@
         "hours": [0, 4.5],
         "level": 3,
         "semester": 7,
-        "optional": 2,
         "recommended": [],
         "linked": []
       },
@@ -529,7 +527,6 @@
         "name": "Optativa 3",
         "hours": [0, 4.5],
         "level": 3,
-        "optional": 3,
         "semester": 8,
         "recommended": [],
         "linked": []
@@ -539,7 +536,6 @@
         "hours": [0, 6],
         "level": 4,
         "semester": 8,
-        "optional": 4,
         "recommended": [],
         "linked": []
       },
@@ -585,7 +581,6 @@
         "hours": [0, 6],
         "level": 4,
         "semester": 9,
-        "optional": 5,
         "recommended": [],
         "linked": []
       },
@@ -595,7 +590,6 @@
         "hours": [0, 6],
         "level": 4,
         "semester": 9,
-        "optional": 6,
         "recommended": [],
         "linked": []
       },
@@ -630,189 +624,341 @@
     "optionalUnits": [
       {
         "name": "Automatas\nIndustriales",
+        "level": 3,
+        "hours": [1.5, 1.5],
+        "semester": 7,
         "optional": 1,
-        "hours": [1.5, 1.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Protocolors\nAvanzados de\nComunicaciones",
+        "level": 3,
+        "hours": [1.5, 1.5],
+        "semester": 7,
         "optional": 1,
-        "hours": [1.5, 1.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Automatizacion\nde Linea de\nProduccion",
+        "level": 3,
+        "hours": [1.5, 1.5],
+        "semester": 7,
         "optional": 1,
-        "hours": [1.5, 1.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Seguriadad\nIndustrial",
+        "level": 3,
+        "hours": [1.5, 1.5],
+        "semester": 7,
         "optional": 1,
-        "hours": [1.5, 1.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Desarrollo\nEmpresarial",
+        "level": 3,
+        "hours": [1.5, 1.5],
+        "semester": 7,
         "optional": 1,
-        "hours": [1.5, 1.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Control\nDistribuido",
+        "level": 3,
+        "hours": [1.5, 1.5],
+        "semester": 7,
         "optional": 1,
-        "hours": [1.5, 1.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Sistemas de\nCalidad para\nla Manuactura",
+        "level": 3,
+        "hours": [1.5, 1.5],
+        "semester": 7,
         "optional": 1,
-        "hours": [1.5, 1.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Economía y\nLogistica",
+        "level": 3,
+        "hours": [1.5, 1.5],
+        "semester": 7,
         "optional": 1,
-        "hours": [1.5, 1.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Topicos\nAvanzados de\nSensores",
+        "level": 3,
+        "hours": [0, 4.5],
+        "semester": 7,
         "optional": 2,
-        "hours": [0, 4.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Produccion mas\nLimpia",
+        "level": 3,
+        "hours": [0, 4.5],
+        "semester": 7,
         "optional": 2,
-        "hours": [0, 4.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Uso y Mant. de\nHerr. para\nProc. de Man.",
+        "level": 3,
+        "hours": [0, 4.5],
+        "semester": 7,
         "optional": 2,
-        "hours": [0, 4.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Diseno Avanzado y\nManufactura\nAsistida\npor Computadora",
+        "level": 3,
+        "hours": [0, 4.5],
+        "semester": 8,
         "optional": 3,
-        "hours": [0, 4.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Graficacion 3D",
+        "level": 3,
+        "hours": [0, 4.5],
+        "semester": 8,
         "optional": 3,
-        "hours": [0, 4.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Sistemas\nOperativos en\nTiempo Real",
+        "level": 3,
+        "hours": [0, 4.5],
+        "semester": 8,
         "optional": 3,
-        "hours": [0, 4.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Topicos\nAvanzados de\nElectronica",
+        "level": 3,
+        "hours": [0, 4.5],
+        "semester": 8,
         "optional": 3,
-        "hours": [0, 4.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Procesos\nIndustriales",
+        "level": 3,
+        "hours": [0, 4.5],
+        "semester": 8,
         "optional": 3,
-        "hours": [0, 4.5]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Microcontroladores\nAvanzados",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 8,
         "optional": 4,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Control de\nInteligente",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 8,
         "optional": 4,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Diseno de Equipo\npara el Manejo\nde Materiales",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 8,
         "optional": 4,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Realidad\nVirtual",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 8,
         "optional": 4,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Protocolos de\nComunicacion\nIndustrial",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 8,
         "optional": 4,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Vision\nArtificial\nAplicada",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 8,
         "optional": 4,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Diseno\nErgonomico",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 5,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Instrumentacion\nVirtual\nAplicada",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 5,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Control de\nProcesos\nIndustriales",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 5,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Procesos\nAvanzados de\nManufactura",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 5,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Control de\nSistemas\nRoboticos",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 5,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Sistemas de\nProc. Digital de\nSenales",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 5,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Manufactura\nIntegrada por\nComputadora",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 5,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Mercadotecnia",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 6,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Topicos\nAvanxados de\nSoldadura",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 6,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Integracion de\nun Sistema\nRobotico",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 6,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Implementacion\nde Sistemas\nDigitales",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 6,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Topicos\nAvanxados de\nAutomatizacion",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 6,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Sistemas\nAvanzados de\nManufactura",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 6,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       },
       {
         "name": "Proyecto de\nSistemas\nEmbebidos",
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
         "optional": 6,
-        "hours": [1.5, 3]
+        "recommended": [],
+        "linked": []
       }
     ],
     "infoCareer": {
-      "semester": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      "level": [1, 2, 3, 4, 5],
-      "credits": [0, 3, 4.5, 6, 7.5, 9]
+      "regularUnits": {
+        "semester": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "level": [1, 2, 3, 4, 5],
+        "credits": [0, 3, 4.5, 6, 7.5, 9]
+      },
+      "optionalUnits": {
+        "semester": [7, 8, 9],
+        "level": [3, 4],
+        "optional": [1, 2, 3, 4, 5, 6]
+      }
+      
     }
   },
   "Bionica": {
@@ -1214,7 +1360,6 @@
         "hours": [1.5, 3],
         "level": 3,
         "semester": 8,
-        "optional": 1,
         "recommended": [],
         "linked": []
       },
@@ -1222,7 +1367,6 @@
         "name": "Optativa II",
         "hours": [1.5, 3],
         "level": 4,
-        "optional": 2,
         "semester": 8,
         "recommended": [],
         "linked": []
@@ -1264,7 +1408,6 @@
         "hours": [1.5, 3],
         "level": 5,
         "semester": 9,
-        "optional": 2,
         "recommended": [],
         "linked": []
       },
@@ -1304,92 +1447,92 @@
     "optionalUnits": [
       {
         "name": "Simulacion\nde Analiis\nde Esfuerzos",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Ergonomia y\nBiodinamica",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Protesis\nBiomimeticas",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Control de\nSistemas\nBiologicos",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Comunicacion\nOral y Escrita",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Intrumentacion\nClinica y\nLaboratorio",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Intrumentacion\nBiomedica",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Vision Artficial",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Inteligencia\nArtificial",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Robotica\nEvolutiva y\nAutonoma",
-        "optional": 1,
+        "level": 1,
         "hours": [1.5, 3]
       },
       {
         "name": "Ingenieria\nde Control\nHumano",
-        "optional": 2,
+        "level": 2,
         "hours": [1.5, 3]
       },
       {
         "name": "Sistemas\nBiomecanicos",
-        "optional": 2,
+        "level": 2,
         "hours": [1.5, 3]
       },
       {
         "name": "Biosensores\ny Biochips",
-        "optional": 2,
+        "level": 2,
         "hours": [1.5, 3]
       },
       {
         "name": "Intrumentacion\nBiotecologica",
-        "optional": 2,
+        "level": 2,
         "hours": [1.5, 3]
       },
       {
         "name": "Telemetrica\nMedica",
-        "optional": 2,
+        "level": 2,
         "hours": [1.5, 3]
       },
       {
         "name": "Imegenologia",
-        "optional": 2,
+        "level": 2,
         "hours": [1.5, 3]
       },
       {
         "name": "Neuro/Robotica",
-        "optional": 2,
+        "level": 2,
         "hours": [1.5, 3]
       },
       {
         "name": "Sistemas\nSensoriales",
-        "optional": 2,
+        "level": 2,
         "hours": [1.5, 3]
       }
     ],
@@ -1766,7 +1909,6 @@
         "hours": [3, 1.5],
         "level": 2,
         "semester": 8,
-        "optional": 1,
         "recommended": [],
         "linked": []
       },
@@ -1807,7 +1949,6 @@
         "hours": [3, 1.5],
         "level": 3,
         "semester": 9,
-        "optional": 2,
         "recommended": [],
         "linked": []
       },
@@ -1831,67 +1972,67 @@
     "optionalUnits": [
       {
         "name": "Progra. de\nDispositivos\nMoviles",
-        "optional": 1,
+        "level": 1,
         "hours": [3.5, 1.5]
       },
       {
         "name": "Redes\nInalambricas",
-        "optional": 1,
+        "level": 1,
         "hours": [3.5, 1.5]
       },
       {
         "name": "Redes\nNeuronales",
-        "optional": 1,
+        "level": 1,
         "hours": [3.5, 1.5]
       },
       {
         "name": "Logica\nDifusa",
-        "optional": 1,
+        "level": 1,
         "hours": [3.5, 1.5]
       },
       {
         "name": "Sistema de\nInformacion\nGeografica",
-        "optional": 1,
+        "level": 1,
         "hours": [3.5, 1.5]
       },
       {
         "name": "Informatividad\nEn Telecom. E.\nInformatica",
-        "optional": 1,
+        "level": 1,
         "hours": [3.5, 1.5]
       },
       {
         "name": "Television\nDigital",
-        "optional": 2,
+        "level": 2,
         "hours": [3, 1.5]
       },
       {
         "name": "Sistemas\nde Calidad",
-        "optional": 2,
+        "level": 2,
         "hours": [3, 1.5]
       },
       {
         "name": "Filtrado\nAvanzado",
-        "optional": 2,
+        "level": 2,
         "hours": [3, 1.5]
       },
       {
         "name": "Criptografia",
-        "optional": 2,
+        "level": 2,
         "hours": [3, 1.5]
       },
       {
         "name": "Microondas",
-        "optional": 2,
+        "level": 2,
         "hours": [3, 1.5]
       },
       {
         "name": "Processamiento\nde Imagenes",
-        "optional": 2,
+        "level": 2,
         "hours": [3, 1.5]
       },
       {
         "name": "Procesamiento\nde Voz",
-        "optional": 2,
+        "level": 2,
         "hours": [3, 1.5]
       }
     ],

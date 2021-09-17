@@ -9,6 +9,7 @@ import { useApplication } from "./ApplicationContext";
 
 export default function Application() {
   const { career, group, order } = useApplication();
+
   return (
     <div className='application'>
       <ApplicationSettings />

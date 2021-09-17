@@ -31,7 +31,7 @@ body {
     font-weight: 700;
     background-color: var(--bg-primary);
     min-width: 320px;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -72,7 +72,6 @@ p {
 }
 
 .btn {
-    font-size: 2rem;
     height: 6.4rem;
     border: none;
     border-radius: var(--border-size);
@@ -193,7 +192,6 @@ p {
 /* Units style render*/
 
 .card{
-    font-size: 1.4rem;
     height: 6em;
     width: 10em;
     position: relative;
@@ -356,7 +354,6 @@ p {
     z-index: 100;
     height: 100vh;
     width: 25rem;
-    font-size: 2rem;
     background-color:white;
     box-shadow: 0 0 1rem 1rem #aaa;
 
@@ -429,6 +426,42 @@ p {
     border-top: 0.3rem solid blue;
     transform: scale(1.1);
 }
+
+.unit--skeleton {
+    border: 0.25rem solid #aaa;
+    flex-direction: column;
+    border-radius: var(--border-radious);
+}
+
+.skeleton--text-p {
+    width: 75%;
+    height: 20%;
+    border-radius: var(--border-radious);
+    background-color: #aaa;
+    /* margin-bottom: 1rem; */
+}
+.skeleton--text-s {
+    width: 50%;
+    height: 15%;
+    border-radius: var(--border-radious);
+    background-color: #aaa;
+}
+
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        /* backgorund-color: rgb(163, 184, 194) */
+        background-color: #666;
+    }
+    100% {
+        backgorund-color:#ccc;
+    }
+}
+
+
 /* Desktop queries */
 
 

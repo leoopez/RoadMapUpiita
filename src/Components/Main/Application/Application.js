@@ -3,7 +3,7 @@
 // import Options from "./Options/Options";
 import ApplicationSettings from "./ApplicationSettings";
 import RoadMap from "./RoadMap/RoadMap";
-import WaitingRoom from "../../UI/WaitngRoom";
+import ApplicationLoading from "./ApplicationLoading";
 
 import { useApplication } from "./ApplicationContext";
 import { CAREERS } from "../../../config";
@@ -18,7 +18,7 @@ export default function Application() {
         <RoadMap career={career} group={group} order={order} />
       ) : (
         <>
-          <WaitingRoom text={"Selecciona una carrera"} />
+          <ApplicationLoading text={"Selecciona una carrera"} />
           <div className='group--button'>
             {CAREERS.map((item, key) => (
               <button

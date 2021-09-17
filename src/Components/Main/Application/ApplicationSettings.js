@@ -3,14 +3,17 @@ import React, { useState } from "react";
 
 import useClose from "../../../custom-hooks/useClose";
 
-import { CAREERS } from "../../../config";
+import { CAREERS, GROUP_BY } from "../../../config";
+import { transformText } from "../../../utils/generals";
 
 import { useApplication } from "./ApplicationContext";
 
 export default function AplicationSettings() {
-  const { career, triggerActionCareer } = useApplication();
+  const { career, group, triggerActionCareer, triggerActionGroup } =
+    useApplication();
 
   const [openCareer, setOpenCareer] = useState(false);
+  const [openGroup, setOpenGroup] = useState(false);
 
   const ref = useClose(false, setOpenCareer);
 
@@ -22,6 +25,24 @@ export default function AplicationSettings() {
           onClick={() => setOpenCareer(openCareer => !openCareer)}>
           {career || <span style={{ color: "#aaa" }}>Carrera</span>}
         </button>
+      </div>
+      <div>
+        Agrupar por :
+        <button
+          className='btn ml'
+          onClick={() => setOpenGroup(openSidebarGroup => !openSidebarGroup)}>
+          {transformText(group) || (
+            <span style={{ color: "#aaa" }}>Agrupar por:</span>
+          )}
+        </button>
+        {openGroup &&
+          GROUP_BY.map((item, key) => (
+            <button key={key} className='btn ml'>
+              {transformText(item) || (
+                <span style={{ color: "#aaa" }}>Agrupar por:</span>
+              )}
+            </button>
+          ))}
       </div>
       <div
         ref={ref}
@@ -45,33 +66,3 @@ export default function AplicationSettings() {
     </>
   );
 }
-
-/* 
-      <div
-        ref={ref_right}
-        className={`sidebar--container sidebar--container-r ${
-          openSidebarGroup ? "active" : ""
-        }`}>
-        <span
-          className='icon--container icon--right'
-          onClick={() =>
-            setOpenSidebarGroup(openSidebarGroup => !openSidebarGroup)
-          }>
-          <FaWindowClose size={"100%"} color={"#bbb"} />
-        </span>
-        <nav>
-          <ul
-            className='sidebar--nav'
-            onClick={() =>
-              setOpenSidebarGroup(openSidebarGroup => !openSidebarGroup)
-            }>
-            {GROUP_BY.map((item, key) => (
-              <li key={key} onClick={() => triggerActionGroup(item)}>
-                <button className='flex-container flex-container--center btn'>
-                  {transformText(item)}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div> */

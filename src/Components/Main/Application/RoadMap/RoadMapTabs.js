@@ -7,25 +7,22 @@ import { FaExchangeAlt } from "react-icons/fa";
 // Components
 import RoadMapTabRegular from "./RoadMapTabRegular";
 import RoadMapTabOptional from "./RoadMapTabOptional";
-import RoadMapLaoding from "../../../UI/RoadMapLaoding";
+import RoadMaploading from "./RoadMapLoading";
 
 // Utils
 import useFetchData from "../../../../utils/useFetchData";
-import { transformText } from "../../../../utils/generals";
-import { GROUP_BY } from "../../../../config";
 
 //Context
 import { useApplication } from "../ApplicationContext";
 
 export default function RoadMapTabs() {
   const [selectedTab, setSelectedTab] = useState(0);
-  const [openGroup, setOpenGroup] = useState(false);
 
-  const { career, group, triggerActionOrder } = useApplication();
+  const { career, triggerActionOrder } = useApplication();
   const { loading, error, units } = useFetchData(career);
 
   if (error) return <pre>{JSON.stringify(error, null, 2)}</pre>;
-  if (loading) return <RoadMapLaoding loading={career} />;
+  if (loading) return <RoadMaploading loading={career} />;
 
   return (
     <div className='tab--container'>
@@ -45,26 +42,6 @@ export default function RoadMapTabs() {
           />
         </div>
         <div className='flex-container tab--options'>
-          <div>
-            Agrupar por :
-            <button
-              className='btn ml'
-              onClick={() =>
-                setOpenGroup(openSidebarGroup => !openSidebarGroup)
-              }>
-              {transformText(group) || (
-                <span style={{ color: "#aaa" }}>Agrupar por:</span>
-              )}
-            </button>
-            {openGroup &&
-              GROUP_BY.map((item, key) => (
-                <button key={key} className='btn ml'>
-                  {transformText(item) || (
-                    <span style={{ color: "#aaa" }}>Agrupar por:</span>
-                  )}
-                </button>
-              ))}
-          </div>
           <span
             className='icon--container flip'
             onClick={() => triggerActionOrder()}>

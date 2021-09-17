@@ -2,8 +2,6 @@
 
 import React from "react";
 
-import "./UI.css";
-
 export default function RoadingMapLoading() {
   return (
     <div className='units-grid grid-container--center'>

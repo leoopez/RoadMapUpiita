@@ -3,68 +3,35 @@ import React, { useState } from "react";
 
 import useClose from "../../../custom-hooks/useClose";
 
-import { CAREERS, GROUP_BY } from "../../../config";
-import { transformText } from "../../../utils/generals";
+import { CAREERS } from "../../../config";
+
 import { useApplication } from "./ApplicationContext";
 
-import { FaWindowClose, FaExchangeAlt } from "react-icons/fa";
-
 export default function AplicationSettings() {
-  const {
-    career,
-    group,
-    triggerActionCareer,
-    triggerActionGroup,
-    triggerActionOrder,
-  } = useApplication();
-  const [openSidebarCareer, setOpenSidebarCareer] = useState(false);
-  const [openSidebarGroup, setOpenSidebarGroup] = useState(false);
+  const { career, triggerActionCareer } = useApplication();
 
-  const ref_left = useClose(false, setOpenSidebarCareer);
-  const ref_right = useClose(false, setOpenSidebarGroup);
+  const [openCareer, setOpenCareer] = useState(false);
+
+  const ref = useClose(false, setOpenCareer);
 
   return (
     <>
       <div className='flex-container settings'>
         <button
           className='btn btn--settings'
-          onClick={() =>
-            setOpenSidebarCareer(openSidebarCareer => !openSidebarCareer)
-          }>
+          onClick={() => setOpenCareer(openCareer => !openCareer)}>
           {career || <span style={{ color: "#aaa" }}>Carrera</span>}
-        </button>
-        <span
-          className='icon--container flip'
-          onClick={() => triggerActionOrder()}>
-          <FaExchangeAlt size={"100%"} color={"#bbb"} />
-        </span>
-
-        <button
-          className='btn btn--settings'
-          onClick={() =>
-            setOpenSidebarGroup(openSidebarGroup => !openSidebarGroup)
-          }>
-          {transformText(group) || (
-            <span style={{ color: "#aaa" }}>Agrupar por:</span>
-          )}
         </button>
       </div>
       <div
-        ref={ref_left}
+        ref={ref}
         className={`sidebar--container sidebar--container-l ${
-          openSidebarCareer ? "active" : ""
+          openCareer ? "active" : ""
         }`}>
-        <span
-          className='icon--container icon--left'
-          onClick={() => setOpenSidebarCareer(open => !open)}>
-          <FaWindowClose size={"100%"} color={"#bbb"} />
-        </span>
         <nav>
           <ul
             className='sidebar--nav'
-            onClick={() =>
-              setOpenSidebarCareer(openSidebarCareer => !openSidebarCareer)
-            }>
+            onClick={() => setOpenCareer(openCareer => !openCareer)}>
             {CAREERS.map((item, key) => (
               <li key={key} onClick={() => triggerActionCareer(item)}>
                 <button className='flex-container flex-container--center btn btn--settings'>
@@ -75,6 +42,11 @@ export default function AplicationSettings() {
           </ul>
         </nav>
       </div>
+    </>
+  );
+}
+
+/* 
       <div
         ref={ref_right}
         className={`sidebar--container sidebar--container-r ${
@@ -102,7 +74,4 @@ export default function AplicationSettings() {
             ))}
           </ul>
         </nav>
-      </div>
-    </>
-  );
-}
+      </div> */

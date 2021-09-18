@@ -4,11 +4,12 @@ import React from "react";
 
 import RegularUnits from "./Units/RegularUnits";
 
-import { useApplication } from "../ApplicationContext";
-
-export default function RoadMapTabRegular({ units, info }) {
-  const { group, order } = useApplication();
-
+export default function RoadMapTabRegular({
+  units,
+  info,
+  group = "semester",
+  order = false,
+}) {
   const renderUnits = info[group].map(it => (
     <RegularUnits
       key={it}

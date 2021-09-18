@@ -4,10 +4,10 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-export default function NavLink({ to, href, target }) {
+export default function NavLink({ to, children }) {
   return (
     <Link to={to} className='flex-container flex-container--center nav--item'>
-      {to}
+      {children}
     </Link>
   );
 }

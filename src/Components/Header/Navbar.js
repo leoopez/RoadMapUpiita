@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       <div className='navbar'>
-        <NavLink to='RoadMapUpiita' href='#' />
+        <NavLink to='/'>RoadMapUpiita</NavLink>
         <span
           className='icon--container'
           onClick={() => setOpen(open => !open)}>
@@ -24,8 +24,7 @@ export default function Navbar() {
       <div ref={ref}>
         {open && (
           <nav className='navbar--active' onClick={() => setOpen(false)}>
-            <NavLink to='inicio' />
-            <NavLink to='upiita' />{" "}
+            <NavLink to='' />
           </nav>
         )}
       </div>

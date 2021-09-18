@@ -3,19 +3,21 @@
 import React from "react";
 
 import { Routes, Route } from "react-router-dom";
-import Index from "./Application";
 
 import Home from "./Home/Home";
-import Whoops404 from "./Whoops";
+import RoadMap from "./RoadMap/RoadMap";
 
 export default function Main() {
   return (
-    <main className='flex-container flex-container--center'>
+    <main className='flex-container flex-container--center main'>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/inicio' element={<Home />} />
-        <Route path='/upiita' element={<Index />} />
-        <Route path='*' element={<Whoops404 />} />
+        <Route path='/Mecatronica' element={<RoadMap career='Mecatronica' />} />
+        <Route path='/Telematica' element={<RoadMap career='Telematica' />} />
+        <Route path='/Bionica' element={<RoadMap career='Bionica' />} />
+        <Route path='/Energia' element={<RoadMap career='Energia' />} />
+        <Route path='/ISISA' element={<RoadMap career='ISISA' />} />
+        <Route path='*' element={<RoadMap />} />
       </Routes>
     </main>
   );

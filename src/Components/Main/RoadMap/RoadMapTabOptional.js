@@ -4,11 +4,12 @@ import React from "react";
 
 import OptionalUnits from "./Units/RegularUnits";
 
-import { useApplication } from "../ApplicationContext";
-
-export default function RoadMapTabOptional({ units, info }) {
-  const { group, order } = useApplication();
-
+export default function RoadMapTabOptional({
+  units,
+  info,
+  group = "semester",
+  order = false,
+}) {
   const renderUnits = info[group].map(it => (
     <OptionalUnits
       key={it}

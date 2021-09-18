@@ -4,7 +4,7 @@ import React from "react";
 
 import RegularUnit from "./RegularUnit";
 
-import { useUnits } from "../../../../../contexts/unit-provider/unit-provider-hook";
+import { useUnits } from "./UnitProvider";
 
 export default function RegularUnits({ units, group }) {
   const { currentUnit, linkedUnits, recommendedUnits } = useUnits();

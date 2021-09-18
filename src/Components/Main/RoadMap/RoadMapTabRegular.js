@@ -3,7 +3,7 @@
 import React from "react";
 
 import RegularUnits from "./Units/RegularUnits";
-
+import RenderUnitsOffScreen from "./Units/RenderUnitsOffScreen";
 export default function RoadMapTabRegular({
   units,
   info,
@@ -19,5 +19,10 @@ export default function RoadMapTabRegular({
   ));
 
   if (order) renderUnits.reverse();
-  return <div className='grid-container--center'>{renderUnits}</div>;
+  return (
+    <>
+      <div className='grid-container--center'>{renderUnits}</div>
+      <RenderUnitsOffScreen />
+    </>
+  );
 }

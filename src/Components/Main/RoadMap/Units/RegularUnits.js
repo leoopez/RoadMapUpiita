@@ -4,20 +4,8 @@ import React from "react";
 
 import RegularUnit from "./RegularUnit";
 
-import { useUnits } from "./UnitProvider";
-
 export default function RegularUnits({ units, group }) {
-  const { currentUnit, linkedUnits, recommendedUnits } = useUnits();
-
-  const renderUnits = units.map((unit, i) => (
-    <RegularUnit
-      key={i}
-      unit={unit}
-      selected={currentUnit && unit.id === currentUnit.id}
-      linked={currentUnit && linkedUnits.includes(unit.id)}
-      recommended={currentUnit && recommendedUnits.includes(unit.id)}
-    />
-  ));
+  const renderUnits = units.map((u, i) => <RegularUnit key={i} unit={u} />);
 
   return (
     <>

@@ -1,38 +1,26 @@
 /** @format */
 
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import useOnScreen from "../../../../custom-hooks/useOnScreen";
 
 const UnitContext = createContext();
 //export hook that creates a Context Consumer
 export const useUnits = () => useContext(UnitContext);
 
-const initialValues = {
-  currentUnit: null,
-  linkedUnits: [],
-  recommendedUnits: [],
-};
-
 export default function UnitProvider({ children }) {
-  const [{ currentUnit, linkedUnits, recommendedUnits }, setState] =
-    useState(initialValues);
+  const [selectedUnit, setSelectedUnit] = useState(null);
+  const [unitsOffScreen, setUnitsOffScreen] = useState(null);
 
-  const changeCurrentUnits = unit => {
-    !unit || unit.id === currentUnit?.id
-      ? setState(initialValues)
-      : setState({
-          currentUnit: unit,
-          linkedUnits: [...unit.linked],
-          recommendedUnits: [...unit.recommended],
-        });
+  const changeUnit = newUnit => {
+    setSelectedUnit(newUnit);
   };
 
   return (
     <UnitContext.Provider
       value={{
-        currentUnit,
-        linkedUnits,
-        recommendedUnits,
-        changeCurrentUnits,
+        selectedUnit,
+        unitsOffScreen,
+        changeUnit,
       }}>
       {children}
     </UnitContext.Provider>

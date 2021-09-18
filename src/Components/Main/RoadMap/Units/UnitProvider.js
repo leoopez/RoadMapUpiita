@@ -3,7 +3,6 @@
 import React, { createContext, useContext, useState } from "react";
 
 const UnitContext = createContext();
-
 //export hook that creates a Context Consumer
 export const useUnits = () => useContext(UnitContext);
 
@@ -14,8 +13,8 @@ const initialValues = {
 };
 
 export default function UnitProvider({ children }) {
-  const [state, setState] = useState(initialValues);
-  const { currentUnit, linkedUnits, recommendedUnits } = state;
+  const [{ currentUnit, linkedUnits, recommendedUnits }, setState] =
+    useState(initialValues);
 
   const changeCurrentUnits = unit => {
     !unit || unit.id === currentUnit?.id

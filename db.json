@@ -79,7 +79,7 @@
         "hours": [4.5, 0],
         "level": 1,
         "semester": 2,
-        "recommended": [0, 1],
+        "recommended": ["M103"],
         "linked": []
       },
       {
@@ -88,8 +88,8 @@
         "hours": [3, 3],
         "level": 1,
         "semester": 2,
-        "recommended": [],
-        "linked": [0]
+        "recommended": ["M101"],
+        "linked": ["M103"]
       },
       {
         "id": "M119",
@@ -97,8 +97,8 @@
         "hours": [4.5, 0],
         "level": 1,
         "semester": 2,
-        "recommended": [0],
-        "linked": [2]
+        "recommended": ["M103"],
+        "linked": ["M118"]
       },
       {
         "id": "M111",
@@ -125,7 +125,7 @@
         "level": 1,
         "semester": 2,
         "recommended": [],
-        "linked": [4, 7]
+        "linked": ["M110", "M107"]
       },
       {
         "id": "M102",
@@ -133,8 +133,8 @@
         "hours": [0, 3],
         "level": 1,
         "semester": 2,
-        "recommended": [],
-        "linked": [6]
+        "recommended": ["M103"],
+        "linked": ["M113"]
       },
       {
         "id": "M109",
@@ -142,8 +142,8 @@
         "hours": [4.5, 0],
         "level": 1,
         "semester": 3,
-        "recommended": [12],
-        "linked": [9]
+        "recommended": ["M103", "M101"],
+        "linked": ["M108"]
       },
       {
         "id": "M106",
@@ -152,7 +152,7 @@
         "level": 1,
         "semester": 3,
         "recommended": [],
-        "linked": [8, 12]
+        "linked": ["M103", "M105"]
       },
       {
         "id": "M112",
@@ -161,7 +161,7 @@
         "level": 1,
         "semester": 3,
         "recommended": [],
-        "linked": [12]
+        "linked": ["M105"]
       },
       {
         "id": "M114",
@@ -179,7 +179,7 @@
         "level": 2,
         "semester": 3,
         "recommended": [],
-        "linked": [13]
+        "linked": ["M120"]
       },
       {
         "id": "M203",
@@ -187,8 +187,8 @@
         "hours": [3, 1.5],
         "level": 2,
         "semester": 3,
-        "recommended": [5],
-        "linked": [10]
+        "recommended": ["M113"],
+        "linked": ["M119"]
       },
       {
         "id": "M202",
@@ -196,8 +196,8 @@
         "hours": [3, 1.5],
         "level": 2,
         "semester": 3,
-        "recommended": [5],
-        "linked": [8]
+        "recommended": ["M113"],
+        "linked": ["M103"]
       },
       {
         "id": "M121",
@@ -206,7 +206,7 @@
         "level": 1,
         "semester": 4,
         "recommended": [],
-        "linked": [4, 10]
+        "linked": ["M110", "M119"]
       },
       {
         "id": "M115",
@@ -214,7 +214,7 @@
         "hours": [0, 3],
         "level": 1,
         "semester": 4,
-        "recommended": [18],
+        "recommended": ["M114"],
         "linked": []
       },
       {
@@ -223,7 +223,7 @@
         "hours": [4.5, 0],
         "level": 2,
         "semester": 4,
-        "recommended": [8, 9],
+        "recommended": ["M108", "M104"],
         "linked": []
       },
       {
@@ -242,7 +242,7 @@
         "level": 2,
         "semester": 4,
         "recommended": [],
-        "linked": [16, 17]
+        "linked": ["M112", "M106"]
       },
       {
         "id": "M219",
@@ -250,8 +250,8 @@
         "hours": [0, 3],
         "level": 2,
         "semester": 4,
-        "recommended": [17],
-        "linked": [16]
+        "recommended": ["M112"],
+        "linked": ["M106"]
       },
       {
         "id": "M215",
@@ -259,8 +259,8 @@
         "hours": [3, 1.5],
         "level": 2,
         "semester": 4,
-        "recommended": [2],
-        "linked": [8]
+        "recommended": ["M118"],
+        "linked": ["M108"]
       },
       {
         "id": "M217",
@@ -269,7 +269,7 @@
         "level": 2,
         "semester": 4,
         "recommended": [],
-        "linked": [14]
+        "linked": ["M102"]
       },
       {
         "id": "M212",
@@ -277,7 +277,7 @@
         "hours": [3, 0],
         "level": 2,
         "semester": 5,
-        "recommended": [8, 9],
+        "recommended": ["M108", "M104"],
         "linked": []
       },
       {
@@ -286,8 +286,8 @@
         "hours": [4.5, 0],
         "level": 2,
         "semester": 5,
-        "recommended": [8],
-        "linked": [15, 9]
+        "recommended": ["M108"],
+        "linked": ["M109", "M104"]
       },
       {
         "id": "M205",
@@ -295,8 +295,8 @@
         "hours": [3, 1.5],
         "level": 2,
         "semester": 5,
-        "recommended": [9, 13],
-        "linked": [22]
+        "recommended": ["M104", "M120"],
+        "linked": ["M121"]
       },
       {
         "id": "M201",
@@ -304,7 +304,7 @@
         "hours": [1.5, 1.5],
         "level": 2,
         "semester": 5,
-        "recommended": [11],
+        "recommended": ["M111"],
         "linked": []
       },
       {
@@ -313,7 +313,7 @@
         "hours": [0, 4.5],
         "level": 2,
         "semester": 5,
-        "recommended": [27],
+        "recommended": ["M219"],
         "linked": []
       },
       {
@@ -323,7 +323,7 @@
         "level": 2,
         "semester": 5,
         "recommended": [],
-        "linked": [17]
+        "linked": ["M112"]
       },
       {
         "id": "M304",
@@ -332,7 +332,7 @@
         "level": 3,
         "semester": 5,
         "recommended": [],
-        "linked": [21]
+        "linked": ["M202"]
       },
       {
         "id": "M302",
@@ -350,7 +350,7 @@
         "level": 4,
         "semester": 5,
         "recommended": [],
-        "linked": [26]
+        "linked": ["M207"]
       },
       {
         "id": "M218",
@@ -358,8 +358,8 @@
         "hours": [1.5, 1.5],
         "level": 2,
         "semester": 6,
-        "recommended": [16],
-        "linked": [17]
+        "recommended": ["M106"],
+        "linked": ["M112"]
       },
       {
         "id": "M214",
@@ -367,7 +367,7 @@
         "hours": [0, 3],
         "level": 2,
         "semester": 6,
-        "recommended": [35],
+        "recommended": ["M204"],
         "linked": []
       },
       {
@@ -376,8 +376,8 @@
         "hours": [0, 3],
         "level": 2,
         "semester": 6,
-        "recommended": [12],
-        "linked": [35]
+        "recommended": ["M105"],
+        "linked": ["M204"]
       },
       {
         "id": "M208",
@@ -385,7 +385,7 @@
         "hours": [0, 3],
         "level": 2,
         "semester": 6,
-        "recommended": [23],
+        "recommended": ["M115"],
         "linked": []
       },
       {
@@ -394,8 +394,8 @@
         "hours": [1.5, 1.5],
         "level": 2,
         "semester": 6,
-        "recommended": [15],
-        "linked": [31]
+        "recommended": ["M109"],
+        "linked": ["M221"]
       },
       {
         "id": "M303",
@@ -412,8 +412,8 @@
         "hours": [3, 1.5],
         "level": 3,
         "semester": 6,
-        "recommended": [5],
-        "linked": [21]
+        "recommended": ["M113"],
+        "linked": ["M202"]
       },
       {
         "id": "M307",
@@ -421,7 +421,7 @@
         "hours": [1.5, 1.5],
         "level": 3,
         "semester": 6,
-        "recommended": [33],
+        "recommended": ["M201"],
         "linked": []
       },
       {
@@ -430,7 +430,7 @@
         "hours": [3, 1.5],
         "level": 3,
         "semester": 6,
-        "recommended": [32],
+        "recommended": ["M205"],
         "linked": []
       },
       {
@@ -439,7 +439,7 @@
         "hours": [0, 3],
         "level": 2,
         "semester": 7,
-        "recommended": [5],
+        "recommended": ["M113"],
         "linked": []
       },
       {
@@ -448,7 +448,7 @@
         "hours": [1.5, 1.5],
         "level": 2,
         "semester": 7,
-        "recommended": [11],
+        "recommended": ["M111"],
         "linked": []
       },
       {
@@ -485,7 +485,7 @@
         "level": 3,
         "semester": 7,
         "recommended": [],
-        "linked": [21]
+        "linked": ["M202"]
       },
       {
         "id": "M403",
@@ -503,7 +503,7 @@
         "level": 5,
         "semester": 7,
         "recommended": [],
-        "linked": [43, 45]
+        "linked": ["M301", "M211"]
       },
       {
         "id": "M305",
@@ -512,7 +512,7 @@
         "level": 3,
         "semester": 8,
         "recommended": [],
-        "linked": [40]
+        "linked": ["M214"]
       },
       {
         "id": "M309",
@@ -546,7 +546,7 @@
         "level": 4,
         "semester": 8,
         "recommended": [],
-        "linked": [46]
+        "linked": ["M307"]
       },
       {
         "id": "M404",
@@ -564,7 +564,7 @@
         "level": 4,
         "semester": 8,
         "recommended": [],
-        "linked": [44]
+        "linked": ["M303"]
       },
       {
         "id": "M401",
@@ -573,7 +573,7 @@
         "level": 4,
         "semester": 8,
         "recommended": [],
-        "linked": [36]
+        "linked": ["M304"]
       },
       {
         "id": "MOPT5",
@@ -609,7 +609,7 @@
         "level": 5,
         "semester": 9,
         "recommended": [],
-        "linked": [61]
+        "linked": ["M404"]
       },
       {
         "id": "M504",
@@ -618,7 +618,7 @@
         "level": 5,
         "semester": 10,
         "recommended": [],
-        "linked": []
+        "linked": ["M503"]
       }
     ],
     "optionalUnits": [

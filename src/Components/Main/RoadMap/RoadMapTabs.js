@@ -27,7 +27,6 @@ export default function RoadMapTabs({ career }) {
   if (error) return <pre>{JSON.stringify(error, null, 2)}</pre>;
   if (loading) return <RoadMaploading loading={career} />;
 
-  console.log(error);
   return (
     <div className='tab--container'>
       <div className='flex-container tab--header'>

@@ -10,8 +10,7 @@ import useFetchData from "../../../utils/useFetchData";
 import { transformText } from "../../../utils/generals";
 
 // Components
-import RoadMapTabRegular from "./RoadMapTabRegular";
-import RoadMapTabOptional from "./RoadMapTabOptional";
+import RoadMapTab from "./RoadMapTab";
 import RoadMaploading from "./RoadMapLoading";
 
 //UI
@@ -24,7 +23,7 @@ export default function RoadMapTabs({ career }) {
   const [group, setGroup] = useState("semester");
   const { loading, error, units } = useFetchData(career);
 
-  if (error) return <pre>{JSON.stringify(error, null, 2)}</pre>;
+  if (error) return <pre>{JSON.stringify(error)}</pre>;
   if (loading) return <RoadMaploading loading={career} />;
 
   return (
@@ -45,7 +44,15 @@ export default function RoadMapTabs({ career }) {
           />
         </div>
         <div className='flex-container tab--options'>
-          <SelectGroup selected={group} change={setGroup} />
+          <SelectGroup
+            groupby={
+              selectedTab === 0
+                ? units.infoCareer.regularUnits.groupby
+                : units.infoCareer.optionalUnits.groupby
+            }
+            selected={group}
+            change={setGroup}
+          />
           <Icon cName='flip' onClick={() => setOrder(order => !order)}>
             <FaExchangeAlt size={"100%"} />
           </Icon>
@@ -53,18 +60,19 @@ export default function RoadMapTabs({ career }) {
       </div>
       <div className='tab--body'>
         {selectedTab === 0 ? (
-          <RoadMapTabRegular
+          <RoadMapTab
             units={units.regularUnits}
             info={units.infoCareer.regularUnits}
             order={order}
             group={group}
           />
         ) : (
-          <RoadMapTabOptional
+          <RoadMapTab
             units={units.optionalUnits}
             info={units.infoCareer.optionalUnits}
             order={order}
             group={group}
+            optional={true}
           />
         )}
       </div>
@@ -84,10 +92,11 @@ const TabItem = ({ index, tab, selectedTab, setSelectedTab = f => f }) => {
   );
 };
 
-const SelectGroup = ({ selected, change }) => {
+const SelectGroup = ({ groupby = [], selected, change }) => {
+  console.log(groupby);
   return (
     <select onChange={e => change(e.target.value)} value={selected}>
-      {GROUP_BY.map((item, i) => (
+      {groupby.map((item, i) => (
         <option value={item} key={i}>
           {transformText(item)[0].toUpperCase()}
         </option>

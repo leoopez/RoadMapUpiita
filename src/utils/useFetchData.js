@@ -9,17 +9,15 @@ export default function useFetchData(data) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function getData(data) {
-      try {
-        const res = await fetch(URL_FETCH_DATA(data));
-        const resJson = await res.json();
-        setUnits(resJson);
-        setLoading(false);
-      } catch (err) {
-        setError(err);
-      }
-    }
-    getData(data);
+    fetch(URL_FETCH_DATA(data))
+      .then(res => res.json())
+      .then(setUnits)
+      .then(() => setLoading(false))
+      .catch(e => {
+        console.log(e);
+        setError(e);
+      });
+    
   }, [data]);
 
   return { loading, error, units };

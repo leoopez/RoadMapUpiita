@@ -2,16 +2,16 @@
 
 import React from "react";
 
-import RegularUnits from "./Units/RegularUnits";
-import RenderUnitsOffScreen from "./Units/RenderUnitsOffScreen";
+import Units from "./Units/Units";
 export default function RoadMapTabRegular({
   units,
   info,
   group = "semester",
   order = false,
+  optional = false,
 }) {
   const renderUnits = info[group].map(it => (
-    <RegularUnits
+    <Units
       key={it}
       units={units.filter(unit => unit[group] === it)}
       group={it}
@@ -19,10 +19,5 @@ export default function RoadMapTabRegular({
   ));
 
   if (order) renderUnits.reverse();
-  return (
-    <>
-      <div className='grid-container--center'>{renderUnits}</div>
-      <RenderUnitsOffScreen />
-    </>
-  );
+  return <div className='grid-container--center'>{renderUnits}</div>;
 }

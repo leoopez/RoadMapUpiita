@@ -7,7 +7,7 @@ import useClose from "../../../../custom-hooks/useClose";
 
 import { FaFilePdf } from "react-icons/fa";
 
-export default function RegularUnit({ unit }) {
+export default function Unit({ unit }) {
   const { selectedUnit } = useUnits();
   const selected = selectedUnit && unit.id === selectedUnit.id;
   return (

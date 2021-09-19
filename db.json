@@ -951,14 +951,15 @@
       "regularUnits": {
         "semester": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         "level": [1, 2, 3, 4, 5],
-        "credits": [0, 3, 4.5, 6, 7.5, 9]
+        "credits": [0, 3, 4.5, 6, 7.5, 9],
+        "groupby": ["semester", "level", "credits"]
       },
       "optionalUnits": {
         "semester": [7, 8, 9],
         "level": [3, 4],
-        "optional": [1, 2, 3, 4, 5, 6]
+        "optional": [1, 2, 3, 4, 5, 6],
+        "groupby": ["semester", "level", "optional", "credits"]
       }
-      
     }
   },
   "Bionica": {

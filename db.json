@@ -690,6 +690,7 @@
     ],
     "optionalUnits": [
       {
+        "id": "M315",
         "name": "Automatas\nIndustriales",
         "level": 3,
         "hours": [1.5, 1.5],
@@ -699,6 +700,7 @@
         "linked": []
       },
       {
+        "id": "M328",
         "name": "Protocolors\nAvanzados de\nComunicaciones",
         "level": 3,
         "hours": [1.5, 1.5],
@@ -708,6 +710,7 @@
         "linked": []
       },
       {
+        "id": "M316",
         "name": "Automatizacion\nde Linea de\nProduccion",
         "level": 3,
         "hours": [1.5, 1.5],
@@ -717,6 +720,7 @@
         "linked": []
       },
       {
+        "id": "M319",
         "name": "Seguriadad\nIndustrial",
         "level": 3,
         "hours": [1.5, 1.5],
@@ -726,6 +730,7 @@
         "linked": []
       },
       {
+        "id": "M318",
         "name": "Desarrollo\nEmpresarial",
         "level": 3,
         "hours": [1.5, 1.5],
@@ -735,6 +740,7 @@
         "linked": []
       },
       {
+        "id": "M311",
         "name": "Control\nDistribuido",
         "level": 3,
         "hours": [1.5, 1.5],
@@ -744,6 +750,7 @@
         "linked": []
       },
       {
+        "id": "M327",
         "name": "Sistemas de\nCalidad para\nla Manuactura",
         "level": 3,
         "hours": [1.5, 1.5],
@@ -753,6 +760,7 @@
         "linked": []
       },
       {
+        "id": "M310",
         "name": "Economía y\nLogistica",
         "level": 3,
         "hours": [1.5, 1.5],
@@ -762,6 +770,7 @@
         "linked": []
       },
       {
+        "id": "M317",
         "name": "Topicos\nAvanzados de\nSensores",
         "level": 3,
         "hours": [0, 4.5],
@@ -771,6 +780,7 @@
         "linked": []
       },
       {
+        "id": "M323",
         "name": "Produccion mas\nLimpia",
         "level": 3,
         "hours": [0, 4.5],
@@ -780,6 +790,7 @@
         "linked": []
       },
       {
+        "id": "M324",
         "name": "Uso y Mant. de\nHerr. para\nProc. de Man.",
         "level": 3,
         "hours": [0, 4.5],
@@ -789,6 +800,7 @@
         "linked": []
       },
       {
+        "id": "M313",
         "name": "Diseno Avanzado y\nManufactura\nAsistida\npor Computadora",
         "level": 3,
         "hours": [0, 4.5],
@@ -798,6 +810,7 @@
         "linked": []
       },
       {
+        "id": "M321",
         "name": "Graficacion 3D",
         "level": 3,
         "hours": [0, 4.5],
@@ -807,6 +820,7 @@
         "linked": []
       },
       {
+        "id": "M320",
         "name": "Sistemas\nOperativos en\nTiempo Real",
         "level": 3,
         "hours": [0, 4.5],
@@ -816,6 +830,7 @@
         "linked": []
       },
       {
+        "id": "M312",
         "name": "Topicos\nAvanzados de\nElectronica",
         "level": 3,
         "hours": [0, 4.5],
@@ -825,6 +840,7 @@
         "linked": []
       },
       {
+        "id": "M322",
         "name": "Procesos\nIndustriales",
         "level": 3,
         "hours": [0, 4.5],
@@ -834,6 +850,7 @@
         "linked": []
       },
       {
+        "id": "M407",
         "name": "Microcontroladores\nAvanzados",
         "level": 4,
         "hours": [1.5, 3],
@@ -843,6 +860,7 @@
         "linked": []
       },
       {
+        "id": "M420",
         "name": "Control de\nInteligente",
         "level": 4,
         "hours": [1.5, 3],
@@ -852,6 +870,7 @@
         "linked": []
       },
       {
+        "id": "M421",
         "name": "Diseno de Equipo\npara el Manejo\nde Materiales",
         "level": 4,
         "hours": [1.5, 3],
@@ -861,6 +880,7 @@
         "linked": []
       },
       {
+        "id": "M425",
         "name": "Realidad\nVirtual",
         "level": 4,
         "hours": [1.5, 3],
@@ -870,6 +890,7 @@
         "linked": []
       },
       {
+        "id": "M423",
         "name": "Protocolos de\nComunicacion\nIndustrial",
         "level": 4,
         "hours": [1.5, 3],
@@ -879,6 +900,7 @@
         "linked": []
       },
       {
+        "id": "M410",
         "name": "Vision\nArtificial\nAplicada",
         "level": 4,
         "hours": [1.5, 3],
@@ -888,6 +910,7 @@
         "linked": []
       },
       {
+        "id": "M422",
         "name": "Diseno\nErgonomico",
         "level": 4,
         "hours": [1.5, 3],
@@ -897,6 +920,7 @@
         "linked": []
       },
       {
+        "id": "M415",
         "name": "Instrumentacion\nVirtual\nAplicada",
         "level": 4,
         "hours": [1.5, 3],
@@ -906,6 +930,7 @@
         "linked": []
       },
       {
+        "id": "M419",
         "name": "Control de\nProcesos\nIndustriales",
         "level": 4,
         "hours": [1.5, 3],
@@ -915,6 +940,7 @@
         "linked": []
       },
       {
+        "id": "M412",
         "name": "Procesos\nAvanzados de\nManufactura",
         "level": 4,
         "hours": [1.5, 3],
@@ -924,6 +950,7 @@
         "linked": []
       },
       {
+        "id": "M413",
         "name": "Control de\nSistemas\nRoboticos",
         "level": 4,
         "hours": [1.5, 3],
@@ -933,6 +960,7 @@
         "linked": []
       },
       {
+        "id": "M426",
         "name": "Sistemas de\nProc. Digital de\nSenales",
         "level": 4,
         "hours": [1.5, 3],
@@ -942,6 +970,7 @@
         "linked": []
       },
       {
+        "id": "M416",
         "name": "Manufactura\nIntegrada por\nComputadora",
         "level": 4,
         "hours": [1.5, 3],
@@ -951,6 +980,7 @@
         "linked": []
       },
       {
+        "id": "M408",
         "name": "Mercadotecnia",
         "level": 4,
         "hours": [1.5, 3],
@@ -960,6 +990,7 @@
         "linked": []
       },
       {
+        "id": "M427",
         "name": "Topicos\nAvanxados de\nSoldadura",
         "level": 4,
         "hours": [1.5, 3],
@@ -969,6 +1000,7 @@
         "linked": []
       },
       {
+        "id": "M409",
         "name": "Integracion de\nun Sistema\nRobotico",
         "level": 4,
         "hours": [1.5, 3],
@@ -978,6 +1010,7 @@
         "linked": []
       },
       {
+        "id": "M414",
         "name": "Implementacion\nde Sistemas\nDigitales",
         "level": 4,
         "hours": [1.5, 3],
@@ -987,6 +1020,7 @@
         "linked": []
       },
       {
+        "id": "M417",
         "name": "Topicos\nAvanxados de\nAutomatizacion",
         "level": 4,
         "hours": [1.5, 3],
@@ -996,6 +1030,7 @@
         "linked": []
       },
       {
+        "id": "M418",
         "name": "Sistemas\nAvanzados de\nManufactura",
         "level": 4,
         "hours": [1.5, 3],
@@ -1005,6 +1040,7 @@
         "linked": []
       },
       {
+        "id": "M424",
         "name": "Proyecto de\nSistemas\nEmbebidos",
         "level": 4,
         "hours": [1.5, 3],
@@ -1032,478 +1068,596 @@
   "Bionica": {
     "regularUnits": [
       {
+        "id": "B104",
         "name": "Cálculo Dif.\ne Integral",
         "hours": [3, 3],
+        "credits": "9",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B103",
         "name": "Algebra Lineal",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B101",
         "name": "Biologia\nCelular",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B102",
         "name": "Quimica\nOrganica",
-        "hours": [3.5, 1.5],
+        "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B109",
         "name": "Metrologia",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B114",
         "name": "Bioetica",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B112",
         "name": "Herramietas\nComputacionales",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 1,
         "semester": 2,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B105",
         "name": "Calculo\nVectorial",
         "hours": [3, 3],
+        "credits": "9",
         "level": 1,
         "semester": 2,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B111",
         "name": "Anatomia",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 1,
         "semester": 2,
         "recommended": [0, 1],
         "linked": []
       },
       {
+        "id": "B106",
         "name": "Fundamentos\nde Fisica para\nla Ingenieria",
         "hours": [3, 3],
+        "credits": "9",
         "level": 1,
         "semester": 2,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B116",
         "name": "Ingles I",
         "hours": [0, 3],
+        "credits": "3",
         "level": 1,
         "semester": 2,
         "recommended": [0],
         "linked": []
       },
       {
+        "id": "B210",
         "name": "Biologia Molcular",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 2,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B201",
         "name": "Ecuaciones\nDiferenciales",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 2,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B110",
         "name": "Programacion\nOrientada a\nObjetos",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 1,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B107",
         "name": "Fund. de Teoria\nElectromagnetica",
         "hours": [3, 3],
+        "credits": "9",
         "level": 1,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B115",
         "name": "Desarrollo\nSostenible",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 1,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B205",
         "name": "Fisicoquimica",
         "hours": [1.5, 3],
-        "level": 1,
+        "credits": "6",
+        "level": 2,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B208",
         "name": "Fisiologia",
         "hours": [1.5, 1.5],
-        "level": 1,
+        "credits": "4.5",
+        "level": 2,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B207",
         "name": "Teria de\nlos Circuitos",
         "hours": [3, 3],
+        "credits": "9",
         "level": 2,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B216",
         "name": "Ingles II",
         "hours": [0, 3],
+        "credits": "3",
         "level": 2,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B108",
         "name": "Bioestadistica",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 1,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B206",
         "name": "Bioquimica",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 2,
         "semester": 4,
         "recommended": [],
         "linked": [4]
       },
       {
+        "id": "B202",
         "name": "Fundamentos\nMatematicos\nde Ingenieria",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 2,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B203",
         "name": "Ondas\nElectromagneticas\ny Sist. Radianes",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B212",
         "name": "Sistemas de\nGestion de\nCalidad",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 2,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B301",
         "name": "Analisis\nNumerico",
         "hours": [3, 3],
+        "credits": "9",
         "level": 3,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B302",
         "name": "Dispositivos\nElectronicos",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B308",
         "name": "Ingles III",
         "hours": [0, 3],
+        "credits": "3",
         "level": 3,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B213",
         "name": "Biognosis",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B204",
         "name": "Fisica Moderna\ny Optica",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B309",
         "name": "Electronica\nAnalogica y\ndePotencia",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 3,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B303",
         "name": "Electonica\nDigital",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 3,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B315",
         "name": "Sensores\ny Actuadores",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B311",
         "name": "Biomagnetsmo",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 3,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B312",
         "name": "Mecanismos\nBiomimeticos",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B209",
         "name": "Biofisica",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 2,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B215",
         "name": "Liderazgo y\nEmprendedores",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 2,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B305",
         "name": "Biomateriales",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 3,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B304",
         "name": "Teoria de\nControl",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 3,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B310",
         "name": "Procesamiento\nde Imagenes",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B402",
         "name": "Dispositivos\nProgramables",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 4,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B403",
         "name": "Analisis de\nEsfuerzos",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 4,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B211",
         "name": "Investigacion y\nDesarrollo de\nProyectos",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 2,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B306",
         "name": "Control\nNeurodifuso",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
-        "name": "Procesamiento\nde Senales\nBiologicas",
+        "id": "B314",
+        "name": "Procesamiento\nde Señales\nBiologicas",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B313",
         "name": "Bio\nIntruentacion",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 3,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B401",
         "name": "Modelado\ny Control de\nSist. Bionicos",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 4,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B404",
         "name": "Manufactura de\nElementos\nBiomimeticos",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 4,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B405",
         "name": "Reconocimiento\nde Patrones",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 4,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "BOPT1",
         "name": "Optativa I",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "BOPT2",
         "name": "Optativa II",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 4,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B406",
         "name": "Normatividad\ny Gestion\nTecnologica",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 4,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B504",
         "name": "Metodologia\nde Investigacion",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 5,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B503",
         "name": "Biomecanica",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 5,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B502",
         "name": "Bioelectronica",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 5,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "BOPT3",
         "name": "Optatica III",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 5,
         "semester": 9,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B501",
         "name": "Biorobotica",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 5,
         "semester": 9,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B505",
         "name": "Trabajo\nTerminal I",
         "hours": [0, 7.5],
-        "level": 5,
+        "credits": "7.5",
         "semester": 9,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "BSS",
         "name": "Servicio\nSocial",
         "hours": [0, 0],
+        "credits": "0",
         "level": 5,
         "semester": 9,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "B506",
         "name": "Trabajo\nTerminal II",
         "hours": [0, 7.5],
         "level": 5,
@@ -1514,523 +1668,728 @@
     ],
     "optionalUnits": [
       {
+        "id": "B322",
         "name": "Simulacion\nde Analiis\nde Esfuerzos",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B323",
         "name": "Ergonomia y\nBiodinamica",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B317",
         "name": "Protesis\nBiomimeticas",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B316",
         "name": "Control de\nSistemas\nBiologicos",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B307",
         "name": "Comunicacion\nOral y Escrita",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B324",
         "name": "Intrumentacion\nClinica y\nLaboratorio",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B319",
         "name": "Intrumentacion\nBiomedica",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B318",
         "name": "Vision Artficial",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B320",
         "name": "Inteligencia\nArtificial",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B321",
         "name": "Robotica\nEvolutiva y\nAutonoma",
-        "level": 1,
-        "hours": [1.5, 3]
+        "level": 3,
+        "hours": [1.5, 3],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B409",
         "name": "Ingenieria\nde Control\nHumano",
-        "level": 2,
-        "hours": [1.5, 3]
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
+        "optional": 3,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B410",
         "name": "Sistemas\nBiomecanicos",
-        "level": 2,
-        "hours": [1.5, 3]
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
+        "optional": 3,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B408",
         "name": "Biosensores\ny Biochips",
-        "level": 2,
-        "hours": [1.5, 3]
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
+        "optional": 3,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B407",
         "name": "Intrumentacion\nBiotecologica",
-        "level": 2,
-        "hours": [1.5, 3]
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
+        "optional": 3,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B414",
         "name": "Telemetrica\nMedica",
-        "level": 2,
-        "hours": [1.5, 3]
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
+        "optional": 3,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B415",
         "name": "Imegenologia",
-        "level": 2,
-        "hours": [1.5, 3]
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
+        "optional": 3,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B413",
         "name": "Neuro/Robotica",
-        "level": 2,
-        "hours": [1.5, 3]
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
+        "optional": 3,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "B412",
         "name": "Sistemas\nSensoriales",
-        "level": 2,
-        "hours": [1.5, 3]
+        "level": 4,
+        "hours": [1.5, 3],
+        "semester": 9,
+        "optional": 3,
+        "recommended": [],
+        "linked": []
       }
     ],
     "infoCareer": {
-      "semester": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      "level": [1, 2, 3, 4, 5],
-      "credits": [0, 3, 4.5, 6, 7.5, 9]
+      "regularUnits": {
+        "semester": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "level": [1, 2, 3, 4, 5],
+        "credits": ["0", "3", "4.5", "6", "7.5", "9"],
+        "groupby": ["semester", "level", "credits"]
+      },
+      "optionalUnits": {
+        "semester": [8, 9],
+        "level": [3, 4],
+        "optional": [1, 3],
+        "groupby": ["semester", "level", "optional"]
+      }
     }
   },
   "Telematica": {
     "regularUnits": [
       {
+        "id": "T112",
         "name": "Algebra Lineal",
         "hours": [6, 0],
+        "credits": "12",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T110",
         "name": "Cálculo Dif.\ne Integral",
         "hours": [4.5, 1.5],
+        "credits": "10.5",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T104",
         "name": "Administracion\nde Sistemas\nOperativos",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T102",
         "name": "Analisis\nY Diseno de\nSistemas",
         "hours": [3, 3],
+        "credits": "12",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T117",
         "name": "Comunicacion\nOral y Escrita",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T108",
         "name": "Ecuaciones\nDiferenciales",
         "hours": [4.5, 0],
+        "credits": "9",
         "level": 1,
         "semester": 2,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T114",
         "name": "Calculo\nMultivariable",
         "hours": [4.5, 1.5],
+        "credits": "10.5",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T101",
         "name": "Programacion",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 1,
         "semester": 1,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T115",
         "name": "Administracion\nOrganizacional",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 1,
         "semester": 2,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T118",
         "name": "Ingles I",
         "hours": [0, 3],
+        "credits": "3",
         "level": 1,
         "semester": 2,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T107",
         "name": "Fundamentos\nde Fisica",
         "hours": [3, 0],
+        "credits": "6",
         "level": 1,
         "semester": 2,
         "recommended": [0],
         "linked": []
       },
       {
+        "id": "T116",
         "name": "Etica\nProfesion\ny Sociedad",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 1,
         "semester": 2,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T111",
         "name": "Variable\nCompleja",
         "hours": [3, 0],
+        "credits": "6",
         "level": 1,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T109",
         "name": "Probabilidad",
         "hours": [4.5, 0],
+        "credits": "9",
         "level": 1,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T119",
         "name": "Ingles II",
         "hours": [0, 3],
+        "credits": "3",
         "level": 1,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T103",
         "name": "Estructura\nde Datos",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 1,
         "semester": 3,
         "recommended": [12],
         "linked": []
       },
       {
+        "id": "T201",
         "name": "Senales y\nSistemas",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T204",
         "name": "Teoria\nde los\nCircuitos",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T217",
         "name": "Informacion\nFinanciera\ne Ing.Econom.",
         "hours": [0, 3],
+        "credits": "3",
         "level": 2,
         "semester": 3,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T105",
         "name": "Diseno\nDigital",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 1,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T113",
         "name": "Electromagnetismo",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 1,
         "semester": 4,
         "recommended": [5],
         "linked": []
       },
       {
+        "id": "T219",
         "name": "Ingles III",
         "hours": [0, 3],
+        "credits": "3",
         "level": 2,
         "semester": 4,
         "recommended": [5],
         "linked": [8]
       },
       {
+        "id": "T215",
         "name": "Bases de\nDatos",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T214",
         "name": "Programacon\nAvanzada",
         "hours": [3, 3],
+        "credits": "9",
         "level": 2,
         "semester": 4,
         "recommended": [18],
         "linked": []
       },
       {
+        "id": "T203",
         "name": "Electronica",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T206",
         "name": "Teoria de las\nComunicaciones",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T106",
         "name": "Arquitectura\nde Computadoras",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 1,
         "semester": 5,
         "recommended": [],
         "linked": [16, 17]
       },
       {
+        "id": "T208",
         "name": "Procesamiento\ndigital de\nSenales",
         "hours": [4.5, 1.5],
+        "credits": "10.5",
         "level": 2,
         "semester": 4,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T213",
         "name": "Ingenieria\nWeb",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T202",
         "name": "Prop. de Ondas\nElectromagneticas",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T207",
         "name": "Comunicaciones\nDigitales",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T216",
         "name": "Transmision\nde Datos",
-        "hours": [3.5, 1.5],
+        "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 5,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T209",
         "name": "Telefonia",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T211",
         "name": "Protocolos\nde Internet",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T205",
         "name": "Teria de la\nInformacion",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T302",
         "name": "Lineas de\nTransmision\n y Antenas",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 3,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T307",
         "name": "Administracion\nde Proyectos",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T405",
         "name": "Dispositivos\nProgramables",
         "hours": [1.5, 4.5],
-        "level": 3,
+        "credits": "7.5",
+        "level": 4,
         "semester": 6,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T210",
         "name": "Sistemas\nCelulares",
         "hours": [3, 1.5],
-        "level": 4,
+        "credits": "7.5",
+        "level": 2,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T212",
         "name": "Sistemas\nDistribuidos",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T308",
         "name": "Liderazgo\ny Emprendedores",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 3,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T305",
         "name": "Bases de\nDatos\nDistribuidas",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 3,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T301",
         "name": "Redes\nInteligentes",
         "hours": [1.5, 1.5],
+        "credits": "4.5",
         "level": 3,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T304",
         "name": "Multimedia",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T403",
         "name": "Redes de\nTelecomunicaciones",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 4,
         "semester": 7,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T218",
         "name": "Optativa I",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 2,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T303",
         "name": "Seguridad\nen Redes",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T306",
         "name": "Metodologia\nde la\nInvestigacion",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 3,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T404",
         "name": "Aplicaciones\nDistribuidas",
         "hours": [1.5, 3],
+        "credits": "6",
         "level": 4,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T406",
         "name": "Servicio\nSocial",
         "hours": [0, 0],
+        "credits": "0",
         "level": 4,
         "semester": 8,
         "recommended": [],
         "linked": []
       },
       {
-        "name": "Optativa III",
+        "id": "TOPT2",
+        "name": "Optativa II",
         "hours": [3, 1.5],
+        "credits": "7.5",
         "level": 3,
         "semester": 9,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T401",
         "name": "Proyecto\nTerminal I",
         "hours": [0, 7.5],
+        "credits": "7.5",
         "level": 4,
         "semester": 9,
         "recommended": [],
         "linked": []
       },
       {
+        "id": "T402",
         "name": "Proyecto\nTerminal II",
         "hours": [0, 7.5],
+        "credits": "7.5",
         "level": 4,
         "semester": 10,
         "recommended": [],
@@ -2039,75 +2398,149 @@
     ],
     "optionalUnits": [
       {
+        "id": "T230",
         "name": "Progra. de\nDispositivos\nMoviles",
-        "level": 1,
-        "hours": [3.5, 1.5]
+        "level": 2,
+        "hours": [3.5, 1.5],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T226",
         "name": "Redes\nInalambricas",
-        "level": 1,
-        "hours": [3.5, 1.5]
+        "level": 2,
+        "hours": [3.5, 1.5],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T227",
         "name": "Redes\nNeuronales",
-        "level": 1,
-        "hours": [3.5, 1.5]
+        "level": 2,
+        "hours": [3.5, 1.5],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T228",
         "name": "Logica\nDifusa",
-        "level": 1,
-        "hours": [3.5, 1.5]
+        "level": 2,
+        "hours": [3.5, 1.5],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T229",
         "name": "Sistema de\nInformacion\nGeografica",
-        "level": 1,
-        "hours": [3.5, 1.5]
+        "level": 2,
+        "hours": [3.5, 1.5],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
-        "name": "Informatividad\nEn Telecom. E.\nInformatica",
-        "level": 1,
-        "hours": [3.5, 1.5]
+        "id": "T231",
+        "name": "Normatitividad\nEn Telecom. E.\nInformatica",
+        "level": 2,
+        "hours": [3.5, 1.5],
+        "semester": 8,
+        "optional": 1,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T313",
         "name": "Television\nDigital",
-        "level": 2,
-        "hours": [3, 1.5]
+        "level": 3,
+        "hours": [3, 1.5],
+        "semester": 9,
+        "optional": 2,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T314",
         "name": "Sistemas\nde Calidad",
-        "level": 2,
-        "hours": [3, 1.5]
+        "level": 3,
+        "hours": [3, 1.5],
+        "semester": 9,
+        "optional": 2,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T316",
         "name": "Filtrado\nAvanzado",
-        "level": 2,
-        "hours": [3, 1.5]
+        "level": 3,
+        "hours": [3, 1.5],
+        "semester": 9,
+        "optional": 2,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T310",
         "name": "Criptografia",
-        "level": 2,
-        "hours": [3, 1.5]
+        "level": 3,
+        "hours": [3, 1.5],
+        "semester": 9,
+        "optional": 2,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T311",
         "name": "Microondas",
-        "level": 2,
-        "hours": [3, 1.5]
+        "level": 3,
+        "hours": [3, 1.5],
+        "semester": 9,
+        "optional": 2,
+        "recommended": [],
+        "linked": []
       },
       {
-        "name": "Processamiento\nde Imagenes",
-        "level": 2,
-        "hours": [3, 1.5]
+        "id": "T312",
+        "name": "Procesamiento\nde Imagenes",
+        "level": 3,
+        "hours": [3, 1.5],
+        "semester": 9,
+        "optional": 2,
+        "recommended": [],
+        "linked": []
       },
       {
+        "id": "T315",
         "name": "Procesamiento\nde Voz",
-        "level": 2,
-        "hours": [3, 1.5]
+        "level": 3,
+        "hours": [3, 1.5],
+        "semester": 9,
+        "optional": 2,
+        "recommended": [],
+        "linked": []
       }
     ],
     "infoCareer": {
-      "semester": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      "level": [1, 2, 3, 4],
-      "credits": [0, 3, 4.5, 6, 7.5, 9]
+      "regularUnits": {
+        "semester": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "level": [1, 2, 3, 4],
+        "credits": ["0", "3", "4.5", "6", "7.5", "9", "10.5", "12"],
+        "groupby": ["semester", "level", "credits"]
+      },
+      "optionalUnits": {
+        "semester": [8, 9],
+        "level": [2, 3],
+        "optional": [1, 2],
+        "groupby": ["semester", "level", "optional"]
+      }
     }
   }
 }

@@ -5,7 +5,7 @@ import NavLink from "./NavLink";
 
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react/cjs/react.development";
-import useClose from "../../custom-hooks/useClose";
+import useClose from "../../hooks/useClose";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

@@ -17,7 +17,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "json": "json-server --watch db.json --host 192.168.0.13 --port 3001 --delay 1000",
+    "json": "json-server --watch db.json --host 192.168.0.13 --port 3001 --delay 200",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

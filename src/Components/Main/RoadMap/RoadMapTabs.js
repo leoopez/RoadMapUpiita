@@ -6,7 +6,6 @@ import { FaExchangeAlt } from "react-icons/fa";
 
 // Utils
 import useFetchData from "../../../utils/useFetchData";
-// import { GROUP_BY } from "../../../config";
 import { transformText } from "../../../utils/generals";
 
 // Components
@@ -15,12 +14,17 @@ import RoadMaploading from "./RoadMapLoading";
 
 //UI
 import { Icon } from "../../UI";
-import { GROUP_BY } from "../../../config";
 
 export default function RoadMapTabs({ career }) {
   const [selectedTab, setSelectedTab] = useState(0);
   const [order, setOrder] = useState(false);
   const [group, setGroup] = useState("semester");
+
+  const changeTab = tab => {
+    setSelectedTab(tab);
+    setOrder(false);
+    setGroup("semester");
+  };
   const { loading, error, units } = useFetchData(career);
 
   if (error) return <pre>{JSON.stringify(error)}</pre>;
@@ -34,13 +38,13 @@ export default function RoadMapTabs({ career }) {
             index={0}
             tab='Regulares'
             selectedTab={selectedTab}
-            setSelectedTab={setSelectedTab}
+            changeTab={changeTab}
           />
           <TabItem
             index={1}
             tab='Optativas'
             selectedTab={selectedTab}
-            setSelectedTab={setSelectedTab}
+            changeTab={changeTab}
           />
         </div>
         <div className='flex-container tab--options'>
@@ -80,13 +84,13 @@ export default function RoadMapTabs({ career }) {
   );
 }
 
-const TabItem = ({ index, tab, selectedTab, setSelectedTab = f => f }) => {
+const TabItem = ({ index, tab, selectedTab, changeTab = f => f }) => {
   return (
     <div
       className={`flex-container flex-container--center tab-header--item ${
         selectedTab === index ? "active" : ""
       }`}
-      onClick={() => setSelectedTab(index)}>
+      onClick={() => changeTab(index)}>
       {tab}
     </div>
   );

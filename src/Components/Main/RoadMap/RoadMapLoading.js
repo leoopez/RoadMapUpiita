@@ -13,7 +13,7 @@ export default function RoadingMapLoading() {
 }
 
 function Units() {
-  const units = [...Array(20)].map((x, y) => <UnitSkeleton key={y} />);
+  const units = [...Array(30)].map((x, y) => <UnitSkeleton key={y} />);
   return units;
 }
 

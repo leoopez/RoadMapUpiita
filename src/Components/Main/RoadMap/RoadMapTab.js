@@ -8,7 +8,6 @@ export default function RoadMapTabRegular({
   info,
   group = "semester",
   order = false,
-  optional = false,
 }) {
   const renderUnits = info[group].map(it => (
     <Units
@@ -19,5 +18,5 @@ export default function RoadMapTabRegular({
   ));
 
   if (order) renderUnits.reverse();
-  return <div className='grid-container--center'>{renderUnits}</div>;
+  return <div className='grid-container--center units mt'>{renderUnits}</div>;
 }

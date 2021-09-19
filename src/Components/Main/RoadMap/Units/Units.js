@@ -12,7 +12,9 @@ export default function Units({ units, group }) {
       <div className='group--number flex-container flex-container--center'>
         {group}
       </div>
-      <div className='flex-container flex-container--center'>{renderUnits}</div>
+      <div className='flex-container flex-container--center group--units'>
+        {renderUnits}
+      </div>
     </>
   );
 }

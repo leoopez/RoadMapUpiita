@@ -97,12 +97,14 @@ const TabItem = ({ index, tab, selectedTab, changeTab = f => f }) => {
 };
 
 const SelectGroup = ({ groupby = [], selected, change }) => {
-  console.log(groupby);
   return (
-    <select onChange={e => change(e.target.value)} value={selected}>
+    <select
+      onChange={e => change(e.target.value)}
+      value={selected}
+      className='select--group'>
       {groupby.map((item, i) => (
         <option value={item} key={i}>
-          {transformText(item)[0].toUpperCase()}
+          {transformText(item)}
         </option>
       ))}
     </select>

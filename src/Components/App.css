@@ -128,10 +128,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
-    padding: 0.8rem;
 }
 
 .ic-s{
@@ -180,6 +179,22 @@ p {
     transform: scale(1.3);
 }
 
+.level-1{
+    color: blue;
+}
+
+.level-3{
+    color: red;
+}
+
+.level-4{
+    color: brown;
+}
+
+.level-5{
+    color: #9B59B6 ;
+}
+
 .optional-1{
     color: #9B59B6;
 }
@@ -204,27 +219,12 @@ p {
     color: #f06595 ;
 }
 
-.level-1{
-    color: blue;
-}
-
-.level-3{
-    color: red;
-}
-
-.level-4{
-    color: brown;
-}
-
-.level-5{
-    color: #9B59B6 ;
-}
-
 .is--close{
     display: none !important;
 }
 
 .main {
+    min-height: calc(100vh - 12rem);
     margin: 0 1.5rem;
     font-size: 1.4rem;
 }
@@ -237,6 +237,7 @@ p {
 /* Units style render*/
 
 .card{
+    font-size: 1.2rem;
     height: 6em;
     width: 10em;
     position: relative;
@@ -388,6 +389,12 @@ p {
     transform: scale(1.1);
 }
 
+.select--group {
+    padding: 1rem 0.5rem;
+    border: none;
+    box-shadow: 0 0 0.2rem 0.1rem;
+}
+
 .unit--skeleton {
     border: 0.25rem solid #aaa;
     flex-direction: column;
@@ -425,9 +432,25 @@ p {
 
 /* Desktop queries */
 
-
 @media only screen and (min-width: 40em) {
-    .nav__settings{
-        flex-direction: row;
+
+    .main {
+        margin: 0 5rem;
+    }
+    
+    .units {
+        grid-template-columns: 4rem auto;
+    }
+
+    .group--units {
+        justify-content: start;
+    }
+
+    .group--number{
+        height: 100%;
+    }
+    
+    .card {
+        font-size: 1.4rem;
     }
   }

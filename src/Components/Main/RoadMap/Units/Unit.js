@@ -11,7 +11,9 @@ export default function Unit({ unit }) {
   const { selectedUnit } = useUnits();
   const selected = selectedUnit && unit.id === selectedUnit.id;
   return (
-    <div className={`card unit level-${unit.level}`} id={unit.id}>
+    <div
+      className={`card level-${unit.level} optional-${unit?.optional}`}
+      id={unit.id}>
       <FrontCard selected={selected} unit={unit} />
       <BackCard selected={selected} unit={unit} />
     </div>

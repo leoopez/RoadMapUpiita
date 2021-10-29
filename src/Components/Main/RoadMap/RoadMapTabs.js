@@ -2,6 +2,7 @@
 
 //3rd libraries
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaExchangeAlt } from "react-icons/fa";
 
 // Utils
@@ -13,7 +14,7 @@ import RoadMapTab from "./RoadMapTab";
 import RoadMaploading from "./RoadMapLoading";
 
 //UI
-import { Icon } from "../../UI";
+import { Icon, ErrorHandler } from "../../UI";
 
 export default function RoadMapTabs({ career }) {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -25,9 +26,10 @@ export default function RoadMapTabs({ career }) {
     setOrder(false);
     setGroup("semester");
   };
+
   const { loading, error, units } = useFetchData(career);
 
-  if (error) return <pre>{JSON.stringify(error)}</pre>;
+  if (error) return <ErrorHandler />;
   if (loading) return <RoadMaploading loading={career} />;
 
   return (

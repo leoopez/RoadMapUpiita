@@ -13,3 +13,11 @@ export function Icon({ children, cName = "", onClick = f => f }) {
     </span>
   );
 }
+
+export function ErrorHandler() {
+  return (
+    <div>
+      <h2>Error al Obtener los datos</h2>
+    </div>
+  );
+}

@@ -1,11 +1,9 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import NavLink from "./NavLink";
 
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useState } from "react/cjs/react.development";
-
 import { Icon } from "../UI";
 import { CAREERS } from "../../config";
 

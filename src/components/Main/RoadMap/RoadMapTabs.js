@@ -2,7 +2,6 @@
 
 //3rd libraries
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { FaExchangeAlt } from "react-icons/fa";
 
 // Utils
